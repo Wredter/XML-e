@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="plajlisty.css" type="text/css" ?>
+
+<root
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="plajlisty.xsd" xsi:schemaLocation="plajlisty.xsd">
+ 
+ <metadane>
+        <autor>
+            <imie>Wiktor</imie>
+            <nazwisko>Muraszko</nazwisko>
+            <nr_indeksu>210281</nr_indeksu>
+        </autor>
+        <autor>
+            <imie>Wojciech</imie>
+            <nazwisko>Mosieński</nazwisko>
+            <nr_indeksu>210280</nr_indeksu>
+        </autor>
+        <data_modyfikacji>2019-03-29</data_modyfikacji>
+    </metadane>
+    <lista_gatunków>
+        <gatunek id="Rock">Rock</gatunek>
+        <gatunek id="Pop">Pop</gatunek>
+        <gatunek id="Alternatywna">Alternatywna</gatunek>
+    </lista_gatunków>
+	<lista_wykonawców>
+        <wykonawca id="GNR" nazwa="Guns N’ Roses">
+            <artysta><imie>Axl</imie><nazwisko>Rose</nazwisko></artysta>
+			<artysta pseudo="Slash"><imie>Soul</imie><nazwisko>Hudson</nazwisko></artysta>
+            <artysta><imie>Izzy</imie><nazwisko>Stradlin</nazwisko></artysta>
+            <artysta><imie>Duff</imie><nazwisko>McKagan</nazwisko></artysta>
+            <artysta><imie>Steven</imie><nazwisko>Adler</nazwisko></artysta>
+        </wykonawca>
+        <wykonawca id="MT" nazwa="Modern Talking">
+			<artysta><imie>Dieter</imie><nazwisko>Bohlen</nazwisko></artysta>
+			<artysta><imie>Thomas</imie><nazwisko>Anders</nazwisko></artysta>
+        </wykonawca>
+    </lista_wykonawców>
+	<lista_piosenek>
+	    <piosenka tytuł="It's So Easy" wykonawca="GNR" gatunek="Rock" nastrój="wesoła">
+            <czas_trwania>3:23</czas_trwania>
+            <album>Appetite for Destruction</album>
+            <rok_wydania>1987</rok_wydania>
+        </piosenka>
+		<piosenka tytuł="Nighttrain" wykonawca="GNR" gatunek="Rock" nastrój="smutna">
+            <czas_trwania>4:29</czas_trwania>
+            <album>Appetite for Destruction</album>
+            <rok_wydania>1987</rok_wydania>
+        </piosenka>
+		<piosenka tytuł="Out Ta Get Me" wykonawca="GNR" gatunek="Rock" nastrój="mieszana">
+            <czas_trwania>4:25</czas_trwania>
+            <album>Appetite for Destruction</album>
+            <rok_wydania>1987</rok_wydania>
+        </piosenka>
+        <piosenka tytuł="Mr. Brownstone" wykonawca="GNR" gatunek="Rock" nastrój="smutna">
+            <czas_trwania>3:49</czas_trwania>
+            <album>Appetite for Destruction</album>
+            <rok_wydania>1987</rok_wydania>
+        </piosenka>
+        <piosenka tytuł="Paradise City" wykonawca="GNR" gatunek="Rock" nastrój="wesoła">
+            <czas_trwania>6:46</czas_trwania>
+            <album>Appetite for Destruction</album>
+            <rok_wydania>1987</rok_wydania>
+        </piosenka>
+        <piosenka tytuł="My Michelle" wykonawca="GNR" gatunek="Rock" nastrój="niezidentyfikowana">
+            <czas_trwania>3:40</czas_trwania>
+            <album>Appetite for Destruction</album>
+            <rok_wydania>1987</rok_wydania>
+        </piosenka>
+        <piosenka tytuł="Think About You" wykonawca="GNR" gatunek="Rock" nastrój="smutna">
+            <czas_trwania>3:52</czas_trwania>
+            <album>Appetite for Destruction</album>
+            <rok_wydania>1987</rok_wydania>
+        </piosenka>
+        <piosenka tytuł="Sweet Child O' Mine" wykonawca="GNR" gatunek="Rock" nastrój="smutna">
+            <czas_trwania>5:55</czas_trwania>
+            <album>Appetite for Destruction</album>
+            <rok_wydania>1987</rok_wydania>
+        </piosenka>
+        <piosenka tytuł="You're Crazy" wykonawca="GNR" gatunek="Rock" nastrój="wesoła">
+            <czas_trwania>3:17</czas_trwania>
+            <album>Appetite for Destruction</album>
+            <rok_wydania>1987</rok_wydania>
+        </piosenka>
+        <piosenka tytuł="Anything Goes" wykonawca="GNR" gatunek="Rock" nastrój="wesoła">
+            <czas_trwania>3:26</czas_trwania>
+            <album>Appetite for Destruction</album>
+            <rok_wydania>1987</rok_wydania>
+        </piosenka>
+        <piosenka tytuł="Rocet Queen" wykonawca="GNR" gatunek="Rock" nastrój="wesoła">
+            <czas_trwania>3:40</czas_trwania>
+            <album>Appetite for Destruction</album>
+            <rok_wydania>1987</rok_wydania>
+        </piosenka>
+		<piosenka tytuł="Brother Louie" wykonawca="MT" gatunek="Pop" nastrój="smutna">
+            <czas_trwania>3:41</czas_trwania>
+            <album>Ready for Romance</album>
+            <rok_wydania>1986</rok_wydania>
+        </piosenka>
+        <piosenka tytuł="Just We Two" wykonawca="MT" gatunek="Pop" nastrój="smutna">
+            <czas_trwania>3:54</czas_trwania>
+            <album>Ready for Romance</album>
+            <rok_wydania>1986</rok_wydania>
+        </piosenka>
+        <piosenka tytuł="Lady Lai" wykonawca="MT" gatunek="Pop" nastrój="smutna">
+            <czas_trwania>4:55</czas_trwania>
+            <album>Ready for Romance</album>
+            <rok_wydania>1986</rok_wydania>
+        </piosenka>
+        <piosenka tytuł="Doctor for My Heart" wykonawca="MT" gatunek="Pop" nastrój="niezidentyfikowana">
+            <czas_trwania>3:16</czas_trwania>
+            <album>Ready for Romance</album>
+            <rok_wydania>1986</rok_wydania>
+        </piosenka>
+        <piosenka tytuł="Save Me - Don't Break Me" wykonawca="MT" gatunek="Pop" nastrój="smutna">
+            <czas_trwania>3:45</czas_trwania>
+            <album>Ready for Romance</album>
+            <rok_wydania>1986</rok_wydania>
+        </piosenka>
+        <piosenka tytuł="Atlantis Is Calling" wykonawca="MT" gatunek="Pop" nastrój="niezidentyfikowana">
+            <czas_trwania>3:48</czas_trwania>
+            <album>Ready for Romance</album>
+            <rok_wydania>1986</rok_wydania>
+        </piosenka>
+        <piosenka tytuł="Keep Lova Alive" wykonawca="MT" gatunek="Pop" nastrój="smutna">
+            <czas_trwania>3:25</czas_trwania>
+            <album>Ready for Romance</album>
+            <rok_wydania>1986</rok_wydania>
+        </piosenka>
+        <piosenka tytuł="Hey You" wykonawca="MT" gatunek="Pop" nastrój="niezidentyfikowana">
+            <czas_trwania>3:20</czas_trwania>
+            <album>Ready for Romance</album>
+            <rok_wydania>1986</rok_wydania>
+        </piosenka>
+        <piosenka tytuł="Angie's Heart" wykonawca="MT" gatunek="Pop" nastrój="mieszana">
+            <czas_trwania>3:37</czas_trwania>
+            <album>Ready for Romance</album>
+            <rok_wydania>1986</rok_wydania>
+        </piosenka>
+        <piosenka tytuł="Only Love Can Break My Heart" wykonawca="MT" gatunek="Pop" nastrój="smutna">
+            <czas_trwania>3:35</czas_trwania>
+            <album>Ready for Romance</album>
+            <rok_wydania>1986</rok_wydania>
+        </piosenka>
+	</lista_piosenek>
+	
+	<plajlista nazwa="Guns'i A4D">
+		<piosenkaRef tytulRef="It's So Easy" />
+		<piosenkaRef tytulRef="Nighttrain" />
+		<piosenkaRef tytulRef="Out Ta Get Me" />
+		<piosenkaRef tytulRef="Mr. Brownstone" />
+		<piosenkaRef tytulRef="Paradise City" />
+		<piosenkaRef tytulRef="My Michelle" />
+		<piosenkaRef tytulRef="Think About You" />
+		<piosenkaRef tytulRef="Sweet Child O' Mine" />
+		<piosenkaRef tytulRef="You're Crazy" />
+		<piosenkaRef tytulRef="Anything Goes" />
+		<piosenkaRef tytulRef="Rocet Queen" />
+	</plajlista>
+	<plajlista nazwa="Eternal Romance">
+		<piosenkaRef tytulRef="Brother Louie" />
+		<piosenkaRef tytulRef="Just We Two" />
+		<piosenkaRef tytulRef="Lady Lai" />
+		<piosenkaRef tytulRef="Doctor for My Heart" />
+		<piosenkaRef tytulRef="Save Me - Don't Break Me" />
+		<piosenkaRef tytulRef="Atlantis Is Calling" />
+		<piosenkaRef tytulRef="Keep Lova Alive" />
+		<piosenkaRef tytulRef="Hey You" />
+		<piosenkaRef tytulRef="Angie's Heart" />
+		<piosenkaRef tytulRef="Only Love Can Break My Heart" />
+	</plajlista>
+	
+
+ 
+</root>
+
+
+
