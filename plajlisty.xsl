@@ -20,7 +20,7 @@
 		  <th>Nazwisko</th>
 		  <th>Nr indeksu</th>
 		</tr>
-		<xsl:for-each select="/zestawienie/autorzy/autor">
+		<xsl:for-each select="/zestawienie/Dane/autor">
 		<tr>
 		  <td><xsl:value-of select="./imie" /></td>
 		  <td><xsl:value-of select="./nazwisko" /></td>
@@ -55,22 +55,22 @@
   </table>
   </div>
 
-  
+
   <div class="pure-u-3-5">
   <h2>Dane plajlist</h2>
   <table border="1">
     <xsl:for-each select="/zestawienie/plajlista">
     <tr>
-      <td colspan="7">nazwa: <xsl:value-of select="nazwa"/>, liczba piosenek: <xsl:value-of select="liczbaPiosenek"/></td>
+      <td colspan="7"><b><font size="5"> nazwa: <xsl:value-of select="nazwa"/> | liczba piosenek: <xsl:value-of select="liczbaPiosenek"/></font></b></td>
     </tr>
     <tr>
-      <td>Tytuł</td>
-      <td>Artyści</td>
-      <td>Gatunek</td>
-      <td>Nastrój</td>
-      <td>Czas Trwania</td>
-      <td>Album</td>
-      <td>Rok wydania</td>
+      <td><b>Tytuł</b></td>
+      <td><b>Artyści</b></td>
+      <td><b>Gatunek</b></td>
+      <td><b>Nastrój</b></td>
+      <td><b>Czas Trwania</b></td>
+      <td><b>Album</b></td>
+      <td><b>Rok wydania</b></td>
     </tr>
     <xsl:for-each select="piosenka">
     <tr>
@@ -84,6 +84,13 @@
     </tr>
     </xsl:for-each>
     </xsl:for-each>
+  </table>
+  <br/>
+  <table>
+    <tr>
+      <td><xsl:text>Data modyfikacji: </xsl:text></td>
+      <td><xsl:value-of select="/zestawienie/Dane/Datamodyfikacji"/></td>
+    </tr>
   </table>
   </div>
   </div>

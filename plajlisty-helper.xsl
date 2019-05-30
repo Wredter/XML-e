@@ -11,7 +11,7 @@ exclude-result-prefixes="my">
 	
 	<xsl:template match="/root">
         <xsl:element name="zestawienie">
-			<xsl:element name="autorzy">
+			<xsl:element name="Dane">
 				<xsl:for-each select="metadane/autor">
 					<xsl:element name="autor">
 						<xsl:element name="imie">
@@ -25,6 +25,9 @@ exclude-result-prefixes="my">
 						</xsl:element>
 					</xsl:element>
 				</xsl:for-each>
+				<xsl:element name="Datamodyfikacji">
+					<xsl:value-of  select="current-dateTime()"/>
+				</xsl:element>
 			</xsl:element>
 			<xsl:element name="biblioteka">
 				<xsl:element name="liczbaWykonawców">
