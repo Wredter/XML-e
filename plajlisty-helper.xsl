@@ -6,7 +6,8 @@ exclude-result-prefixes="my">
 <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
     
 	<xsl:key name ="WykonawcaKey" match="wykonawca" use="@id"/>
-	<xsl:key name ="PiosenkaKey" match="piosenka" use="@tytluł"/>
+	<xsl:key name ="PiosenkaKey" match="piosenka" use="@tytuł"/>
+	<xsl:key name ="GatunekKey" match="gatunek" use="@id"/>
 	
 	<xsl:template match="/root">
         <xsl:element name="zestawienie">
@@ -62,28 +63,28 @@ exclude-result-prefixes="my">
 							<xsl:element name="Tytuł">
 								<xsl:value-of select="@tytulRef"/>
 							</xsl:element>
-							<xsl:variable name="wykonawcaref" select="/root/lista_piosenek/piosenka[@tytuł = $piosenkaref]/@wykonawca" />
+							<xsl:variable name="wykonawcaref" select="key('PiosenkaKey',$piosenkaref)/@wykonawca" />
 							<xsl:element name="artyści">
 								<xsl:for-each select="key('WykonawcaKey',$wykonawcaref)/artysta">
 								<xsl:sort select="nazwisko"/>
 									<xsl:value-of select="imie"/><xsl:text> </xsl:text><xsl:value-of select="nazwisko"/>,
 								</xsl:for-each>
 							</xsl:element>
-							<xsl:variable name="gatunekref" select="/root/lista_piosenek/piosenka[@tytuł = $piosenkaref]/@gatunek" />
+							<xsl:variable name="gatunekref" select="key('PiosenkaKey',$piosenkaref)/@gatunek" />
 							<xsl:element name="gatunek">
-								<xsl:value-of select="/root/lista_gatunków/gatunek[@id = $gatunekref]"/>
+								<xsl:value-of select="key('GatunekKey',$gatunekref)/."/>
 							</xsl:element>
 							<xsl:element name="nastrój">
-								<xsl:value-of select="/root/lista_piosenek/piosenka[@tytuł = $piosenkaref]/@nastrój"/>
+								<xsl:value-of select="key('PiosenkaKey',$piosenkaref)/@nastrój"/>
 							</xsl:element>
 							<xsl:element name="rokWydania">
-								<xsl:value-of select="/root/lista_piosenek/piosenka[@tytuł = $piosenkaref]/rok_wydania"/>
+								<xsl:value-of select="key('PiosenkaKey',$piosenkaref)/rok_wydania"/>
 							</xsl:element>
 							<xsl:element name="album">
-								<xsl:value-of select="/root/lista_piosenek/piosenka[@tytuł = $piosenkaref]/album"/>
+								<xsl:value-of select="key('PiosenkaKey',$piosenkaref)/album"/>
 							</xsl:element>
 							<xsl:element name="czasTrwania">
-								<xsl:value-of select="/root/lista_piosenek/piosenka[@tytuł = $piosenkaref]/czas_trwania"/>
+								<xsl:value-of select="key('PiosenkaKey',$piosenkaref)/czas_trwania"/>
 							</xsl:element>
 						</xsl:element>
 					</xsl:for-each>
