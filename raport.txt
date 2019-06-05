@@ -1,0 +1,107 @@
+Autor:                     Wiktor Muraszko
+numer indeksu:             210281
+
+Autor:                     Wojciech Mosieński
+numer indeksu:             210280
+
+Data:                      2019-03-29
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+lista wykonawców:
+
+nazwa zaspołu:             Guns N’ Roses
+  -artysta:                Axl Rose
+  -artysta:                Soul Hudson
+  -artysta:                Izzy Stradlin
+  -artysta:                Duff McKagan
+  -artysta:                Steven Adler
+
+nazwa zaspołu:             Modern Talking
+  -artysta:                Dieter Bohlen
+  -artysta:                Thomas Anders
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+gatunki:
+
+  -Rock
+  -Pop
+  -Alternatywna
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+lista piosenek:
+
+tytuł                          | wykonawca         | gatunek | nastrój                | czas trwania | album                       | rok wydania
+------------------------------------------------------------------------------------------------------------------------------------------------
+It's So Easy                   | Guns N’ Roses     | Rock    | wesoła                 | 3:23         | Appetite for Destruction    | 1987        
+------------------------------------------------------------------------------------------------------------------------------------------------
+Nighttrain                     | Guns N’ Roses     | Rock    | smutna                 | 4:29         | Appetite for Destruction    | 1987        
+------------------------------------------------------------------------------------------------------------------------------------------------
+Out Ta Get Me                  | Guns N’ Roses     | Rock    | mieszana               | 4:25         | Appetite for Destruction    | 1987        
+------------------------------------------------------------------------------------------------------------------------------------------------
+Mr. Brownstone                 | Guns N’ Roses     | Rock    | smutna                 | 3:49         | Appetite for Destruction    | 1987        
+------------------------------------------------------------------------------------------------------------------------------------------------
+Paradise City                  | Guns N’ Roses     | Rock    | wesoła                 | 6:46         | Appetite for Destruction    | 1987        
+------------------------------------------------------------------------------------------------------------------------------------------------
+My Michelle                    | Guns N’ Roses     | Rock    | niezidentyfikowana     | 3:40         | Appetite for Destruction    | 1987        
+------------------------------------------------------------------------------------------------------------------------------------------------
+Think About You                | Guns N’ Roses     | Rock    | smutna                 | 3:52         | Appetite for Destruction    | 1987        
+------------------------------------------------------------------------------------------------------------------------------------------------
+Sweet Child O' Mine            | Guns N’ Roses     | Rock    | smutna                 | 5:55         | Appetite for Destruction    | 1987        
+------------------------------------------------------------------------------------------------------------------------------------------------
+You're Crazy                   | Guns N’ Roses     | Rock    | wesoła                 | 3:17         | Appetite for Destruction    | 1987        
+------------------------------------------------------------------------------------------------------------------------------------------------
+Anything Goes                  | Guns N’ Roses     | Rock    | wesoła                 | 3:26         | Appetite for Destruction    | 1987        
+------------------------------------------------------------------------------------------------------------------------------------------------
+Rocet Queen                    | Guns N’ Roses     | Rock    | wesoła                 | 3:40         | Appetite for Destruction    | 1987        
+------------------------------------------------------------------------------------------------------------------------------------------------
+Brother Louie                  | Modern Talking    | Pop     | smutna                 | 3:41         | Ready for Romance           | 1986        
+------------------------------------------------------------------------------------------------------------------------------------------------
+Just We Two                    | Modern Talking    | Pop     | smutna                 | 3:54         | Ready for Romance           | 1986        
+------------------------------------------------------------------------------------------------------------------------------------------------
+Lady Lai                       | Modern Talking    | Pop     | smutna                 | 4:55         | Ready for Romance           | 1986        
+------------------------------------------------------------------------------------------------------------------------------------------------
+Doctor for My Heart            | Modern Talking    | Pop     | niezidentyfikowana     | 3:16         | Ready for Romance           | 1986        
+------------------------------------------------------------------------------------------------------------------------------------------------
+Save Me - Don't Break Me       | Modern Talking    | Pop     | smutna                 | 3:45         | Ready for Romance           | 1986        
+------------------------------------------------------------------------------------------------------------------------------------------------
+Atlantis Is Calling            | Modern Talking    | Pop     | niezidentyfikowana     | 3:48         | Ready for Romance           | 1986        
+------------------------------------------------------------------------------------------------------------------------------------------------
+Keep Lova Alive                | Modern Talking    | Pop     | smutna                 | 3:25         | Ready for Romance           | 1986        
+------------------------------------------------------------------------------------------------------------------------------------------------
+Hey You                        | Modern Talking    | Pop     | niezidentyfikowana     | 3:20         | Ready for Romance           | 1986        
+------------------------------------------------------------------------------------------------------------------------------------------------
+Angie's Heart                  | Modern Talking    | Pop     | mieszana               | 3:37         | Ready for Romance           | 1986        
+------------------------------------------------------------------------------------------------------------------------------------------------
+Only Love Can Break My Heart   | Modern Talking    | Pop     | smutna                 | 3:35         | Ready for Romance           | 1986        
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+lista playlist:
+
+nazwa: Guns'i A4D
+  -tytuł piosenki: It's So Easy
+  -tytuł piosenki: Nighttrain
+  -tytuł piosenki: Out Ta Get Me
+  -tytuł piosenki: Mr. Brownstone
+  -tytuł piosenki: Paradise City
+  -tytuł piosenki: My Michelle
+  -tytuł piosenki: Think About You
+  -tytuł piosenki: Sweet Child O' Mine
+  -tytuł piosenki: You're Crazy
+  -tytuł piosenki: Anything Goes
+  -tytuł piosenki: Rocet Queen
+
+nazwa: Eternal Romance
+  -tytuł piosenki: Brother Louie
+  -tytuł piosenki: Just We Two
+  -tytuł piosenki: Lady Lai
+  -tytuł piosenki: Doctor for My Heart
+  -tytuł piosenki: Save Me - Don't Break Me
+  -tytuł piosenki: Atlantis Is Calling
+  -tytuł piosenki: Keep Lova Alive
+  -tytuł piosenki: Hey You
+  -tytuł piosenki: Angie's Heart
+  -tytuł piosenki: Only Love Can Break My Heart
