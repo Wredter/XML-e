@@ -20,7 +20,7 @@
             <script type="text/javascript">
                 <![CDATA[
                 function onClickAutorzy(evt) {
-                    var element = document.getElementById("autor");
+                    var element = document.getElementById("autorzy");
                     var atrybut = element.getAttribute("visibility");
                     if(atrybut === "visible"){
                         element.setAttribute("visibility", "hidden");
@@ -52,7 +52,32 @@
 			<svg:text x="810" y="20" font-size="12" fill="white" font-weight="bold" text-anchor="middle">
 				Ostatnia aktualizacja: <xsl:value-of select="metadane/data_modyfikacji"/>
 			</svg:text>
+            
+            <svg:rect x="0" y="0" width="860" height="1360" rx="10" ry="10" fill="url(#bg)"/>
+            <xsl:apply-templates/>
+            <xsl:apply-templates select="autorzy"/>
         </svg:svg>
+        
+        <xsl:template match="autorzy">
+        <svg:g id="autorzy_pliku" width="100" height="60" onclick="onClickAutorzy(evt)"
+               cursor="pointer">
+            <svg:rect x="15" y="20" class="button" width="100" height="32" fill="url(#bar)" stroke="black" rx="10"
+                      ry="10"/>
+            <svg:text x="40" y="41" fill="white" font-size="16">Autorzy</svg:text>
+        </svg:g>
+        <svg:g id="autorzy" visibility="hidden">
+            <svg:rect x="130" y="20" width="600" height="30" fill="url(#bar)" stroke="black"/>
+            <svg:text x="420" y="40" font-size="16" fill="white" text-anchor="middle">
+                <xsl:apply-templates/>
+            </svg:text>
+        </svg:g>
+        </xsl:template>
+
+    <xsl:template match="autor">
+        <xsl:value-of select="concat(imie, ' ')"/>
+        <xsl:value-of select="concat(nazwisko, ' ')"/>
+        <xsl:value-of select="concat(indeks, ' ')"/>
+    </xsl:template>
 
 
     </xsl:template>
