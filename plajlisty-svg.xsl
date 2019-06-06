@@ -86,7 +86,7 @@
         <svg:g id="metadane" visibility="hidden">
             <svg:rect x="130" y="70" width="600" height="30" fill="url(#bar)" stroke="black"/>
             <svg:text x="420" y="91" font-size="16" fill="white" text-anchor="middle">
-                <xsl:apply-templates/>
+                <xsl:apply-templates select="autor"/>
             </svg:text>
         </svg:g>
         </xsl:template>
@@ -94,6 +94,6 @@
     <xsl:template match="autor">
         <xsl:value-of select="concat(imie, ' ')"/>
         <xsl:value-of select="concat(nazwisko, ' ')"/>
-        <xsl:value-of select="concat(indeks, ' ')"/>
+        <xsl:value-of select="concat(nr_indeksu, ' ')"/>
     </xsl:template>
 </xsl:stylesheet>
