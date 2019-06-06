@@ -85,7 +85,7 @@
         </svg:g>
         <svg:g id="metadane" visibility="hidden">
             <svg:rect x="130" y="70" width="800" height="30" fill="url(#bar)" stroke="black"/>
-            <svg:text x="420" y="91" font-size="16" fill="white" text-anchor="middle">
+            <svg:text x="520" y="91" font-size="16" fill="white" text-anchor="middle">
                 <xsl:apply-templates select="autor"/>
             </svg:text>
         </svg:g>
