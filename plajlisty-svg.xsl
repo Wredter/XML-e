@@ -15,7 +15,7 @@
     <xsl:template match="/">
         <svg:svg width="950" height="960" font-family="fantasy">
             <svg:title>
-                Transformata XML -> SVG Playlisty
+                <svg:value-of select="metadane/data_modyfikacji"/>
             </svg:title>
         </svg:svg>
 
