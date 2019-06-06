@@ -12,7 +12,7 @@
                 doctype-public="-//W3C//DTD SVG 1.1//EN"
                 doctype-system="http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd"/>
 
-    <xsl:template match="/">
+    <xsl:template match="/root">
         <svg:svg width="950" height="960" font-family="sans-serif">
             <svg:title>
                 RAPORT
@@ -56,8 +56,8 @@
             <svg:rect x="0" y="50" width="950" height="910" rx="10" ry="10" fill="url(#bg)"/>
             <xsl:apply-templates/>
             <xsl:apply-templates select="autorzy"/>
-            </svg:svg>
-        </xsl:template>
+        </svg:svg>
+    </xsl:template>
         
         <xsl:template match="autorzy">
         <svg:g id="autorzy_pliku" width="100" height="60" onclick="onClickAutorzy(evt)"
