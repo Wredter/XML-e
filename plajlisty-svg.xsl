@@ -62,11 +62,11 @@
         <xsl:template match="metadane">
         <svg:g id="autorzy_pliku" width="100" height="60" onclick="onClickAutorzy(evt)"
                cursor="pointer">
-            <svg:rect x="15" y="20" class="button" width="100" height="32" fill="url(#bar)" stroke="black" rx="10"
+            <svg:rect x="15" y="40" class="button" width="100" height="32" fill="url(#bar)" stroke="black" rx="10"
                       ry="10"/>
             <svg:text x="40" y="41" fill="white" font-size="16">Autorzy</svg:text>
         </svg:g>
-        <svg:g id="autorzy" visibility="hidden">
+        <svg:g id="metadane" visibility="hidden">
             <svg:rect x="130" y="20" width="600" height="30" fill="url(#bar)" stroke="black"/>
             <svg:text x="420" y="40" font-size="16" fill="white" text-anchor="middle">
                 <xsl:apply-templates/>
