@@ -20,7 +20,7 @@
             <script type="text/javascript">
                 <![CDATA[
                 function onClickAutorzy(evt) {
-                    var element = document.getElementById("autor");
+                    var element = document.getElementById("metadane");
                     var atrybut = element.getAttribute("visibility");
                     if(atrybut === "visible"){
                         element.setAttribute("visibility", "hidden");
@@ -29,6 +29,23 @@
                     }
                 }]]>
             </script>
+            
+            <style>
+                .bar:hover
+                {
+                fill: #71B280;
+                }
+
+                .button:hover
+                {
+                fill: #71B280;
+                }
+
+                .wykres_tlo:hover
+                {
+                fill: #575757;
+                }
+            </style>
             
             <svg:defs>
                 <svg:linearGradient id="bg-darker">
