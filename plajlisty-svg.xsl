@@ -84,8 +84,8 @@
             <svg:text x="35" y="91" fill="white" font-size="16">Autorzy</svg:text>
         </svg:g>
         <svg:g id="metadane" visibility="hidden">
-            <svg:rect x="130" y="20" width="600" height="30" fill="url(#bar)" stroke="black"/>
-            <svg:text x="420" y="40" font-size="16" fill="white" text-anchor="middle">
+            <svg:rect x="130" y="70" width="600" height="30" fill="url(#bar)" stroke="black"/>
+            <svg:text x="420" y="91" font-size="16" fill="white" text-anchor="middle">
                 <xsl:apply-templates/>
             </svg:text>
         </svg:g>
