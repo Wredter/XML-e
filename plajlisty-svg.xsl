@@ -56,7 +56,8 @@
             <svg:rect x="0" y="0" width="860" height="1360" rx="10" ry="10" fill="url(#bg)"/>
             <xsl:apply-templates/>
             <xsl:apply-templates select="autorzy"/>
-        </svg:svg>
+            </svg:svg>
+        </xsl:template>
         
         <xsl:template match="autorzy">
         <svg:g id="autorzy_pliku" width="100" height="60" onclick="onClickAutorzy(evt)"
