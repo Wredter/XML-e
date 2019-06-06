@@ -13,7 +13,7 @@
                 doctype-system="http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd"/>
 
     <xsl:template match="/">
-        <svg:svg width="950" height="960" font-family="fantasy">
+        <svg:svg width="950" height="960" font-family="Tahoma">
             <svg:title>
                 <svg:value-of select="metadane/data_modyfikacji"/>
             </svg:title>
