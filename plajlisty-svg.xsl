@@ -79,7 +79,4 @@
         <xsl:value-of select="concat(nazwisko, ' ')"/>
         <xsl:value-of select="concat(indeks, ' ')"/>
     </xsl:template>
-
-
-    </xsl:template>
 </xsl:stylesheet>
