@@ -53,7 +53,7 @@
 				Ostatnia aktualizacja: <xsl:value-of select="metadane/data_modyfikacji"/>
 			</svg:text>
             
-            <svg:rect x="0" y="0" width="860" height="1360" rx="10" ry="10" fill="url(#bg)"/>
+            <svg:rect x="0" y="50" width="950" height="910" rx="10" ry="10" fill="url(#bg)"/>
             <xsl:apply-templates/>
             <xsl:apply-templates select="autorzy"/>
             </svg:svg>
