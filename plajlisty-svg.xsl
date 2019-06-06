@@ -20,7 +20,7 @@
             <script type="text/javascript">
                 <![CDATA[
                 function onClickAutorzy(evt) {
-                    var element = document.getElementById("autorzy");
+                    var element = document.getElementById("autor");
                     var atrybut = element.getAttribute("visibility");
                     if(atrybut === "visible"){
                         element.setAttribute("visibility", "hidden");
