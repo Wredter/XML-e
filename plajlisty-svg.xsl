@@ -13,10 +13,22 @@
                 doctype-system="http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd"/>
 
     <xsl:template match="/">
-        <svg:svg width="950" height="960" font-family="fantasy">
+        <svg:svg width="950" height="960" font-family="sans-serif">
             <svg:title>
-                <svg:value-of select="metadane/data_modyfikacji"/>
+                RAPORT
             </svg:title>
+            <script type="text/javascript">
+                <![CDATA[
+                function onClickAutorzy(evt) {
+                    var element = document.getElementById("autor");
+                    var atrybut = element.getAttribute("visibility");
+                    if(atrybut === "visible"){
+                        element.setAttribute("visibility", "hidden");
+                    }else{
+                        element.setAttribute("visibility", "visible");
+                    }
+                }]]>
+            </script>
             
             <svg:defs>
 				<svg:linearGradient id="gradient">
