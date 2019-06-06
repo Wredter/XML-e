@@ -13,7 +13,7 @@
                 doctype-system="http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd"/>
 
     <xsl:template match="/">
-        <svg:svg width="950" height="960" font-family="Comic Sans MS">
+        <svg:svg width="950" height="960" font-family="fantasy">
             <svg:title>
                 Transformata XML -> SVG Playlisty
             </svg:title>
