@@ -41,7 +41,7 @@
 				Playlisty
 			</svg:text>
 			<svg:text x="810" y="20" font-size="12" fill="white" font-weight="bold" text-anchor="middle">
-				Ostatnia aktualizacja: <xsl:value-of select="metadane/data_modyfikacji"/>
+				Ostatnia aktualizacja: <xsl:value-of select="/metadane/data_modyfikacji"/>
 			</svg:text>
         </svg:svg>
 
