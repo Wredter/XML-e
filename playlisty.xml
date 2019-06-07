@@ -3,7 +3,7 @@
 
 <root
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation="plajlisty.xsd" xsi:schemaLocation="plajlisty.xsd">
+xsi:noNamespaceSchemaLocation="plajlisty.xsd">
  
  <metadane>
         <autor>
