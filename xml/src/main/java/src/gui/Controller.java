@@ -38,6 +38,10 @@ public class Controller implements Initializable {
     public ListView<String> listaArtystow = new ListView<>();
 
 
+    //playlista
+    @FXML
+    public TextField nazwaPlaylisty = new TextField();
+
     //lista piosenek ref - piosenka ref
     @FXML
     public ComboBox idPiosenki = new ComboBox();
@@ -99,7 +103,6 @@ public class Controller implements Initializable {
         refreshListaPiosenek();
         refreshListaGatunkow();
     }
-
 
 
 
@@ -171,6 +174,7 @@ public class Controller implements Initializable {
     public void selectPlaylista() {
         PlajlistaType p = (PlajlistaType)root.getPlajlista().stream().filter(x -> x.getNazwa().equals(listaPlaylist.getSelectionModel().getSelectedItem())).toArray()[0];
         int id = root.getPlajlista().indexOf(p);
+        nazwaPlaylisty.setText(p.getNazwa());
         refreshListaPiosenekRef(id);
     }
 
@@ -247,7 +251,7 @@ public class Controller implements Initializable {
 
     public void clickDodajPlayliste() {
         PlajlistaType p = new PlajlistaType();
-        p.setNazwa(albumPiosenki.getText());
+        p.setNazwa(nazwaPlaylisty.getText());
         root.getPlajlista().add(p);
         refreshListaPlaylist();
     }
@@ -255,6 +259,12 @@ public class Controller implements Initializable {
     public void clickUsunPlayliste() {
         PlajlistaType pl = (PlajlistaType)root.getPlajlista().stream().filter(x -> x.getNazwa().equals(listaPlaylist.getSelectionModel().getSelectedItem())).toArray()[0];
         root.getPlajlista().remove(pl);
+        refreshListaPlaylist();
+    }
+
+    public void clickUpdatePlayliste() {
+        PlajlistaType pl = (PlajlistaType)root.getPlajlista().stream().filter(x -> x.getNazwa().equals(listaPlaylist.getSelectionModel().getSelectedItem())).toArray()[0];
+        pl.setNazwa(nazwaPlaylisty.getText());
         refreshListaPlaylist();
     }
 
