@@ -204,7 +204,7 @@ public class Controller implements Initializable {
         PlajlistaType pl = (PlajlistaType) root.getPlajlista().stream().filter(x -> x.getNazwa().equals(listaPlaylist.getSelectionModel().getSelectedItem())).toArray()[0];
         PiosenkaReferenceType pr = (PiosenkaReferenceType) pl.getPiosenkaRef().stream().filter(x -> x.getTytulRef().equals(listaPiosenekRef.getSelectionModel().getSelectedItem())).toArray()[0];
         pl.getPiosenkaRef().remove(pr);
-        int id = pl.getPiosenkaRef().indexOf(pr);
+        int id = root.getPlajlista().indexOf(pl);
         refreshListaPiosenekRef(id);
     }
 
@@ -245,7 +245,7 @@ public class Controller implements Initializable {
         PiosenkaReferenceType pr = new PiosenkaReferenceType();
         pr.setTytulRef(p.getTytul());
         pl.getPiosenkaRef().add(pr);
-        int id = pl.getPiosenkaRef().indexOf(pr);
+        int id = root.getPlajlista().indexOf(pl);
         refreshListaPiosenekRef(id);
     }
 

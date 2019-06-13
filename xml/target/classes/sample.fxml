@@ -21,21 +21,21 @@
                      <left>
                         <HBox BorderPane.alignment="CENTER_LEFT">
                            <children>
-                              <VBox prefHeight="200.0" prefWidth="100.0">
+                              <VBox>
                                  <children>
                                     <ListView fx:id="listaPlaylist" onMouseClicked="#selectPlaylista" />
                                     <TextField fx:id="nazwaPlaylisty" promptText="Nazwa Playlisty" />
-                                    <Button mnemonicParsing="false" text="Dodaj" onMouseClicked="#clickDodajPlayliste"/>
-                                    <Button mnemonicParsing="false" text="Usuń" onMouseClicked="#clickUsunPlayliste"/>
-                                    <Button mnemonicParsing="false" text="modyfikuj" onMouseClicked="#clickUpdatePlayliste"/>
+                                    <Button mnemonicParsing="false" onMouseClicked="#clickDodajPlayliste" text="Dodaj" />
+                                    <Button mnemonicParsing="false" onMouseClicked="#clickUsunPlayliste" text="Usuń" />
+                                    <Button mnemonicParsing="false" onMouseClicked="#clickUpdatePlayliste" text="modyfikuj" />
                                  </children>
                               </VBox>
                               <ListView fx:id="listaPiosenekRef" HBox.hgrow="ALWAYS" />
                               <VBox>
                                  <children>
-                                    <ComboBox fx:id="idPiosenki" VBox.vgrow="ALWAYS" />
-                                    <Button mnemonicParsing="false" text="Dodaj piosenke do playlisty" />
-                                    <Button mnemonicParsing="false" text="Usuń piosenke z playlisty" />
+                                    <ComboBox fx:id="idPiosenki" promptText="wybierz piosenke" VBox.vgrow="ALWAYS" />
+                                    <Button mnemonicParsing="false" onMouseClicked="#clickDodajPiosenkeDoPlaylisty" text="Dodaj piosenke do playlisty" />
+                                    <Button mnemonicParsing="false" onMouseClicked="#clickUsunPiosenkeZPlaylisty" text="Usuń piosenke z playlisty" />
                                  </children>
                               </VBox>
                               <ListView fx:id="listaPiosenek" onMouseClicked="#selectPiosenka" HBox.hgrow="ALWAYS" />
@@ -43,13 +43,15 @@
                         </HBox>
                      </left>
                      <right>
-                        <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                        <VBox BorderPane.alignment="CENTER">
                            <children>
-                              <TextField />
-                              <TextField />
-                              <TextField />
-                              <TextField />
-                              <TextField />
+                              <TextField promptText="tytuł" />
+                              <TextField promptText="czas" />
+                              <TextField promptText="album" />
+                              <TextField promptText="rok wydania" />
+                              <ComboBox prefWidth="150.0" promptText="wybierz wykonawce" />
+                              <ComboBox prefWidth="150.0" promptText="wybierz gatunek" />
+                              <ComboBox prefWidth="150.0" promptText="wybierz nastrój" />
                            </children>
                         </VBox>
                      </right>
