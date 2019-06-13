@@ -102,16 +102,24 @@ public class Controller implements Initializable {
         refreshListaWykonawcow();
         refreshListaPiosenek();
         refreshListaGatunkow();
+        refreshNastroj();
     }
 
-
-
+    ArrayList<String> nastroje = new ArrayList<>();
+    public void refreshNastroj() {
+        nastroje.add("smutna");
+        nastroje.add("mieszana");
+        nastroje.add("wesola");
+        nastroje.add("niezidentyfikowana");
+        nastrojPiosenki.setItems(FXCollections.observableArrayList(nastroje));
+    }
 
     public void refreshListaGatunkow() {
         ArrayList<String> gatunki = new ArrayList<>();
         for (GatunekType gatunek : root.getListaGatunkow().getGatunek()) {
             gatunki.add(gatunek.getValue());
         }
+        gatunekPiosenki.setItems(FXCollections.observableArrayList(gatunki));
         listaGatunkow.setItems(FXCollections.observableArrayList(gatunki));
     }
 
@@ -145,6 +153,7 @@ public class Controller implements Initializable {
         for (WykonawcaType p : root.getListaWykonawcow().getWykonawca()) {
             wykonawcy.add(p.getId());
         }
+        wykonawcaPiosenki.setItems(FXCollections.observableArrayList(wykonawcy));
         listaWykonawcow.setItems(FXCollections.observableArrayList(wykonawcy));
     }
 
@@ -162,9 +171,10 @@ public class Controller implements Initializable {
         czasPiosenki.setText(p.getCzasTrwania());
         albumPiosenki.setText(p.getAlbum());
         rokPiosenki.setText(p.getRokWydania().toString());
-        nastrojPiosenki.setId(p.getNastroj());
-        wykonawcaPiosenki.setId(p.getWykonawca());
-        gatunekPiosenki.setId(p.getGatunek());
+        System.out.print(p.getNastroj());
+        nastrojPiosenki.getSelectionModel().select(p.getNastroj());
+        wykonawcaPiosenki.getSelectionModel().select(p.getWykonawca());
+        gatunekPiosenki.getSelectionModel().select(p.getGatunek());
     }
 
 
