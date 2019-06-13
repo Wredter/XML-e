@@ -63,9 +63,9 @@ public class XMLOperations {
     }
 
     public static void transformXML(String transformedName) {
-        String[] arglist1 = {"-o:raport.xml", xmlFilePath, "playlisty-helper.xsl"};
+        String[] arglist1 = {"-o:raport.xml", xmlFilePath, "plajlisty-helper.xsl"};
         Transform.main(arglist1);
-        String[] arglist2 = {"-o:" + transformedName + ".xhtml", "raport.xml", "playlisty.xsl"};
+        String[] arglist2 = {"-o:" + transformedName + ".xhtml", "raport.xml", "plajlisty.xsl"};
         Transform.main(arglist2);
     }
 
