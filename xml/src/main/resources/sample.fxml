@@ -52,9 +52,9 @@
                               <ComboBox fx:id="wykonawcaPiosenki" prefWidth="150.0" promptText="wybierz wykonawce" />
                               <ComboBox fx:id="gatunekPiosenki" prefWidth="150.0" promptText="wybierz gatunek" />
                               <ComboBox fx:id="nastrojPiosenki" prefWidth="150.0" promptText="wybierz nastrój" />
-                              <Button mnemonicParsing="false" text="Dodaj Piosenke" />
-                              <Button mnemonicParsing="false" text="Usuń piosenke" />
-                              <Button mnemonicParsing="false" text="Modyfikuj piosenke" />
+                              <Button mnemonicParsing="false" text="Dodaj Piosenke" onMouseClicked="#clickDodajPiosenke"/>
+                              <Button mnemonicParsing="false" text="Usuń piosenke" onMouseClicked="#clickUsunPiosenke"/>
+                              <Button mnemonicParsing="false" text="Modyfikuj piosenke" onMouseClicked="#clickUpdatePiosenke"/>
                            </children>
                         </VBox>
                      </right>
