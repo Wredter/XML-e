@@ -103,21 +103,31 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/src/gui/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="176" column="50" lean-forward="false" selection-start-line="176" selection-start-column="50" selection-end-line="176" selection-end-column="50" />
+            <state relative-caret-position="362">
+              <caret line="297" column="39" lean-forward="false" selection-start-line="297" selection-start-column="39" selection-end-line="297" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#refreshNastroj#0;class#Controller#0" expanded="false" />
+                <element signature="method#refreshListaGatunkow#0;class#Controller#0" expanded="false" />
                 <element signature="method#refreshListaPlaylist#0;class#Controller#0" expanded="false" />
+                <element signature="method#refreshListaPiosenekRef#0;class#Controller#0" expanded="false" />
+                <element signature="method#refreshListaPiosenek#0;class#Controller#0" expanded="false" />
+                <element signature="method#refreshListaWykonawcow#0;class#Controller#0" expanded="false" />
                 <element signature="method#refreshListaArtystow#0;class#Controller#0" expanded="false" />
+                <element signature="method#refreshPiosenka#0;class#Controller#0" expanded="false" />
                 <element signature="method#selectPlaylista#0;class#Controller#0" expanded="false" />
                 <element signature="method#selectWykonawca#0;class#Controller#0" expanded="false" />
                 <element signature="method#selectPiosenkaRef#0;class#Controller#0" expanded="false" />
                 <element signature="method#clickUsunPiosenke#0;class#Controller#0" expanded="false" />
                 <element signature="method#clickDodajPiosenke#0;class#Controller#0" expanded="false" />
                 <element signature="method#clickUpdatePiosenke#0;class#Controller#0" expanded="false" />
+                <element signature="method#clickDodajPiosenkeDoPlaylisty#0;class#Controller#0" expanded="false" />
                 <element signature="method#clickDodajPlayliste#0;class#Controller#0" expanded="false" />
                 <element signature="method#clickUsunPlayliste#0;class#Controller#0" expanded="false" />
                 <element signature="method#clickUpdatePlayliste#0;class#Controller#0" expanded="false" />
+                <element signature="method#clickUsunWykonawce#0;class#Controller#0" expanded="false" />
+                <element signature="method#clickUpdateWykonawce#0;class#Controller#0" expanded="false" />
+                <element signature="method#saveXMLFile#0;class#Controller#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -674,7 +684,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32914287" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32914287" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -755,17 +765,27 @@
           <caret line="259" column="5" lean-forward="true" selection-start-line="257" selection-start-column="32" selection-end-line="259" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#refreshNastroj#0;class#Controller#0" expanded="false" />
+            <element signature="method#refreshListaGatunkow#0;class#Controller#0" expanded="false" />
             <element signature="method#refreshListaPlaylist#0;class#Controller#0" expanded="false" />
+            <element signature="method#refreshListaPiosenekRef#0;class#Controller#0" expanded="false" />
+            <element signature="method#refreshListaPiosenek#0;class#Controller#0" expanded="false" />
+            <element signature="method#refreshListaWykonawcow#0;class#Controller#0" expanded="false" />
             <element signature="method#refreshListaArtystow#0;class#Controller#0" expanded="false" />
+            <element signature="method#refreshPiosenka#0;class#Controller#0" expanded="false" />
             <element signature="method#selectPlaylista#0;class#Controller#0" expanded="false" />
             <element signature="method#selectWykonawca#0;class#Controller#0" expanded="false" />
             <element signature="method#selectPiosenkaRef#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUsunPiosenke#0;class#Controller#0" expanded="false" />
             <element signature="method#clickDodajPiosenke#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUpdatePiosenke#0;class#Controller#0" expanded="false" />
+            <element signature="method#clickDodajPiosenkeDoPlaylisty#0;class#Controller#0" expanded="false" />
             <element signature="method#clickDodajPlayliste#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUsunPlayliste#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUpdatePlayliste#0;class#Controller#0" expanded="false" />
+            <element signature="method#clickUsunWykonawce#0;class#Controller#0" expanded="false" />
+            <element signature="method#clickUpdateWykonawce#0;class#Controller#0" expanded="false" />
+            <element signature="method#saveXMLFile#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -920,17 +940,27 @@
           <caret line="189" column="0" lean-forward="true" selection-start-line="189" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#refreshNastroj#0;class#Controller#0" expanded="false" />
+            <element signature="method#refreshListaGatunkow#0;class#Controller#0" expanded="false" />
             <element signature="method#refreshListaPlaylist#0;class#Controller#0" expanded="false" />
+            <element signature="method#refreshListaPiosenekRef#0;class#Controller#0" expanded="false" />
+            <element signature="method#refreshListaPiosenek#0;class#Controller#0" expanded="false" />
+            <element signature="method#refreshListaWykonawcow#0;class#Controller#0" expanded="false" />
             <element signature="method#refreshListaArtystow#0;class#Controller#0" expanded="false" />
+            <element signature="method#refreshPiosenka#0;class#Controller#0" expanded="false" />
             <element signature="method#selectPlaylista#0;class#Controller#0" expanded="false" />
             <element signature="method#selectWykonawca#0;class#Controller#0" expanded="false" />
             <element signature="method#selectPiosenkaRef#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUsunPiosenke#0;class#Controller#0" expanded="false" />
             <element signature="method#clickDodajPiosenke#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUpdatePiosenke#0;class#Controller#0" expanded="false" />
+            <element signature="method#clickDodajPiosenkeDoPlaylisty#0;class#Controller#0" expanded="false" />
             <element signature="method#clickDodajPlayliste#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUsunPlayliste#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUpdatePlayliste#0;class#Controller#0" expanded="false" />
+            <element signature="method#clickUsunWykonawce#0;class#Controller#0" expanded="false" />
+            <element signature="method#clickUpdateWykonawce#0;class#Controller#0" expanded="false" />
+            <element signature="method#saveXMLFile#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1140,21 +1170,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/src/gui/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="176" column="50" lean-forward="false" selection-start-line="176" selection-start-column="50" selection-end-line="176" selection-end-column="50" />
+        <state relative-caret-position="362">
+          <caret line="297" column="39" lean-forward="false" selection-start-line="297" selection-start-column="39" selection-end-line="297" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#refreshNastroj#0;class#Controller#0" expanded="false" />
+            <element signature="method#refreshListaGatunkow#0;class#Controller#0" expanded="false" />
             <element signature="method#refreshListaPlaylist#0;class#Controller#0" expanded="false" />
+            <element signature="method#refreshListaPiosenekRef#0;class#Controller#0" expanded="false" />
+            <element signature="method#refreshListaPiosenek#0;class#Controller#0" expanded="false" />
+            <element signature="method#refreshListaWykonawcow#0;class#Controller#0" expanded="false" />
             <element signature="method#refreshListaArtystow#0;class#Controller#0" expanded="false" />
+            <element signature="method#refreshPiosenka#0;class#Controller#0" expanded="false" />
             <element signature="method#selectPlaylista#0;class#Controller#0" expanded="false" />
             <element signature="method#selectWykonawca#0;class#Controller#0" expanded="false" />
             <element signature="method#selectPiosenkaRef#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUsunPiosenke#0;class#Controller#0" expanded="false" />
             <element signature="method#clickDodajPiosenke#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUpdatePiosenke#0;class#Controller#0" expanded="false" />
+            <element signature="method#clickDodajPiosenkeDoPlaylisty#0;class#Controller#0" expanded="false" />
             <element signature="method#clickDodajPlayliste#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUsunPlayliste#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUpdatePlayliste#0;class#Controller#0" expanded="false" />
+            <element signature="method#clickUsunWykonawce#0;class#Controller#0" expanded="false" />
+            <element signature="method#clickUpdateWykonawce#0;class#Controller#0" expanded="false" />
+            <element signature="method#saveXMLFile#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
