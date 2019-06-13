@@ -121,7 +121,7 @@ public class Controller implements Initializable {
         ArrayList<String> wykonawcy = new ArrayList<>();
         wykonawcy.add("");
         for (WykonawcaType p : root.getListaWykonawcow().getWykonawca()) {
-            wykonawcy.add(p.getNazwa());
+            wykonawcy.add(p.getId());
         }
         listaWykonawcow.setItems(FXCollections.observableArrayList(wykonawcy));
     }
@@ -135,11 +135,23 @@ public class Controller implements Initializable {
         listaArtystow.setItems(FXCollections.observableArrayList(artysci));
     }
 
+    public void refreshPiosenka(int piosenkaId) {
+        
+    }
+
     public void selectPlaylista() {
         PlajlistaType p = (PlajlistaType)root.getPlajlista().stream().filter(x -> x.getNazwa().equals(listaPlaylist.getSelectionModel().getSelectedItem())).toArray()[0];
         int id = root.getPlajlista().indexOf(p);
         refreshListaPiosenek(id);
     }
+
+    public void selectWykonawca() {
+        WykonawcaType p = (WykonawcaType)root.getListaWykonawcow().getWykonawca().stream().filter(x -> x.getId().equals(listaWykonawcow.getSelectionModel().getSelectedItem())).toArray()[0];
+        int id = root.getListaWykonawcow().getWykonawca().indexOf(p);
+        refreshListaArtystow(id);
+    }
+
+
 
 
 
