@@ -133,6 +133,7 @@ public class Controller implements Initializable {
         for (PiosenkaType p : root.getListaPiosenek().getPiosenka()) {
             piosenki.add(p.getTytul());
         }
+        idPiosenki.setItems(FXCollections.observableArrayList(piosenki));
         listaPiosenek.setItems(FXCollections.observableArrayList(piosenki));
     }
 
@@ -183,6 +184,13 @@ public class Controller implements Initializable {
         PiosenkaType p = (PiosenkaType)root.getListaPiosenek().getPiosenka().stream().filter(x -> x.getTytul().equals(listaPiosenek.getSelectionModel().getSelectedItem())).toArray()[0];
         int id = root.getListaPiosenek().getPiosenka().indexOf(p);
         refreshPiosenka(id);
+    }
+
+    public void selectPiosenkaRef() {
+//        PlajlistaType p = (PlajlistaType)root.getPlajlista().stream().filter(x -> x.getNazwa().equals(listaPlaylist.getSelectionModel().getSelectedItem())).toArray()[0];
+//        PiosenkaReferenceType pr = (PiosenkaReferenceType)p.getPiosenkaRef().stream().filter(x -> x.getTytulRef().equals(listaPiosenekRef.getSelectionModel().getSelectedItem())).toArray()[0];
+//        int id = root.getListaPiosenek().getPiosenka().indexOf(p);
+//        refreshPiosenka(id);
     }
 
 
