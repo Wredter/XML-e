@@ -7,8 +7,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
-import src.classes.GatunekType;
-import src.classes.RootType;
+import src.classes.*;
 import src.logic.XMLOperations;
 
 import javax.xml.bind.JAXBException;
@@ -88,20 +87,57 @@ public class Controller implements Initializable {
             e.printStackTrace();
         }
         root = XMLOperations.root;
-        mainTab();
-        System.out.println("ddduppa");
     }
 
-    public void mainTab() {
+    public void refreshListaGatunkow() {
         ArrayList<String> gatunki = new ArrayList<>();
         gatunki.add("");
         for (GatunekType gatunek : root.getListaGatunkow().getGatunek()) {
             gatunki.add(gatunek.getValue());
         }
-        System.out.println(gatunki);
-        System.out.println("ddduppa");
         listaGatunkow.setItems(FXCollections.observableArrayList(gatunki));
+    }
 
+    public void refreshListaPlaylist() {
+        ArrayList<String> playlisty = new ArrayList<>();
+        playlisty.add("");
+        for (PlajlistaType p : root.getPlajlista()) {
+            playlisty.add(p.getNazwa());
+        }
+        listaPlaylist.setItems(FXCollections.observableArrayList(playlisty));
+    }
+
+    public void refreshListaPiosenek(int playlistaId) {
+        ArrayList<String> piosenki = new ArrayList<>();
+        piosenki.add("");
+        for (PiosenkaReferenceType p : root.getPlajlista().get(playlistaId).getPiosenkaRef()) {
+            piosenki.add(p.getTytulRef());
+        }
+        listaPiosenek.setItems(FXCollections.observableArrayList(piosenki));
+    }
+
+    public void refreshListaWykonawcow() {
+        ArrayList<String> wykonawcy = new ArrayList<>();
+        wykonawcy.add("");
+        for (WykonawcaType p : root.getListaWykonawcow().getWykonawca()) {
+            wykonawcy.add(p.getNazwa());
+        }
+        listaWykonawcow.setItems(FXCollections.observableArrayList(wykonawcy));
+    }
+
+    public void refreshListaArtystow(int wykonawcaId) {
+        ArrayList<String> artysci = new ArrayList<>();
+        artysci.add("");
+        for (ArtystaType p : root.getListaWykonawcow().getWykonawca().get(wykonawcaId).getArtysta()) {
+            artysci.add(p.getImie() + " " + p.getNazwisko());
+        }
+        listaArtystow.setItems(FXCollections.observableArrayList(artysci));
+    }
+
+    public void selectPlaylista() {
+        PlajlistaType p = (PlajlistaType)root.getPlajlista().stream().filter(x -> x.getNazwa().equals(listaPlaylist.getSelectionModel().getSelectedItem())).toArray()[0];
+        int id = root.getPlajlista().indexOf(p);
+        refreshListaPiosenek(id);
     }
 
 
