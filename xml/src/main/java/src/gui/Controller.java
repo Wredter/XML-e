@@ -23,54 +23,40 @@ import java.time.LocalDate;
 import java.util.*;
 
 public class Controller implements Initializable {
+    //listy
     @FXML
-    public ListView<String> listView;
+    public ListView<String> listaPlaylist; //lista playlist - piosenka
     @FXML
-    public TextField nazwa = new TextField();
+    public ListView<String> listaPiosenek;
     @FXML
-    public TextField cena = new TextField();
+    public ListView<String> listaGatunkow;
     @FXML
-    public TextField kalorycznosc = new TextField();
+    public ListView<String> listaWykonawcow; //lista wykonawcow - artysta
     @FXML
-    public ComboBox skladnik1 = new ComboBox();
+    public ListView<String> listaArtystow;
+
+    //lista piosenek - piosenka
     @FXML
-    public ComboBox skladnik2 = new ComboBox();
+    public TextField tytulPiosenki = new TextField();
     @FXML
-    public ComboBox skladnik3 = new ComboBox();
+    public TextField czasPiosenki = new TextField();
     @FXML
-    public ComboBox skladnik4 = new ComboBox();
+    public TextField albumPiosenki = new TextField();
     @FXML
-    public ComboBox skladnik5 = new ComboBox();
+    public TextField rokPiosenki = new TextField();
     @FXML
-    public ComboBox skladnik6 = new ComboBox();
+    public ComboBox nastrojPiosenki = new ComboBox();
     @FXML
-    public ComboBox skladnik7 = new ComboBox();
+    public ComboBox wykonawcaPiosenki = new ComboBox();
     @FXML
-    public ComboBox skladnik8 = new ComboBox();
-    @FXML
-    public DatePicker data = new DatePicker();
-    @FXML
-    public TextField imie1 = new TextField();
-    @FXML
-    public TextField imie2 = new TextField();
-    @FXML
-    public TextField nazwisko1 = new TextField();
-    @FXML
-    public TextField nazwisko2 = new TextField();
-    @FXML
-    public TextField projekt = new TextField();
-    @FXML
-    public DatePicker modyfikacja = new DatePicker();
-    @FXML
-    public TextField path_save = new TextField();
-    @FXML
-    public TextField path_read = new TextField();
-    @FXML
-    public TextField skladnik_nazwa = new TextField();
-    @FXML
-    public TextField skladnik_id = new TextField();
-    @FXML
-    public ListView<String> skladnik_list = new ListView<>();
+    public ComboBox gatunekPiosenki = new ComboBox();
+
+    //lista artystow - artysta
+    //TODO
+
+    //lista gatunkow - gatunek
+    //TODO
+
 
     private static RootType root = XMLOperations.root;
 
