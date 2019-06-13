@@ -22,19 +22,17 @@
                            <children>
                               <ListView fx:id="listaPlaylist" onMouseClicked="#selectPlaylista" HBox.hgrow="ALWAYS" />
                               <ListView fx:id="listaPiosenekRef" HBox.hgrow="ALWAYS" />
-                              <ListView fx:id="listaPiosenek" HBox.hgrow="ALWAYS" />
+                              <VBox>
+                                 <children>
+                                    <ComboBox fx:id="idPiosenki" VBox.vgrow="ALWAYS" />
+                                    <Button mnemonicParsing="false" text="Dodaj piosenke do playlisty" />
+                                    <Button mnemonicParsing="false" text="Usuń piosenke z playlisty" />
+                                 </children>
+                              </VBox>
+                              <ListView fx:id="listaPiosenek" HBox.hgrow="ALWAYS" onMouseClicked="#selectPiosenka"/>
                            </children>
                         </HBox>
                      </left>
-                     <right>
-                        <VBox BorderPane.alignment="CENTER_RIGHT">
-                           <children>
-                              <ComboBox VBox.vgrow="ALWAYS" />
-                              <Button mnemonicParsing="false" text="Button" VBox.vgrow="ALWAYS" />
-                              <Button mnemonicParsing="false" text="Button" VBox.vgrow="ALWAYS" />
-                           </children>
-                        </VBox>
-                     </right>
                   </BorderPane>
                </children></AnchorPane>
       </content>
