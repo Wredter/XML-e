@@ -1,4 +1,4 @@
-package logic;
+package src.logic;
 
 import javax.xml.bind.ValidationEvent;
 import javax.xml.bind.ValidationEventHandler;
