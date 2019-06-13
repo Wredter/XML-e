@@ -7,6 +7,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
+import src.classes.GatunekType;
 import src.classes.RootType;
 import src.logic.XMLOperations;
 
@@ -87,6 +88,20 @@ public class Controller implements Initializable {
             e.printStackTrace();
         }
         root = XMLOperations.root;
+        mainTab();
+        System.out.println("ddduppa");
+    }
+
+    public void mainTab() {
+        ArrayList<String> gatunki = new ArrayList<>();
+        gatunki.add("");
+        for (GatunekType gatunek : root.getListaGatunkow().getGatunek()) {
+            gatunki.add(gatunek.getValue());
+        }
+        System.out.println(gatunki);
+        System.out.println("ddduppa");
+        listaGatunkow.setItems(FXCollections.observableArrayList(gatunki));
+
     }
 
 
