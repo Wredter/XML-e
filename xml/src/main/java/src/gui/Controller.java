@@ -53,10 +53,24 @@ public class Controller implements Initializable {
 
     //lista artystow - artysta
     //TODO
+    @FXML
+    public TextField imieArtysty = new TextField();
+    @FXML
+    public TextField nazwiskoArtysty = new TextField();
+    @FXML
+    public TextField pseudoArtysty = new TextField();
 
     //lista gatunkow - gatunek
     //TODO
-
+    @FXML
+    public TextField id_gatunek = new TextField();
+    @FXML
+    public TextField nazwaGatunek = new TextField();
+    //lists wykonawców
+    @FXML
+    public TextField id_wykonawcy = new TextField();
+    @FXML
+    public TextField nazwaWykonawcy = new TextField();
 
     private static RootType root = XMLOperations.root;
 
