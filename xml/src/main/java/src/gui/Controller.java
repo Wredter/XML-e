@@ -88,6 +88,7 @@ public class Controller implements Initializable {
         }
         root = XMLOperations.root;
         refreshListaPlaylist();
+        refreshListaWykonawcow();
     }
 
     public void refreshListaGatunkow() {
