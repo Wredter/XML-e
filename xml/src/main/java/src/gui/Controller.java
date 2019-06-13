@@ -25,15 +25,15 @@ import java.util.*;
 public class Controller implements Initializable {
     //listy
     @FXML
-    public ListView<String> listaPlaylist; //lista playlist - piosenka
+    public ListView<String> listaPlaylist = new ListView<>(); //lista playlist - piosenka
     @FXML
-    public ListView<String> listaPiosenek;
+    public ListView<String> listaPiosenek = new ListView<>();
     @FXML
-    public ListView<String> listaGatunkow;
+    public ListView<String> listaGatunkow = new ListView<>();
     @FXML
-    public ListView<String> listaWykonawcow; //lista wykonawcow - artysta
+    public ListView<String> listaWykonawcow = new ListView<>(); //lista wykonawcow - artysta
     @FXML
-    public ListView<String> listaArtystow;
+    public ListView<String> listaArtystow = new ListView<>();
 
     //lista piosenek - piosenka
     @FXML
@@ -87,6 +87,7 @@ public class Controller implements Initializable {
             e.printStackTrace();
         }
         root = XMLOperations.root;
+        refreshListaPlaylist();
     }
 
     public void refreshListaGatunkow() {
