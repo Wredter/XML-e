@@ -37,6 +37,11 @@ public class Controller implements Initializable {
     @FXML
     public ListView<String> listaArtystow = new ListView<>();
 
+
+    //lista piosenek ref - piosenka ref
+    @FXML
+    public ComboBox idPiosenki = new ComboBox();
+
     //lista piosenek - piosenka
     @FXML
     public TextField tytulPiosenki = new TextField();
@@ -91,11 +96,16 @@ public class Controller implements Initializable {
         root = XMLOperations.root;
         refreshListaPlaylist();
         refreshListaWykonawcow();
+        refreshListaPiosenek();
+        refreshListaGatunkow();
     }
+
+
+
+
 
     public void refreshListaGatunkow() {
         ArrayList<String> gatunki = new ArrayList<>();
-        gatunki.add("");
         for (GatunekType gatunek : root.getListaGatunkow().getGatunek()) {
             gatunki.add(gatunek.getValue());
         }
@@ -104,7 +114,6 @@ public class Controller implements Initializable {
 
     public void refreshListaPlaylist() {
         ArrayList<String> playlisty = new ArrayList<>();
-        playlisty.add("");
         for (PlajlistaType p : root.getPlajlista()) {
             playlisty.add(p.getNazwa());
         }
@@ -113,7 +122,6 @@ public class Controller implements Initializable {
 
     public void refreshListaPiosenekRef(int playlistaId) {
         ArrayList<String> piosenki = new ArrayList<>();
-        piosenki.add("");
         for (PiosenkaReferenceType p : root.getPlajlista().get(playlistaId).getPiosenkaRef()) {
             piosenki.add(p.getTytulRef());
         }
@@ -122,7 +130,6 @@ public class Controller implements Initializable {
 
     public void refreshListaPiosenek() {
         ArrayList<String> piosenki = new ArrayList<>();
-        piosenki.add("");
         for (PiosenkaType p : root.getListaPiosenek().getPiosenka()) {
             piosenki.add(p.getTytul());
         }
@@ -131,7 +138,6 @@ public class Controller implements Initializable {
 
     public void refreshListaWykonawcow() {
         ArrayList<String> wykonawcy = new ArrayList<>();
-        wykonawcy.add("");
         for (WykonawcaType p : root.getListaWykonawcow().getWykonawca()) {
             wykonawcy.add(p.getId());
         }
@@ -140,7 +146,6 @@ public class Controller implements Initializable {
 
     public void refreshListaArtystow(int wykonawcaId) {
         ArrayList<String> artysci = new ArrayList<>();
-        artysci.add("");
         for (ArtystaType p : root.getListaWykonawcow().getWykonawca().get(wykonawcaId).getArtysta()) {
             artysci.add(p.getImie() + " " + p.getNazwisko());
         }
@@ -158,6 +163,10 @@ public class Controller implements Initializable {
         gatunekPiosenki.setId(p.getGatunek());
     }
 
+
+
+
+
     public void selectPlaylista() {
         PlajlistaType p = (PlajlistaType)root.getPlajlista().stream().filter(x -> x.getNazwa().equals(listaPlaylist.getSelectionModel().getSelectedItem())).toArray()[0];
         int id = root.getPlajlista().indexOf(p);
@@ -172,13 +181,28 @@ public class Controller implements Initializable {
 
     public void selectPiosenka() {
         PiosenkaType p = (PiosenkaType)root.getListaPiosenek().getPiosenka().stream().filter(x -> x.getTytul().equals(listaPiosenek.getSelectionModel().getSelectedItem())).toArray()[0];
-        int id = root.getListaWykonawcow().getWykonawca().indexOf(p);
+        int id = root.getListaPiosenek().getPiosenka().indexOf(p);
         refreshPiosenka(id);
     }
 
 
 
 
+    public void clickUsunPiosenke() {
+        PiosenkaType p = (PiosenkaType)root.getListaPiosenek().getPiosenka().stream().filter(x -> x.getTytul().equals(listaPiosenek.getSelectionModel().getSelectedItem())).toArray()[0];
+        root.getListaPiosenek().getPiosenka().remove(p);
+        refreshListaPiosenek();
+    }
+
+    public void clickDodajPiosenke() {
+        PiosenkaType p = new PiosenkaType();
+        p.setAlbum(albumPiosenki.getText());
+        p.setTytul(tytulPiosenki.getText());
+        p.setCzasTrwania(czasPiosenki.getText());
+        p.setRokWydania(new BigInteger(rokPiosenki.getText()));
+        root.getListaPiosenek().getPiosenka().add(p);
+        refreshListaPiosenek();
+    }
 
 
     private void saveXMLFile() {
