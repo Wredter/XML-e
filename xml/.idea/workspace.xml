@@ -49,14 +49,14 @@
             <state relative-caret-position="119">
               <caret line="23" column="36" lean-forward="false" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
               <folding>
-                <marker date="1560467784935" expanded="true" signature="3828:4606" ph="..." />
-                <marker date="1560467784935" expanded="true" signature="3844:4595" ph="..." />
-                <marker date="1560467784935" expanded="true" signature="3933:4578" ph="..." />
-                <marker date="1560467784935" expanded="true" signature="3959:4565" ph="..." />
-                <marker date="1560467784935" expanded="true" signature="4113:4538" ph="..." />
-                <marker date="1560467784935" expanded="true" signature="4141:4506" ph="..." />
-                <marker date="1560467784935" expanded="true" signature="4202:4477" ph="..." />
-                <marker date="1560467784935" expanded="true" signature="4240:4445" ph="..." />
+                <marker date="1560469421244" expanded="true" signature="3936:4714" ph="..." />
+                <marker date="1560469421244" expanded="true" signature="3952:4703" ph="..." />
+                <marker date="1560469421244" expanded="true" signature="4041:4686" ph="..." />
+                <marker date="1560469421244" expanded="true" signature="4067:4673" ph="..." />
+                <marker date="1560469421244" expanded="true" signature="4221:4646" ph="..." />
+                <marker date="1560469421244" expanded="true" signature="4249:4614" ph="..." />
+                <marker date="1560469421244" expanded="true" signature="4310:4585" ph="..." />
+                <marker date="1560469421244" expanded="true" signature="4348:4553" ph="..." />
               </folding>
             </state>
           </provider>
@@ -103,8 +103,8 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/src/gui/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="297" column="39" lean-forward="false" selection-start-line="297" selection-start-column="39" selection-end-line="297" selection-end-column="39" />
+            <state relative-caret-position="249">
+              <caret line="251" column="58" lean-forward="false" selection-start-line="251" selection-start-column="58" selection-end-line="251" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#refreshNastroj#0;class#Controller#0" expanded="false" />
@@ -120,14 +120,15 @@
                 <element signature="method#selectPiosenkaRef#0;class#Controller#0" expanded="false" />
                 <element signature="method#clickUsunPiosenke#0;class#Controller#0" expanded="false" />
                 <element signature="method#clickDodajPiosenke#0;class#Controller#0" expanded="false" />
-                <element signature="method#clickUpdatePiosenke#0;class#Controller#0" expanded="false" />
                 <element signature="method#clickDodajPiosenkeDoPlaylisty#0;class#Controller#0" expanded="false" />
                 <element signature="method#clickDodajPlayliste#0;class#Controller#0" expanded="false" />
                 <element signature="method#clickUsunPlayliste#0;class#Controller#0" expanded="false" />
                 <element signature="method#clickUpdatePlayliste#0;class#Controller#0" expanded="false" />
+                <element signature="method#clickDodajWykonawce#0;class#Controller#0" expanded="false" />
                 <element signature="method#clickUsunWykonawce#0;class#Controller#0" expanded="false" />
                 <element signature="method#clickUpdateWykonawce#0;class#Controller#0" expanded="false" />
                 <element signature="method#saveXMLFile#0;class#Controller#0" expanded="false" />
+                <element signature="method#openDifferentXMLFile#0;class#Controller#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -739,23 +740,15 @@
         <state relative-caret-position="238">
           <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding>
-            <marker date="1560467784935" expanded="true" signature="3828:4606" ph="..." />
-            <marker date="1560467784935" expanded="true" signature="3844:4595" ph="..." />
-            <marker date="1560467784935" expanded="true" signature="3933:4578" ph="..." />
-            <marker date="1560467784935" expanded="true" signature="3959:4565" ph="..." />
-            <marker date="1560467784935" expanded="true" signature="4113:4538" ph="..." />
-            <marker date="1560467784935" expanded="true" signature="4141:4506" ph="..." />
-            <marker date="1560467784935" expanded="true" signature="4202:4477" ph="..." />
-            <marker date="1560467784935" expanded="true" signature="4240:4445" ph="..." />
+            <marker date="1560469421244" expanded="true" signature="3936:4714" ph="..." />
+            <marker date="1560469421244" expanded="true" signature="3952:4703" ph="..." />
+            <marker date="1560469421244" expanded="true" signature="4041:4686" ph="..." />
+            <marker date="1560469421244" expanded="true" signature="4067:4673" ph="..." />
+            <marker date="1560469421244" expanded="true" signature="4221:4646" ph="..." />
+            <marker date="1560469421244" expanded="true" signature="4249:4614" ph="..." />
+            <marker date="1560469421244" expanded="true" signature="4310:4585" ph="..." />
+            <marker date="1560469421244" expanded="true" signature="4348:4553" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/function/Predicate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="48" column="12" lean-forward="false" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -778,14 +771,15 @@
             <element signature="method#selectPiosenkaRef#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUsunPiosenke#0;class#Controller#0" expanded="false" />
             <element signature="method#clickDodajPiosenke#0;class#Controller#0" expanded="false" />
-            <element signature="method#clickUpdatePiosenke#0;class#Controller#0" expanded="false" />
             <element signature="method#clickDodajPiosenkeDoPlaylisty#0;class#Controller#0" expanded="false" />
             <element signature="method#clickDodajPlayliste#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUsunPlayliste#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUpdatePlayliste#0;class#Controller#0" expanded="false" />
+            <element signature="method#clickDodajWykonawce#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUsunWykonawce#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUpdateWykonawce#0;class#Controller#0" expanded="false" />
             <element signature="method#saveXMLFile#0;class#Controller#0" expanded="false" />
+            <element signature="method#openDifferentXMLFile#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -953,14 +947,15 @@
             <element signature="method#selectPiosenkaRef#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUsunPiosenke#0;class#Controller#0" expanded="false" />
             <element signature="method#clickDodajPiosenke#0;class#Controller#0" expanded="false" />
-            <element signature="method#clickUpdatePiosenke#0;class#Controller#0" expanded="false" />
             <element signature="method#clickDodajPiosenkeDoPlaylisty#0;class#Controller#0" expanded="false" />
             <element signature="method#clickDodajPlayliste#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUsunPlayliste#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUpdatePlayliste#0;class#Controller#0" expanded="false" />
+            <element signature="method#clickDodajWykonawce#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUsunWykonawce#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUpdateWykonawce#0;class#Controller#0" expanded="false" />
             <element signature="method#saveXMLFile#0;class#Controller#0" expanded="false" />
+            <element signature="method#openDifferentXMLFile#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -973,14 +968,14 @@
         <state relative-caret-position="119">
           <caret line="22" column="94" lean-forward="false" selection-start-line="22" selection-start-column="94" selection-end-line="22" selection-end-column="94" />
           <folding>
-            <marker date="1560467784935" expanded="true" signature="3828:4606" ph="..." />
-            <marker date="1560467784935" expanded="true" signature="3844:4595" ph="..." />
-            <marker date="1560467784935" expanded="true" signature="3933:4578" ph="..." />
-            <marker date="1560467784935" expanded="true" signature="3959:4565" ph="..." />
-            <marker date="1560467784935" expanded="true" signature="4113:4538" ph="..." />
-            <marker date="1560467784935" expanded="true" signature="4141:4506" ph="..." />
-            <marker date="1560467784935" expanded="true" signature="4202:4477" ph="..." />
-            <marker date="1560467784935" expanded="true" signature="4240:4445" ph="..." />
+            <marker date="1560469421244" expanded="true" signature="3936:4714" ph="..." />
+            <marker date="1560469421244" expanded="true" signature="3952:4703" ph="..." />
+            <marker date="1560469421244" expanded="true" signature="4041:4686" ph="..." />
+            <marker date="1560469421244" expanded="true" signature="4067:4673" ph="..." />
+            <marker date="1560469421244" expanded="true" signature="4221:4646" ph="..." />
+            <marker date="1560469421244" expanded="true" signature="4249:4614" ph="..." />
+            <marker date="1560469421244" expanded="true" signature="4310:4585" ph="..." />
+            <marker date="1560469421244" expanded="true" signature="4348:4553" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1137,14 +1132,14 @@
         <state relative-caret-position="119">
           <caret line="23" column="36" lean-forward="false" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
           <folding>
-            <marker date="1560467784935" expanded="true" signature="3828:4606" ph="..." />
-            <marker date="1560467784935" expanded="true" signature="3844:4595" ph="..." />
-            <marker date="1560467784935" expanded="true" signature="3933:4578" ph="..." />
-            <marker date="1560467784935" expanded="true" signature="3959:4565" ph="..." />
-            <marker date="1560467784935" expanded="true" signature="4113:4538" ph="..." />
-            <marker date="1560467784935" expanded="true" signature="4141:4506" ph="..." />
-            <marker date="1560467784935" expanded="true" signature="4202:4477" ph="..." />
-            <marker date="1560467784935" expanded="true" signature="4240:4445" ph="..." />
+            <marker date="1560469421244" expanded="true" signature="3936:4714" ph="..." />
+            <marker date="1560469421244" expanded="true" signature="3952:4703" ph="..." />
+            <marker date="1560469421244" expanded="true" signature="4041:4686" ph="..." />
+            <marker date="1560469421244" expanded="true" signature="4067:4673" ph="..." />
+            <marker date="1560469421244" expanded="true" signature="4221:4646" ph="..." />
+            <marker date="1560469421244" expanded="true" signature="4249:4614" ph="..." />
+            <marker date="1560469421244" expanded="true" signature="4310:4585" ph="..." />
+            <marker date="1560469421244" expanded="true" signature="4348:4553" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1168,10 +1163,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/function/Predicate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="48" column="12" lean-forward="false" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/src/gui/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="297" column="39" lean-forward="false" selection-start-line="297" selection-start-column="39" selection-end-line="297" selection-end-column="39" />
+        <state relative-caret-position="249">
+          <caret line="251" column="58" lean-forward="false" selection-start-line="251" selection-start-column="58" selection-end-line="251" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#refreshNastroj#0;class#Controller#0" expanded="false" />
@@ -1187,14 +1190,15 @@
             <element signature="method#selectPiosenkaRef#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUsunPiosenke#0;class#Controller#0" expanded="false" />
             <element signature="method#clickDodajPiosenke#0;class#Controller#0" expanded="false" />
-            <element signature="method#clickUpdatePiosenke#0;class#Controller#0" expanded="false" />
             <element signature="method#clickDodajPiosenkeDoPlaylisty#0;class#Controller#0" expanded="false" />
             <element signature="method#clickDodajPlayliste#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUsunPlayliste#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUpdatePlayliste#0;class#Controller#0" expanded="false" />
+            <element signature="method#clickDodajWykonawce#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUsunWykonawce#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUpdateWykonawce#0;class#Controller#0" expanded="false" />
             <element signature="method#saveXMLFile#0;class#Controller#0" expanded="false" />
+            <element signature="method#openDifferentXMLFile#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>

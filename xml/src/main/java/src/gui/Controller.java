@@ -247,9 +247,9 @@ public class Controller implements Initializable {
         p.setTytul(tytulPiosenki.getText());
         p.setCzasTrwania(czasPiosenki.getText());
         p.setRokWydania(new BigInteger(rokPiosenki.getText()));
-        p.setGatunek(gatunekPiosenki.getPromptText());
-        p.setWykonawca(wykonawcaPiosenki.getPromptText());
-        p.setNastroj(nastrojPiosenki.getPromptText());
+        p.setGatunek(gatunekPiosenki.getValue().toString());
+        p.setWykonawca(wykonawcaPiosenki.getValue().toString());
+        p.setNastroj(nastrojPiosenki.getValue().toString());
         refreshListaPiosenek();
     }
 
