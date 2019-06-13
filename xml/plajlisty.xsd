@@ -29,8 +29,8 @@
  <xs:complexType name="rootType">
   <xs:sequence>
    <xs:element name="metadane" type="metadaneType" maxOccurs="1" />
-   <xs:element name="lista_gatunków" type="lista_gatunkówType" maxOccurs="1" />
-   <xs:element name="lista_wykonawców" type="lista_wykonawcówType" maxOccurs="1" />
+   <xs:element name="lista_gatunkow" type="lista_gatunkowType" maxOccurs="1" />
+   <xs:element name="lista_wykonawcow" type="lista_wykonawcowType" maxOccurs="1" />
    <xs:element name="lista_piosenek" type="lista_piosenekType" maxOccurs="1" />
    <xs:element name="plajlista" type="plajlistaType" maxOccurs="unbounded" />
   </xs:sequence>
@@ -56,7 +56,7 @@
 	<xs:group ref="autorGroup"/>
  </xs:complexType>
  
-  <xs:complexType name="lista_gatunkówType">
+  <xs:complexType name="lista_gatunkowType">
   <xs:sequence>
    <xs:element name="gatunek" maxOccurs="unbounded" type="gatunekType" />
   </xs:sequence>
@@ -70,7 +70,7 @@
       </xs:simpleContent>
     </xs:complexType>
 
-  <xs:complexType name="lista_wykonawcówType">
+  <xs:complexType name="lista_wykonawcowType">
   <xs:sequence>
    <xs:element name="wykonawca" maxOccurs="unbounded" type="wykonawcaType" />
   </xs:sequence>
@@ -103,12 +103,12 @@
  </xs:complexType>
  
    <xs:attributeGroup name="piosenkaAtrrGroup">
-    <xs:attribute name="tytuł" type="stringtype" />
-        <xs:attribute default="niezidentyfikowana" name="nastrój">
+    <xs:attribute name="tytul" type="stringtype" />
+        <xs:attribute default="niezidentyfikowana" name="nastroj">
         <xs:simpleType>
           <xs:restriction base="xs:NMTOKEN">
             <xs:enumeration value="smutna" />
-            <xs:enumeration value="wesoła" />
+            <xs:enumeration value="wesola" />
             <xs:enumeration value="mieszana" />
             <xs:enumeration value="niezidentyfikowana" />
           </xs:restriction>
@@ -143,7 +143,7 @@
 <xs:element name="root" type="rootType">
    <xs:key name="piosenkaKey">
   <xs:selector xpath="lista_piosenek/piosenka" />
-  <xs:field xpath="@tytuł" />
+  <xs:field xpath="@tytul" />
  </xs:key>
  
  <xs:keyref name="piosenkaKeyRef" refer="piosenkaKey">
@@ -152,7 +152,7 @@
  </xs:keyref>
  
     <xs:key name="gatunekKey">
-  <xs:selector xpath="lista_gatunków/gatunek" />
+  <xs:selector xpath="lista_gatunkow/gatunek" />
   <xs:field xpath="@id" />
  </xs:key>
  
@@ -162,7 +162,7 @@
    </xs:keyref>
   
       <xs:key name="wykonawcaKey">
-  <xs:selector xpath="lista_wykonawców/wykonawca" />
+  <xs:selector xpath="lista_wykonawcow/wykonawca" />
   <xs:field xpath="@id" />
  </xs:key>
  

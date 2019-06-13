@@ -35,20 +35,20 @@
   <h2>Dane biblioteki</h2>
   <table border="1">
     <tr>
-      <th>Liczba Wykonawców</th>
-      <th>Liczba Artystów</th>
+      <th>Liczba Wykonawcow</th>
+      <th>Liczba Artystow</th>
       <th>Liczba Piosenek</th>
       <th>Liczba Piosenek Smutnych</th>
-      <th>Liczba Piosenek Wesołych</th>
+      <th>Liczba Piosenek Wesolych</th>
 	  <th>Liczba Piosenek Mieszanych</th>
 	  <th>Liczba Piosenek Niezidentyfikowanych</th>
     </tr>
     <tr>
-      <td><xsl:value-of select="/zestawienie/biblioteka/liczbaWykonawców" /></td>
-      <td><xsl:value-of select="/zestawienie/biblioteka/liczbaArtystów" /></td>
+      <td><xsl:value-of select="/zestawienie/biblioteka/liczbaWykonawcow" /></td>
+      <td><xsl:value-of select="/zestawienie/biblioteka/liczbaArtystow" /></td>
       <td><xsl:value-of select="/zestawienie/biblioteka/liczbaPiosenek" /></td>
 	  <td><xsl:value-of select="/zestawienie/biblioteka/liczbaPiosenekSmutnych" /></td>
-	  <td><xsl:value-of select="/zestawienie/biblioteka/liczbaPiosenekWesołych" /></td>
+	  <td><xsl:value-of select="/zestawienie/biblioteka/liczbaPiosenekWesolych" /></td>
 	  <td><xsl:value-of select="/zestawienie/biblioteka/liczbaPiosenekMieszanych" /></td>
 	  <td><xsl:value-of select="/zestawienie/biblioteka/liczbaPiosenekNiezidentyfikowanych" /></td>
     </tr>
@@ -64,20 +64,20 @@
       <td colspan="7"><b><font size="5"> nazwa: <xsl:value-of select="nazwa"/> | liczba piosenek: <xsl:value-of select="liczbaPiosenek"/></font></b></td>
     </tr>
     <tr>
-      <td><b>Tytuł</b></td>
+      <td><b>Tytul</b></td>
       <td><b>Artyści</b></td>
       <td><b>Gatunek</b></td>
-      <td><b>Nastrój</b></td>
+      <td><b>Nastroj</b></td>
       <td><b>Czas Trwania</b></td>
       <td><b>Album</b></td>
       <td><b>Rok wydania</b></td>
     </tr>
     <xsl:for-each select="piosenka">
     <tr>
-	  <td><xsl:value-of select="Tytuł" /></td>
+	  <td><xsl:value-of select="Tytul" /></td>
 	  <td><xsl:value-of select="artyści" /></td>
 	  <td><xsl:value-of select="gatunek" /></td>
-	  <td><xsl:value-of select="nastrój" /></td>
+	  <td><xsl:value-of select="nastroj" /></td>
 	  <td><xsl:value-of select="czasTrwania" /></td>
 	  <td><xsl:value-of select="album" /></td>
 	  <td><xsl:value-of select="rokWydania" /></td>

@@ -1,4 +1,4 @@
-package logic;
+package src.logic;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -17,7 +17,6 @@ import javax.xml.transform.stream.StreamSource;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 
-import generated.Burgerownia;
 import net.sf.saxon.Transform;
 import net.sf.saxon.TransformerFactoryImpl;
 import org.xml.sax.SAXException;
@@ -31,7 +30,7 @@ public class XMLOperations {
     private static String xmlFilePath;
     private static Schema schema;
 
-    public static RootType rootType;
+    public static RootType root;
 
     static {
         xmlFilePath = "playlisty.xml";
@@ -43,7 +42,7 @@ public class XMLOperations {
             marshaller = jaxbContext.createMarshaller();
             marshaller.setSchema(schema);
             //marshaller.setEventHandler(new OwnValidationEventHandler());
-            marshaller.setProperty(Marshaller.JAXB_NO_NAMESPACE_SCHEMA_LOCATION, "burgerownia.xsd");
+            marshaller.setProperty(Marshaller.JAXB_NO_NAMESPACE_SCHEMA_LOCATION, "plajlisty.xsd");
             unmarshaller.setSchema(schema);
             //unmarshaller.setEventHandler(new OwnValidationEventHandler());
         } catch (JAXBException e) {
@@ -56,17 +55,17 @@ public class XMLOperations {
     }
 
     public static void saveToXML(String newFile) throws JAXBException {
-        marshaller.marshal(burgerownia, new File(newFile + ".xml"));
+        marshaller.marshal(root, new File(newFile + ".xml"));
     }
 
     public static void readFromXML() throws JAXBException, FileNotFoundException {
-        burgerownia = (Burgerownia) unmarshaller.unmarshal(new FileInputStream(new File(xmlFilePath)));
+        root = (RootType) unmarshaller.unmarshal(new FileInputStream(new File(xmlFilePath)));
     }
 
     public static void transformXML(String transformedName) {
-        String[] arglist1 = {"-o:raport.xml", xmlFilePath, "burgerownia_raport.xsl"};
+        String[] arglist1 = {"-o:raport.xml", xmlFilePath, "playlisty-helper.xsl"};
         Transform.main(arglist1);
-        String[] arglist2 = {"-o:" + transformedName + ".xhtml", "raport.xml", "burgerownia_xhtml.xsl"};
+        String[] arglist2 = {"-o:" + transformedName + ".xhtml", "raport.xml", "playlisty.xsl"};
         Transform.main(arglist2);
     }
 

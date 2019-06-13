@@ -6,7 +6,7 @@ exclude-result-prefixes="my">
 <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
     
 	<xsl:key name ="WykonawcaKey" match="wykonawca" use="@id"/>
-	<xsl:key name ="PiosenkaKey" match="piosenka" use="@tytuł"/>
+	<xsl:key name ="PiosenkaKey" match="piosenka" use="@tytul"/>
 	<xsl:key name ="GatunekKey" match="gatunek" use="@id"/>
 	
 	<xsl:template match="/root">
@@ -30,26 +30,26 @@ exclude-result-prefixes="my">
 				</xsl:element>
 			</xsl:element>
 			<xsl:element name="biblioteka">
-				<xsl:element name="liczbaWykonawców">
-					<xsl:value-of select="count(lista_wykonawców/wykonawca)"/>
+				<xsl:element name="liczbaWykonawcow">
+					<xsl:value-of select="count(lista_wykonawcow/wykonawca)"/>
 				</xsl:element>
-				<xsl:element name="liczbaArtystów">
-					<xsl:value-of select="count(lista_wykonawców/wykonawca/artysta)" />
+				<xsl:element name="liczbaArtystow">
+					<xsl:value-of select="count(lista_wykonawcow/wykonawca/artysta)" />
 				</xsl:element>
 				<xsl:element name="liczbaPiosenek">
 					<xsl:value-of select="count(lista_piosenek/piosenka)" />
 				</xsl:element>
 				<xsl:element name="liczbaPiosenekSmutnych">
-					<xsl:value-of select="count(lista_piosenek/piosenka[@nastrój = 'smutna'])" />
+					<xsl:value-of select="count(lista_piosenek/piosenka[@nastroj = 'smutna'])" />
 				</xsl:element>
-				<xsl:element name="liczbaPiosenekWesołych">
-					<xsl:value-of select="count(lista_piosenek/piosenka[@nastrój = 'wesoła'])" />
+				<xsl:element name="liczbaPiosenekWesolych">
+					<xsl:value-of select="count(lista_piosenek/piosenka[@nastroj = 'wesola'])" />
 				</xsl:element>
 				<xsl:element name="liczbaPiosenekMieszanych">
-					<xsl:value-of select="count(lista_piosenek/piosenka[@nastrój = 'mieszana'])" />
+					<xsl:value-of select="count(lista_piosenek/piosenka[@nastroj = 'mieszana'])" />
 				</xsl:element>
 				<xsl:element name="liczbaPiosenekNiezidentyfikowanych">
-					<xsl:value-of select="count(lista_piosenek/piosenka[@nastrój = 'niezidentyfikowana'])" />
+					<xsl:value-of select="count(lista_piosenek/piosenka[@nastroj = 'niezidentyfikowana'])" />
 				</xsl:element>
 			</xsl:element>
 			<xsl:for-each select ="plajlista">
@@ -63,7 +63,7 @@ exclude-result-prefixes="my">
 					<xsl:for-each select = "piosenkaRef">
 						<xsl:element name="piosenka">
 							<xsl:variable name="piosenkaref" select="@tytulRef" />
-							<xsl:element name="Tytuł">
+							<xsl:element name="Tytul">
 								<xsl:value-of select="@tytulRef"/>
 							</xsl:element>
 							<xsl:variable name="wykonawcaref" select="key('PiosenkaKey',$piosenkaref)/@wykonawca" />
@@ -77,8 +77,8 @@ exclude-result-prefixes="my">
 							<xsl:element name="gatunek">
 								<xsl:value-of select="key('GatunekKey',$gatunekref)/."/>
 							</xsl:element>
-							<xsl:element name="nastrój">
-								<xsl:value-of select="key('PiosenkaKey',$piosenkaref)/@nastrój"/>
+							<xsl:element name="nastroj">
+								<xsl:value-of select="key('PiosenkaKey',$piosenkaref)/@nastroj"/>
 							</xsl:element>
 							<xsl:element name="rokWydania">
 								<xsl:value-of select="key('PiosenkaKey',$piosenkaref)/rok_wydania"/>
