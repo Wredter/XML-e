@@ -188,6 +188,14 @@ public class Controller implements Initializable {
 
 
 
+    public void clickUsunPiosenkeZPlaylisty() {
+        PlajlistaType pl = (PlajlistaType) root.getPlajlista().stream().filter(x -> x.getNazwa().equals(listaPlaylist.getSelectionModel().getSelectedItem())).toArray()[0];
+        PiosenkaReferenceType pr = (PiosenkaReferenceType) pl.getPiosenkaRef().stream().filter(x -> x.getTytulRef().equals(listaPiosenekRef.getSelectionModel().getSelectedItem())).toArray()[0];
+        pl.getPiosenkaRef().remove(pr);
+        int id = pl.getPiosenkaRef().indexOf(pr);
+        refreshListaPiosenekRef(id);
+    }
+
     public void clickUsunPiosenke() {
         PiosenkaType p = (PiosenkaType)root.getListaPiosenek().getPiosenka().stream().filter(x -> x.getTytul().equals(listaPiosenek.getSelectionModel().getSelectedItem())).toArray()[0];
         root.getListaPiosenek().getPiosenka().remove(p);
@@ -200,8 +208,46 @@ public class Controller implements Initializable {
         p.setTytul(tytulPiosenki.getText());
         p.setCzasTrwania(czasPiosenki.getText());
         p.setRokWydania(new BigInteger(rokPiosenki.getText()));
+        p.setGatunek(gatunekPiosenki.getPromptText());
+        p.setWykonawca(wykonawcaPiosenki.getPromptText());
+        p.setNastroj(nastrojPiosenki.getPromptText());
         root.getListaPiosenek().getPiosenka().add(p);
         refreshListaPiosenek();
+    }
+
+    public void clickUpdatePiosenke() {
+        PiosenkaType p = (PiosenkaType)root.getListaPiosenek().getPiosenka().stream().filter(x -> x.getTytul().equals(listaPiosenek.getSelectionModel().getSelectedItem())).toArray()[0];
+        p.setAlbum(albumPiosenki.getText());
+        p.setTytul(tytulPiosenki.getText());
+        p.setCzasTrwania(czasPiosenki.getText());
+        p.setRokWydania(new BigInteger(rokPiosenki.getText()));
+        p.setGatunek(gatunekPiosenki.getPromptText());
+        p.setWykonawca(wykonawcaPiosenki.getPromptText());
+        p.setNastroj(nastrojPiosenki.getPromptText());
+        refreshListaPiosenek();
+    }
+
+    public void clickDodajPiosenkeDoPlaylisty() {
+        PlajlistaType pl = (PlajlistaType)root.getPlajlista().stream().filter(x -> x.getNazwa().equals(listaPlaylist.getSelectionModel().getSelectedItem())).toArray()[0];
+        PiosenkaType p = (PiosenkaType)root.getListaPiosenek().getPiosenka().stream().filter(x -> x.getTytul().equals(idPiosenki.getSelectionModel().getSelectedItem())).toArray()[0];
+        PiosenkaReferenceType pr = new PiosenkaReferenceType();
+        pr.setTytulRef(p.getTytul());
+        pl.getPiosenkaRef().add(pr);
+        int id = pl.getPiosenkaRef().indexOf(pr);
+        refreshListaPiosenekRef(id);
+    }
+
+    public void clickDodajPlayliste() {
+        PlajlistaType p = new PlajlistaType();
+        p.setNazwa(albumPiosenki.getText());
+        root.getPlajlista().add(p);
+        refreshListaPlaylist();
+    }
+
+    public void clickUsunPlayliste() {
+        PlajlistaType pl = (PlajlistaType)root.getPlajlista().stream().filter(x -> x.getNazwa().equals(listaPlaylist.getSelectionModel().getSelectedItem())).toArray()[0];
+        root.getPlajlista().remove(pl);
+        refreshListaPlaylist();
     }
 
 
