@@ -58,6 +58,9 @@ public class Controller implements Initializable {
     //TODO
 
 
+    @FXML
+    public TextField path_read = new TextField();
+
     private static RootType root = XMLOperations.root;
 
     @Override
@@ -70,40 +73,6 @@ public class Controller implements Initializable {
             e.printStackTrace();
         }
         root = XMLOperations.root;
-        mainTab();
-    }
-
-    public void mainTab() {
-        ArrayList<String> skl = new ArrayList<>();
-        skl.add("");
-
-        skladnik1.setItems(FXCollections.observableArrayList(skl));
-        skladnik2.setItems(FXCollections.observableArrayList(skl));
-        skladnik3.setItems(FXCollections.observableArrayList(skl));
-        skladnik4.setItems(FXCollections.observableArrayList(skl));
-        skladnik5.setItems(FXCollections.observableArrayList(skl));
-        skladnik6.setItems(FXCollections.observableArrayList(skl));
-        skladnik7.setItems(FXCollections.observableArrayList(skl));
-        skladnik8.setItems(FXCollections.observableArrayList(skl));
-    }
-
-    public void clear() {
-        nazwa.clear();
-        cena.clear();
-        kalorycznosc.clear();
-        clearSKL();
-        System.out.println("clear");
-    }
-
-    private void clearSKL() {
-        skladnik1.getSelectionModel().select(0);
-        skladnik2.getSelectionModel().select(0);
-        skladnik3.getSelectionModel().select(0);
-        skladnik4.getSelectionModel().select(0);
-        skladnik5.getSelectionModel().select(0);
-        skladnik6.getSelectionModel().select(0);
-        skladnik7.getSelectionModel().select(0);
-        skladnik8.getSelectionModel().select(0);
     }
 
 
