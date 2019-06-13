@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg:svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg:svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="950" height="1000" font-family="sans-serif"><svg:title>
+                RAPORT
+            </svg:title><script type="text/javascript">
+                
+                function onClickAutorzy(evt) {
+                    var element = document.getElementById("metadane");
+                    var atrybut = element.getAttribute("visibility");
+                    if(atrybut === "visible"){
+                        element.setAttribute("visibility", "hidden");
+                    }else{
+                        element.setAttribute("visibility", "visible");
+                    }
+                }
+            </script><style>
+                .bar:hover
+                {
+                	fill: #71B280;
+                }
+                .button:hover
+                {
+                	fill: #71B280;
+                }
+		.info
+		{
+			display: none;
+		}
+		.control:hover + .info
+		{
+			display: block;				
+		}
+            </style><svg:defs><svg:linearGradient id="bg-darker"><svg:stop offset="0%" style="stop-color: #000000;"/><svg:stop offset="100%" style="stop-color: #434343;"/></svg:linearGradient><svg:linearGradient id="bg"><svg:stop offset="0%" style="stop-color: #000000;"/><svg:stop offset="100%" style="stop-color: #323232;"/></svg:linearGradient><svg:linearGradient id="bar"><svg:stop offset="0%" style="stop-color: #134E5E;"/><svg:stop offset="100%" style="stop-color: #71B280;"/></svg:linearGradient></svg:defs><svg:rect x="0" y="0" width="950" height="50" fill="#323232" stroke="black"/><svg:text x="475" y="36" font-size="40" fill="white" font-weight="bold" text-anchor="middle">
+				Playlisty
+			</svg:text><svg:text x="810" y="20" font-size="12" fill="white" font-weight="bold" text-anchor="middle">
+				Ostatnia aktualizacja: 2019-03-29</svg:text><svg:rect x="0" y="50" width="950" height="1000" rx="10" ry="10" fill="url(#bg)"/>
+ 
+ <svg:g id="autorzy_pliku" width="100" height="60" onclick="onClickAutorzy(evt)" cursor="pointer"><svg:rect x="15" y="70" class="button" width="100" height="32" fill="url(#bar)" stroke="black" rx="10" ry="10"/><svg:text x="35" y="91" fill="white" font-size="16">Autorzy</svg:text></svg:g><svg:g id="metadane" visibility="hidden"><svg:rect x="130" y="70" width="800" height="30" fill="url(#bar)" stroke="black"/><svg:text x="520" y="91" font-size="16" fill="white" text-anchor="middle">Wiktor Muraszko 210281 Wojciech Mosieński 210280 </svg:text></svg:g>
+    
+        Rock
+        Pop
+        Alternatywna
+    
+	
+        
+            AxlRose
+			SoulHudson
+            IzzyStradlin
+            DuffMcKagan
+            StevenAdler
+        
+        
+			DieterBohlen
+			ThomasAnders
+        
+    
+	
+	    
+            3:23
+            Appetite for Destruction
+            1987
+        
+		
+            4:29
+            Appetite for Destruction
+            1987
+        
+		
+            4:25
+            Appetite for Destruction
+            1987
+        
+        
+            3:49
+            Appetite for Destruction
+            1987
+        
+        
+            6:46
+            Appetite for Destruction
+            1987
+        
+        
+            3:40
+            Appetite for Destruction
+            1987
+        
+        
+            3:52
+            Appetite for Destruction
+            1987
+        
+        
+            5:55
+            Appetite for Destruction
+            1987
+        
+        
+            3:17
+            Appetite for Destruction
+            1987
+        
+        
+            3:26
+            Appetite for Destruction
+            1987
+        
+        
+            3:40
+            Appetite for Destruction
+            1987
+        
+		
+            3:41
+            Ready for Romance
+            1986
+        
+        
+            3:54
+            Ready for Romance
+            1986
+        
+        
+            4:55
+            Ready for Romance
+            1986
+        
+        
+            3:16
+            Ready for Romance
+            1986
+        
+        
+            3:45
+            Ready for Romance
+            1986
+        
+        
+            3:48
+            Ready for Romance
+            1986
+        
+        
+            3:25
+            Ready for Romance
+            1986
+        
+        
+            3:20
+            Ready for Romance
+            1986
+        
+        
+            3:37
+            Ready for Romance
+            1986
+        
+        
+            3:35
+            Ready for Romance
+            1986
+        
+	
+	
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
+
+ 
+<svg:g id="autorzy_pliku" width="100" height="60" onclick="onClickAutorzy(evt)" cursor="pointer"><svg:rect x="15" y="70" class="button" width="100" height="32" fill="url(#bar)" stroke="black" rx="10" ry="10"/><svg:text x="35" y="91" fill="white" font-size="16">Autorzy</svg:text></svg:g><svg:g id="metadane" visibility="hidden"><svg:rect x="130" y="70" width="800" height="30" fill="url(#bar)" stroke="black"/><svg:text x="520" y="91" font-size="16" fill="white" text-anchor="middle">Wiktor Muraszko 210281 Wojciech Mosieński 210280 </svg:text></svg:g><g transform="translate(300 120)"><svg:rect width="600" height="330" y="0" fill="url(#bar)"/><svg:text x="10" y="50" text-anchor="start" fill="white" font-size="20" font-weight="bold">
+			Liczba utworów o określonym nastroju:
+		</svg:text><g class="bar" transform="translate(300 100)"><svg:text x="-10" y="27" text-anchor="end" fill="white" font-size="24" font-weight="bold">
+				Wesołe:
+			</svg:text><rect width="100" height="40" fill="url(#bg-darker)"><animateTransform attributeName="transform" type="scale" from="0 1" to="1 1" begin="0s" dur="3s"/></rect><text x="110" y="30" fill="white" font-size="30" font-weight="bold">5</text></g><g class="bar" transform="translate(300 160)"><svg:text x="-10" y="27" text-anchor="end" fill="white" font-size="24" font-weight="bold">
+				Mieszane:
+			</svg:text><rect width="40" height="40" fill="url(#bg-darker)"><animateTransform attributeName="transform" type="scale" from="0 1" to="1 1" begin="0s" dur="3s"/></rect><text x="50" y="30" fill="white" font-size="30" font-weight="bold">2</text></g><g class="bar" transform="translate(300 220)"><svg:text x="-10" y="27" text-anchor="end" fill="white" font-size="24" font-weight="bold">
+				Smutne:
+			</svg:text><rect width="200" height="40" fill="url(#bg-darker)"><animateTransform attributeName="transform" type="scale" from="0 1" to="1 1" begin="0s" dur="3s"/></rect><text x="210" y="30" fill="white" font-size="30" font-weight="bold">10</text></g><g class="bar" transform="translate(300 280)"><svg:text x="-10" y="27" text-anchor="end" fill="white" font-size="24" font-weight="bold">
+				Niezidentyfikowane:
+			</svg:text><rect width="80" height="40" fill="url(#bg-darker)"><animateTransform attributeName="transform" type="scale" from="0 1" to="1 1" begin="0s" dur="3s"/></rect><text x="90" y="30" fill="white" font-size="30" font-weight="bold">4</text></g></g><svg:rect x="50" y="500" width="250" height="470" fill="url(#bar)"/><svg:text x="70" y="530" text-anchor="start" fill="white" font-size="20" font-weight="bold">Guns'i A4D</svg:text><svg:text y="585" x="70" fill="white" font-size="12" text-anchor="left">It's So Easy</svg:text><svg:rect class="&#10;                        &#9;&#9;control&#10;                    &#9;&#9;" cursor="&#10;                        &#9;&#9;pointer&#10;                    &#9;&#9;" y="565" x="50" width="250" height="35" opacity="0" fill=""/><svg:g class="info"><svg:rect x="645" y="500" width="270" height="220" fill="url(#bar)" stroke="white" stroke-width="2"/><svg:text text-anchor="left" x="660" y="525" fill="white" font-size="12" font-weight="bold">
+					Tytuł: It's So Easy</svg:text><svg:text text-anchor="left" x="660" y="555" fill="white" font-size="12" font-weight="bold">
+					Wykonawca: GNR</svg:text><svg:text text-anchor="left" x="660" y="585" fill="white" font-size="12" font-weight="bold">
+					Gatunek: Rock</svg:text><svg:text text-anchor="left" x="660" y="615" fill="white" font-size="12" font-weight="bold">
+					Nastrój: wesoła</svg:text><svg:text text-anchor="left" x="660" y="645" fill="white" font-size="12" font-weight="bold">
+					Czas trwania: 3:23</svg:text><svg:text text-anchor="left" x="660" y="675" fill="white" font-size="12" font-weight="bold">
+					Album: Appetite for Destruction</svg:text><svg:text text-anchor="left" x="660" y="705" fill="white" font-size="12" font-weight="bold">
+					Rok wydania: 1987</svg:text></svg:g><svg:text y="620" x="70" fill="white" font-size="12" text-anchor="left">Nighttrain</svg:text><svg:rect class="&#10;                        &#9;&#9;control&#10;                    &#9;&#9;" cursor="&#10;                        &#9;&#9;pointer&#10;                    &#9;&#9;" y="600" x="50" width="250" height="35" opacity="0" fill=""/><svg:g class="info"><svg:rect x="645" y="500" width="270" height="220" fill="url(#bar)" stroke="white" stroke-width="2"/><svg:text text-anchor="left" x="660" y="525" fill="white" font-size="12" font-weight="bold">
+					Tytuł: Nighttrain</svg:text><svg:text text-anchor="left" x="660" y="555" fill="white" font-size="12" font-weight="bold">
+					Wykonawca: GNR</svg:text><svg:text text-anchor="left" x="660" y="585" fill="white" font-size="12" font-weight="bold">
+					Gatunek: Rock</svg:text><svg:text text-anchor="left" x="660" y="615" fill="white" font-size="12" font-weight="bold">
+					Nastrój: smutna</svg:text><svg:text text-anchor="left" x="660" y="645" fill="white" font-size="12" font-weight="bold">
+					Czas trwania: 4:29</svg:text><svg:text text-anchor="left" x="660" y="675" fill="white" font-size="12" font-weight="bold">
+					Album: Appetite for Destruction</svg:text><svg:text text-anchor="left" x="660" y="705" fill="white" font-size="12" font-weight="bold">
+					Rok wydania: 1987</svg:text></svg:g><svg:text y="655" x="70" fill="white" font-size="12" text-anchor="left">Out Ta Get Me</svg:text><svg:rect class="&#10;                        &#9;&#9;control&#10;                    &#9;&#9;" cursor="&#10;                        &#9;&#9;pointer&#10;                    &#9;&#9;" y="635" x="50" width="250" height="35" opacity="0" fill=""/><svg:g class="info"><svg:rect x="645" y="500" width="270" height="220" fill="url(#bar)" stroke="white" stroke-width="2"/><svg:text text-anchor="left" x="660" y="525" fill="white" font-size="12" font-weight="bold">
+					Tytuł: Out Ta Get Me</svg:text><svg:text text-anchor="left" x="660" y="555" fill="white" font-size="12" font-weight="bold">
+					Wykonawca: GNR</svg:text><svg:text text-anchor="left" x="660" y="585" fill="white" font-size="12" font-weight="bold">
+					Gatunek: Rock</svg:text><svg:text text-anchor="left" x="660" y="615" fill="white" font-size="12" font-weight="bold">
+					Nastrój: mieszana</svg:text><svg:text text-anchor="left" x="660" y="645" fill="white" font-size="12" font-weight="bold">
+					Czas trwania: 4:25</svg:text><svg:text text-anchor="left" x="660" y="675" fill="white" font-size="12" font-weight="bold">
+					Album: Appetite for Destruction</svg:text><svg:text text-anchor="left" x="660" y="705" fill="white" font-size="12" font-weight="bold">
+					Rok wydania: 1987</svg:text></svg:g><svg:text y="690" x="70" fill="white" font-size="12" text-anchor="left">Mr. Brownstone</svg:text><svg:rect class="&#10;                        &#9;&#9;control&#10;                    &#9;&#9;" cursor="&#10;                        &#9;&#9;pointer&#10;                    &#9;&#9;" y="670" x="50" width="250" height="35" opacity="0" fill=""/><svg:g class="info"><svg:rect x="645" y="500" width="270" height="220" fill="url(#bar)" stroke="white" stroke-width="2"/><svg:text text-anchor="left" x="660" y="525" fill="white" font-size="12" font-weight="bold">
+					Tytuł: Mr. Brownstone</svg:text><svg:text text-anchor="left" x="660" y="555" fill="white" font-size="12" font-weight="bold">
+					Wykonawca: GNR</svg:text><svg:text text-anchor="left" x="660" y="585" fill="white" font-size="12" font-weight="bold">
+					Gatunek: Rock</svg:text><svg:text text-anchor="left" x="660" y="615" fill="white" font-size="12" font-weight="bold">
+					Nastrój: smutna</svg:text><svg:text text-anchor="left" x="660" y="645" fill="white" font-size="12" font-weight="bold">
+					Czas trwania: 3:49</svg:text><svg:text text-anchor="left" x="660" y="675" fill="white" font-size="12" font-weight="bold">
+					Album: Appetite for Destruction</svg:text><svg:text text-anchor="left" x="660" y="705" fill="white" font-size="12" font-weight="bold">
+					Rok wydania: 1987</svg:text></svg:g><svg:text y="725" x="70" fill="white" font-size="12" text-anchor="left">Paradise City</svg:text><svg:rect class="&#10;                        &#9;&#9;control&#10;                    &#9;&#9;" cursor="&#10;                        &#9;&#9;pointer&#10;                    &#9;&#9;" y="705" x="50" width="250" height="35" opacity="0" fill=""/><svg:g class="info"><svg:rect x="645" y="500" width="270" height="220" fill="url(#bar)" stroke="white" stroke-width="2"/><svg:text text-anchor="left" x="660" y="525" fill="white" font-size="12" font-weight="bold">
+					Tytuł: Paradise City</svg:text><svg:text text-anchor="left" x="660" y="555" fill="white" font-size="12" font-weight="bold">
+					Wykonawca: GNR</svg:text><svg:text text-anchor="left" x="660" y="585" fill="white" font-size="12" font-weight="bold">
+					Gatunek: Rock</svg:text><svg:text text-anchor="left" x="660" y="615" fill="white" font-size="12" font-weight="bold">
+					Nastrój: wesoła</svg:text><svg:text text-anchor="left" x="660" y="645" fill="white" font-size="12" font-weight="bold">
+					Czas trwania: 6:46</svg:text><svg:text text-anchor="left" x="660" y="675" fill="white" font-size="12" font-weight="bold">
+					Album: Appetite for Destruction</svg:text><svg:text text-anchor="left" x="660" y="705" fill="white" font-size="12" font-weight="bold">
+					Rok wydania: 1987</svg:text></svg:g><svg:text y="760" x="70" fill="white" font-size="12" text-anchor="left">My Michelle</svg:text><svg:rect class="&#10;                        &#9;&#9;control&#10;                    &#9;&#9;" cursor="&#10;                        &#9;&#9;pointer&#10;                    &#9;&#9;" y="740" x="50" width="250" height="35" opacity="0" fill=""/><svg:g class="info"><svg:rect x="645" y="500" width="270" height="220" fill="url(#bar)" stroke="white" stroke-width="2"/><svg:text text-anchor="left" x="660" y="525" fill="white" font-size="12" font-weight="bold">
+					Tytuł: My Michelle</svg:text><svg:text text-anchor="left" x="660" y="555" fill="white" font-size="12" font-weight="bold">
+					Wykonawca: GNR</svg:text><svg:text text-anchor="left" x="660" y="585" fill="white" font-size="12" font-weight="bold">
+					Gatunek: Rock</svg:text><svg:text text-anchor="left" x="660" y="615" fill="white" font-size="12" font-weight="bold">
+					Nastrój: niezidentyfikowana</svg:text><svg:text text-anchor="left" x="660" y="645" fill="white" font-size="12" font-weight="bold">
+					Czas trwania: 3:40</svg:text><svg:text text-anchor="left" x="660" y="675" fill="white" font-size="12" font-weight="bold">
+					Album: Appetite for Destruction</svg:text><svg:text text-anchor="left" x="660" y="705" fill="white" font-size="12" font-weight="bold">
+					Rok wydania: 1987</svg:text></svg:g><svg:text y="795" x="70" fill="white" font-size="12" text-anchor="left">Think About You</svg:text><svg:rect class="&#10;                        &#9;&#9;control&#10;                    &#9;&#9;" cursor="&#10;                        &#9;&#9;pointer&#10;                    &#9;&#9;" y="775" x="50" width="250" height="35" opacity="0" fill=""/><svg:g class="info"><svg:rect x="645" y="500" width="270" height="220" fill="url(#bar)" stroke="white" stroke-width="2"/><svg:text text-anchor="left" x="660" y="525" fill="white" font-size="12" font-weight="bold">
+					Tytuł: Think About You</svg:text><svg:text text-anchor="left" x="660" y="555" fill="white" font-size="12" font-weight="bold">
+					Wykonawca: GNR</svg:text><svg:text text-anchor="left" x="660" y="585" fill="white" font-size="12" font-weight="bold">
+					Gatunek: Rock</svg:text><svg:text text-anchor="left" x="660" y="615" fill="white" font-size="12" font-weight="bold">
+					Nastrój: smutna</svg:text><svg:text text-anchor="left" x="660" y="645" fill="white" font-size="12" font-weight="bold">
+					Czas trwania: 3:52</svg:text><svg:text text-anchor="left" x="660" y="675" fill="white" font-size="12" font-weight="bold">
+					Album: Appetite for Destruction</svg:text><svg:text text-anchor="left" x="660" y="705" fill="white" font-size="12" font-weight="bold">
+					Rok wydania: 1987</svg:text></svg:g><svg:text y="830" x="70" fill="white" font-size="12" text-anchor="left">Sweet Child O' Mine</svg:text><svg:rect class="&#10;                        &#9;&#9;control&#10;                    &#9;&#9;" cursor="&#10;                        &#9;&#9;pointer&#10;                    &#9;&#9;" y="810" x="50" width="250" height="35" opacity="0" fill=""/><svg:g class="info"><svg:rect x="645" y="500" width="270" height="220" fill="url(#bar)" stroke="white" stroke-width="2"/><svg:text text-anchor="left" x="660" y="525" fill="white" font-size="12" font-weight="bold">
+					Tytuł: Sweet Child O' Mine</svg:text><svg:text text-anchor="left" x="660" y="555" fill="white" font-size="12" font-weight="bold">
+					Wykonawca: GNR</svg:text><svg:text text-anchor="left" x="660" y="585" fill="white" font-size="12" font-weight="bold">
+					Gatunek: Rock</svg:text><svg:text text-anchor="left" x="660" y="615" fill="white" font-size="12" font-weight="bold">
+					Nastrój: smutna</svg:text><svg:text text-anchor="left" x="660" y="645" fill="white" font-size="12" font-weight="bold">
+					Czas trwania: 5:55</svg:text><svg:text text-anchor="left" x="660" y="675" fill="white" font-size="12" font-weight="bold">
+					Album: Appetite for Destruction</svg:text><svg:text text-anchor="left" x="660" y="705" fill="white" font-size="12" font-weight="bold">
+					Rok wydania: 1987</svg:text></svg:g><svg:text y="865" x="70" fill="white" font-size="12" text-anchor="left">You're Crazy</svg:text><svg:rect class="&#10;                        &#9;&#9;control&#10;                    &#9;&#9;" cursor="&#10;                        &#9;&#9;pointer&#10;                    &#9;&#9;" y="845" x="50" width="250" height="35" opacity="0" fill=""/><svg:g class="info"><svg:rect x="645" y="500" width="270" height="220" fill="url(#bar)" stroke="white" stroke-width="2"/><svg:text text-anchor="left" x="660" y="525" fill="white" font-size="12" font-weight="bold">
+					Tytuł: You're Crazy</svg:text><svg:text text-anchor="left" x="660" y="555" fill="white" font-size="12" font-weight="bold">
+					Wykonawca: GNR</svg:text><svg:text text-anchor="left" x="660" y="585" fill="white" font-size="12" font-weight="bold">
+					Gatunek: Rock</svg:text><svg:text text-anchor="left" x="660" y="615" fill="white" font-size="12" font-weight="bold">
+					Nastrój: wesoła</svg:text><svg:text text-anchor="left" x="660" y="645" fill="white" font-size="12" font-weight="bold">
+					Czas trwania: 3:17</svg:text><svg:text text-anchor="left" x="660" y="675" fill="white" font-size="12" font-weight="bold">
+					Album: Appetite for Destruction</svg:text><svg:text text-anchor="left" x="660" y="705" fill="white" font-size="12" font-weight="bold">
+					Rok wydania: 1987</svg:text></svg:g><svg:text y="900" x="70" fill="white" font-size="12" text-anchor="left">Anything Goes</svg:text><svg:rect class="&#10;                        &#9;&#9;control&#10;                    &#9;&#9;" cursor="&#10;                        &#9;&#9;pointer&#10;                    &#9;&#9;" y="880" x="50" width="250" height="35" opacity="0" fill=""/><svg:g class="info"><svg:rect x="645" y="500" width="270" height="220" fill="url(#bar)" stroke="white" stroke-width="2"/><svg:text text-anchor="left" x="660" y="525" fill="white" font-size="12" font-weight="bold">
+					Tytuł: Anything Goes</svg:text><svg:text text-anchor="left" x="660" y="555" fill="white" font-size="12" font-weight="bold">
+					Wykonawca: GNR</svg:text><svg:text text-anchor="left" x="660" y="585" fill="white" font-size="12" font-weight="bold">
+					Gatunek: Rock</svg:text><svg:text text-anchor="left" x="660" y="615" fill="white" font-size="12" font-weight="bold">
+					Nastrój: wesoła</svg:text><svg:text text-anchor="left" x="660" y="645" fill="white" font-size="12" font-weight="bold">
+					Czas trwania: 3:26</svg:text><svg:text text-anchor="left" x="660" y="675" fill="white" font-size="12" font-weight="bold">
+					Album: Appetite for Destruction</svg:text><svg:text text-anchor="left" x="660" y="705" fill="white" font-size="12" font-weight="bold">
+					Rok wydania: 1987</svg:text></svg:g><svg:text y="935" x="70" fill="white" font-size="12" text-anchor="left">Rocet Queen</svg:text><svg:rect class="&#10;                        &#9;&#9;control&#10;                    &#9;&#9;" cursor="&#10;                        &#9;&#9;pointer&#10;                    &#9;&#9;" y="915" x="50" width="250" height="35" opacity="0" fill=""/><svg:g class="info"><svg:rect x="645" y="500" width="270" height="220" fill="url(#bar)" stroke="white" stroke-width="2"/><svg:text text-anchor="left" x="660" y="525" fill="white" font-size="12" font-weight="bold">
+					Tytuł: Rocet Queen</svg:text><svg:text text-anchor="left" x="660" y="555" fill="white" font-size="12" font-weight="bold">
+					Wykonawca: GNR</svg:text><svg:text text-anchor="left" x="660" y="585" fill="white" font-size="12" font-weight="bold">
+					Gatunek: Rock</svg:text><svg:text text-anchor="left" x="660" y="615" fill="white" font-size="12" font-weight="bold">
+					Nastrój: wesoła</svg:text><svg:text text-anchor="left" x="660" y="645" fill="white" font-size="12" font-weight="bold">
+					Czas trwania: 3:40</svg:text><svg:text text-anchor="left" x="660" y="675" fill="white" font-size="12" font-weight="bold">
+					Album: Appetite for Destruction</svg:text><svg:text text-anchor="left" x="660" y="705" fill="white" font-size="12" font-weight="bold">
+					Rok wydania: 1987</svg:text></svg:g><svg:rect x="350" y="500" width="250" height="430" fill="url(#bar)"/><svg:text x="370" y="530" text-anchor="start" fill="white" font-size="20" font-weight="bold">Eternal Romance</svg:text><svg:text y="585" x="370" fill="white" font-size="12" text-anchor="left">Brother Louie</svg:text><svg:rect class="&#10;                        &#9;&#9;control&#10;                    &#9;&#9;" cursor="&#10;                        &#9;&#9;pointer&#10;                    &#9;&#9;" y="565" x="350" width="250" height="35" opacity="0" fill=""/><svg:g class="info"><svg:rect x="645" y="500" width="270" height="220" fill="url(#bar)" stroke="white" stroke-width="2"/><svg:text text-anchor="left" x="660" y="525" fill="white" font-size="12" font-weight="bold">
+					Tytuł: Brother Louie</svg:text><svg:text text-anchor="left" x="660" y="555" fill="white" font-size="12" font-weight="bold">
+					Wykonawca: MT</svg:text><svg:text text-anchor="left" x="660" y="585" fill="white" font-size="12" font-weight="bold">
+					Gatunek: Pop</svg:text><svg:text text-anchor="left" x="660" y="615" fill="white" font-size="12" font-weight="bold">
+					Nastrój: smutna</svg:text><svg:text text-anchor="left" x="660" y="645" fill="white" font-size="12" font-weight="bold">
+					Czas trwania: 3:41</svg:text><svg:text text-anchor="left" x="660" y="675" fill="white" font-size="12" font-weight="bold">
+					Album: Ready for Romance</svg:text><svg:text text-anchor="left" x="660" y="705" fill="white" font-size="12" font-weight="bold">
+					Rok wydania: 1986</svg:text></svg:g><svg:text y="620" x="370" fill="white" font-size="12" text-anchor="left">Just We Two</svg:text><svg:rect class="&#10;                        &#9;&#9;control&#10;                    &#9;&#9;" cursor="&#10;                        &#9;&#9;pointer&#10;                    &#9;&#9;" y="600" x="350" width="250" height="35" opacity="0" fill=""/><svg:g class="info"><svg:rect x="645" y="500" width="270" height="220" fill="url(#bar)" stroke="white" stroke-width="2"/><svg:text text-anchor="left" x="660" y="525" fill="white" font-size="12" font-weight="bold">
+					Tytuł: Just We Two</svg:text><svg:text text-anchor="left" x="660" y="555" fill="white" font-size="12" font-weight="bold">
+					Wykonawca: MT</svg:text><svg:text text-anchor="left" x="660" y="585" fill="white" font-size="12" font-weight="bold">
+					Gatunek: Pop</svg:text><svg:text text-anchor="left" x="660" y="615" fill="white" font-size="12" font-weight="bold">
+					Nastrój: smutna</svg:text><svg:text text-anchor="left" x="660" y="645" fill="white" font-size="12" font-weight="bold">
+					Czas trwania: 3:54</svg:text><svg:text text-anchor="left" x="660" y="675" fill="white" font-size="12" font-weight="bold">
+					Album: Ready for Romance</svg:text><svg:text text-anchor="left" x="660" y="705" fill="white" font-size="12" font-weight="bold">
+					Rok wydania: 1986</svg:text></svg:g><svg:text y="655" x="370" fill="white" font-size="12" text-anchor="left">Lady Lai</svg:text><svg:rect class="&#10;                        &#9;&#9;control&#10;                    &#9;&#9;" cursor="&#10;                        &#9;&#9;pointer&#10;                    &#9;&#9;" y="635" x="350" width="250" height="35" opacity="0" fill=""/><svg:g class="info"><svg:rect x="645" y="500" width="270" height="220" fill="url(#bar)" stroke="white" stroke-width="2"/><svg:text text-anchor="left" x="660" y="525" fill="white" font-size="12" font-weight="bold">
+					Tytuł: Lady Lai</svg:text><svg:text text-anchor="left" x="660" y="555" fill="white" font-size="12" font-weight="bold">
+					Wykonawca: MT</svg:text><svg:text text-anchor="left" x="660" y="585" fill="white" font-size="12" font-weight="bold">
+					Gatunek: Pop</svg:text><svg:text text-anchor="left" x="660" y="615" fill="white" font-size="12" font-weight="bold">
+					Nastrój: smutna</svg:text><svg:text text-anchor="left" x="660" y="645" fill="white" font-size="12" font-weight="bold">
+					Czas trwania: 4:55</svg:text><svg:text text-anchor="left" x="660" y="675" fill="white" font-size="12" font-weight="bold">
+					Album: Ready for Romance</svg:text><svg:text text-anchor="left" x="660" y="705" fill="white" font-size="12" font-weight="bold">
+					Rok wydania: 1986</svg:text></svg:g><svg:text y="690" x="370" fill="white" font-size="12" text-anchor="left">Doctor for My Heart</svg:text><svg:rect class="&#10;                        &#9;&#9;control&#10;                    &#9;&#9;" cursor="&#10;                        &#9;&#9;pointer&#10;                    &#9;&#9;" y="670" x="350" width="250" height="35" opacity="0" fill=""/><svg:g class="info"><svg:rect x="645" y="500" width="270" height="220" fill="url(#bar)" stroke="white" stroke-width="2"/><svg:text text-anchor="left" x="660" y="525" fill="white" font-size="12" font-weight="bold">
+					Tytuł: Doctor for My Heart</svg:text><svg:text text-anchor="left" x="660" y="555" fill="white" font-size="12" font-weight="bold">
+					Wykonawca: MT</svg:text><svg:text text-anchor="left" x="660" y="585" fill="white" font-size="12" font-weight="bold">
+					Gatunek: Pop</svg:text><svg:text text-anchor="left" x="660" y="615" fill="white" font-size="12" font-weight="bold">
+					Nastrój: niezidentyfikowana</svg:text><svg:text text-anchor="left" x="660" y="645" fill="white" font-size="12" font-weight="bold">
+					Czas trwania: 3:16</svg:text><svg:text text-anchor="left" x="660" y="675" fill="white" font-size="12" font-weight="bold">
+					Album: Ready for Romance</svg:text><svg:text text-anchor="left" x="660" y="705" fill="white" font-size="12" font-weight="bold">
+					Rok wydania: 1986</svg:text></svg:g><svg:text y="725" x="370" fill="white" font-size="12" text-anchor="left">Save Me - Don't Break Me</svg:text><svg:rect class="&#10;                        &#9;&#9;control&#10;                    &#9;&#9;" cursor="&#10;                        &#9;&#9;pointer&#10;                    &#9;&#9;" y="705" x="350" width="250" height="35" opacity="0" fill=""/><svg:g class="info"><svg:rect x="645" y="500" width="270" height="220" fill="url(#bar)" stroke="white" stroke-width="2"/><svg:text text-anchor="left" x="660" y="525" fill="white" font-size="12" font-weight="bold">
+					Tytuł: Save Me - Don't Break Me</svg:text><svg:text text-anchor="left" x="660" y="555" fill="white" font-size="12" font-weight="bold">
+					Wykonawca: MT</svg:text><svg:text text-anchor="left" x="660" y="585" fill="white" font-size="12" font-weight="bold">
+					Gatunek: Pop</svg:text><svg:text text-anchor="left" x="660" y="615" fill="white" font-size="12" font-weight="bold">
+					Nastrój: smutna</svg:text><svg:text text-anchor="left" x="660" y="645" fill="white" font-size="12" font-weight="bold">
+					Czas trwania: 3:45</svg:text><svg:text text-anchor="left" x="660" y="675" fill="white" font-size="12" font-weight="bold">
+					Album: Ready for Romance</svg:text><svg:text text-anchor="left" x="660" y="705" fill="white" font-size="12" font-weight="bold">
+					Rok wydania: 1986</svg:text></svg:g><svg:text y="760" x="370" fill="white" font-size="12" text-anchor="left">Atlantis Is Calling</svg:text><svg:rect class="&#10;                        &#9;&#9;control&#10;                    &#9;&#9;" cursor="&#10;                        &#9;&#9;pointer&#10;                    &#9;&#9;" y="740" x="350" width="250" height="35" opacity="0" fill=""/><svg:g class="info"><svg:rect x="645" y="500" width="270" height="220" fill="url(#bar)" stroke="white" stroke-width="2"/><svg:text text-anchor="left" x="660" y="525" fill="white" font-size="12" font-weight="bold">
+					Tytuł: Atlantis Is Calling</svg:text><svg:text text-anchor="left" x="660" y="555" fill="white" font-size="12" font-weight="bold">
+					Wykonawca: MT</svg:text><svg:text text-anchor="left" x="660" y="585" fill="white" font-size="12" font-weight="bold">
+					Gatunek: Pop</svg:text><svg:text text-anchor="left" x="660" y="615" fill="white" font-size="12" font-weight="bold">
+					Nastrój: niezidentyfikowana</svg:text><svg:text text-anchor="left" x="660" y="645" fill="white" font-size="12" font-weight="bold">
+					Czas trwania: 3:48</svg:text><svg:text text-anchor="left" x="660" y="675" fill="white" font-size="12" font-weight="bold">
+					Album: Ready for Romance</svg:text><svg:text text-anchor="left" x="660" y="705" fill="white" font-size="12" font-weight="bold">
+					Rok wydania: 1986</svg:text></svg:g><svg:text y="795" x="370" fill="white" font-size="12" text-anchor="left">Keep Lova Alive</svg:text><svg:rect class="&#10;                        &#9;&#9;control&#10;                    &#9;&#9;" cursor="&#10;                        &#9;&#9;pointer&#10;                    &#9;&#9;" y="775" x="350" width="250" height="35" opacity="0" fill=""/><svg:g class="info"><svg:rect x="645" y="500" width="270" height="220" fill="url(#bar)" stroke="white" stroke-width="2"/><svg:text text-anchor="left" x="660" y="525" fill="white" font-size="12" font-weight="bold">
+					Tytuł: Keep Lova Alive</svg:text><svg:text text-anchor="left" x="660" y="555" fill="white" font-size="12" font-weight="bold">
+					Wykonawca: MT</svg:text><svg:text text-anchor="left" x="660" y="585" fill="white" font-size="12" font-weight="bold">
+					Gatunek: Pop</svg:text><svg:text text-anchor="left" x="660" y="615" fill="white" font-size="12" font-weight="bold">
+					Nastrój: smutna</svg:text><svg:text text-anchor="left" x="660" y="645" fill="white" font-size="12" font-weight="bold">
+					Czas trwania: 3:25</svg:text><svg:text text-anchor="left" x="660" y="675" fill="white" font-size="12" font-weight="bold">
+					Album: Ready for Romance</svg:text><svg:text text-anchor="left" x="660" y="705" fill="white" font-size="12" font-weight="bold">
+					Rok wydania: 1986</svg:text></svg:g><svg:text y="830" x="370" fill="white" font-size="12" text-anchor="left">Hey You</svg:text><svg:rect class="&#10;                        &#9;&#9;control&#10;                    &#9;&#9;" cursor="&#10;                        &#9;&#9;pointer&#10;                    &#9;&#9;" y="810" x="350" width="250" height="35" opacity="0" fill=""/><svg:g class="info"><svg:rect x="645" y="500" width="270" height="220" fill="url(#bar)" stroke="white" stroke-width="2"/><svg:text text-anchor="left" x="660" y="525" fill="white" font-size="12" font-weight="bold">
+					Tytuł: Hey You</svg:text><svg:text text-anchor="left" x="660" y="555" fill="white" font-size="12" font-weight="bold">
+					Wykonawca: MT</svg:text><svg:text text-anchor="left" x="660" y="585" fill="white" font-size="12" font-weight="bold">
+					Gatunek: Pop</svg:text><svg:text text-anchor="left" x="660" y="615" fill="white" font-size="12" font-weight="bold">
+					Nastrój: niezidentyfikowana</svg:text><svg:text text-anchor="left" x="660" y="645" fill="white" font-size="12" font-weight="bold">
+					Czas trwania: 3:20</svg:text><svg:text text-anchor="left" x="660" y="675" fill="white" font-size="12" font-weight="bold">
+					Album: Ready for Romance</svg:text><svg:text text-anchor="left" x="660" y="705" fill="white" font-size="12" font-weight="bold">
+					Rok wydania: 1986</svg:text></svg:g><svg:text y="865" x="370" fill="white" font-size="12" text-anchor="left">Angie's Heart</svg:text><svg:rect class="&#10;                        &#9;&#9;control&#10;                    &#9;&#9;" cursor="&#10;                        &#9;&#9;pointer&#10;                    &#9;&#9;" y="845" x="350" width="250" height="35" opacity="0" fill=""/><svg:g class="info"><svg:rect x="645" y="500" width="270" height="220" fill="url(#bar)" stroke="white" stroke-width="2"/><svg:text text-anchor="left" x="660" y="525" fill="white" font-size="12" font-weight="bold">
+					Tytuł: Angie's Heart</svg:text><svg:text text-anchor="left" x="660" y="555" fill="white" font-size="12" font-weight="bold">
+					Wykonawca: MT</svg:text><svg:text text-anchor="left" x="660" y="585" fill="white" font-size="12" font-weight="bold">
+					Gatunek: Pop</svg:text><svg:text text-anchor="left" x="660" y="615" fill="white" font-size="12" font-weight="bold">
+					Nastrój: mieszana</svg:text><svg:text text-anchor="left" x="660" y="645" fill="white" font-size="12" font-weight="bold">
+					Czas trwania: 3:37</svg:text><svg:text text-anchor="left" x="660" y="675" fill="white" font-size="12" font-weight="bold">
+					Album: Ready for Romance</svg:text><svg:text text-anchor="left" x="660" y="705" fill="white" font-size="12" font-weight="bold">
+					Rok wydania: 1986</svg:text></svg:g><svg:text y="900" x="370" fill="white" font-size="12" text-anchor="left">Only Love Can Break My Heart</svg:text><svg:rect class="&#10;                        &#9;&#9;control&#10;                    &#9;&#9;" cursor="&#10;                        &#9;&#9;pointer&#10;                    &#9;&#9;" y="880" x="350" width="250" height="35" opacity="0" fill=""/><svg:g class="info"><svg:rect x="645" y="500" width="270" height="220" fill="url(#bar)" stroke="white" stroke-width="2"/><svg:text text-anchor="left" x="660" y="525" fill="white" font-size="12" font-weight="bold">
+					Tytuł: Only Love Can Break My Heart</svg:text><svg:text text-anchor="left" x="660" y="555" fill="white" font-size="12" font-weight="bold">
+					Wykonawca: MT</svg:text><svg:text text-anchor="left" x="660" y="585" fill="white" font-size="12" font-weight="bold">
+					Gatunek: Pop</svg:text><svg:text text-anchor="left" x="660" y="615" fill="white" font-size="12" font-weight="bold">
+					Nastrój: smutna</svg:text><svg:text text-anchor="left" x="660" y="645" fill="white" font-size="12" font-weight="bold">
+					Czas trwania: 3:35</svg:text><svg:text text-anchor="left" x="660" y="675" fill="white" font-size="12" font-weight="bold">
+					Album: Ready for Romance</svg:text><svg:text text-anchor="left" x="660" y="705" fill="white" font-size="12" font-weight="bold">
+					Rok wydania: 1986</svg:text></svg:g></svg:svg>

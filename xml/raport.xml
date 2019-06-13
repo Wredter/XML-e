@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zestawienie>
+   <Dane>
+      <autor>
+         <imie>Wiktor</imie>
+         <nazwisko>Muraszko</nazwisko>
+         <nrIndeksu>210281</nrIndeksu>
+      </autor>
+      <autor>
+         <imie>Wojciech</imie>
+         <nazwisko>Mosieński</nazwisko>
+         <nrIndeksu>210280</nrIndeksu>
+      </autor>
+      <Datamodyfikacji>30/05/2019,19:20</Datamodyfikacji>
+   </Dane>
+   <biblioteka>
+      <liczbaWykonawców>2</liczbaWykonawców>
+      <liczbaArtystów>7</liczbaArtystów>
+      <liczbaPiosenek>21</liczbaPiosenek>
+      <liczbaPiosenekSmutnych>10</liczbaPiosenekSmutnych>
+      <liczbaPiosenekWesołych>5</liczbaPiosenekWesołych>
+      <liczbaPiosenekMieszanych>2</liczbaPiosenekMieszanych>
+      <liczbaPiosenekNiezidentyfikowanych>4</liczbaPiosenekNiezidentyfikowanych>
+   </biblioteka>
+   <plajlista>
+      <liczbaPiosenek>11</liczbaPiosenek>
+      <nazwa>Guns'i A4D</nazwa>
+      <piosenka>
+         <Tytuł>It's So Easy</Tytuł>
+         <artyści>Steven Adler,
+								Soul Hudson,
+								Duff McKagan,
+								Axl Rose,
+								Izzy Stradlin,
+								</artyści>
+         <gatunek>Rock</gatunek>
+         <nastrój>wesoła</nastrój>
+         <rokWydania>1987</rokWydania>
+         <album>Appetite for Destruction</album>
+         <czasTrwania>3:23</czasTrwania>
+      </piosenka>
+      <piosenka>
+         <Tytuł>Nighttrain</Tytuł>
+         <artyści>Steven Adler,
+								Soul Hudson,
+								Duff McKagan,
+								Axl Rose,
+								Izzy Stradlin,
+								</artyści>
+         <gatunek>Rock</gatunek>
+         <nastrój>smutna</nastrój>
+         <rokWydania>1987</rokWydania>
+         <album>Appetite for Destruction</album>
+         <czasTrwania>4:29</czasTrwania>
+      </piosenka>
+      <piosenka>
+         <Tytuł>Out Ta Get Me</Tytuł>
+         <artyści>Steven Adler,
+								Soul Hudson,
+								Duff McKagan,
+								Axl Rose,
+								Izzy Stradlin,
+								</artyści>
+         <gatunek>Rock</gatunek>
+         <nastrój>mieszana</nastrój>
+         <rokWydania>1987</rokWydania>
+         <album>Appetite for Destruction</album>
+         <czasTrwania>4:25</czasTrwania>
+      </piosenka>
+      <piosenka>
+         <Tytuł>Mr. Brownstone</Tytuł>
+         <artyści>Steven Adler,
+								Soul Hudson,
+								Duff McKagan,
+								Axl Rose,
+								Izzy Stradlin,
+								</artyści>
+         <gatunek>Rock</gatunek>
+         <nastrój>smutna</nastrój>
+         <rokWydania>1987</rokWydania>
+         <album>Appetite for Destruction</album>
+         <czasTrwania>3:49</czasTrwania>
+      </piosenka>
+      <piosenka>
+         <Tytuł>Paradise City</Tytuł>
+         <artyści>Steven Adler,
+								Soul Hudson,
+								Duff McKagan,
+								Axl Rose,
+								Izzy Stradlin,
+								</artyści>
+         <gatunek>Rock</gatunek>
+         <nastrój>wesoła</nastrój>
+         <rokWydania>1987</rokWydania>
+         <album>Appetite for Destruction</album>
+         <czasTrwania>6:46</czasTrwania>
+      </piosenka>
+      <piosenka>
+         <Tytuł>My Michelle</Tytuł>
+         <artyści>Steven Adler,
+								Soul Hudson,
+								Duff McKagan,
+								Axl Rose,
+								Izzy Stradlin,
+								</artyści>
+         <gatunek>Rock</gatunek>
+         <nastrój>niezidentyfikowana</nastrój>
+         <rokWydania>1987</rokWydania>
+         <album>Appetite for Destruction</album>
+         <czasTrwania>3:40</czasTrwania>
+      </piosenka>
+      <piosenka>
+         <Tytuł>Think About You</Tytuł>
+         <artyści>Steven Adler,
+								Soul Hudson,
+								Duff McKagan,
+								Axl Rose,
+								Izzy Stradlin,
+								</artyści>
+         <gatunek>Rock</gatunek>
+         <nastrój>smutna</nastrój>
+         <rokWydania>1987</rokWydania>
+         <album>Appetite for Destruction</album>
+         <czasTrwania>3:52</czasTrwania>
+      </piosenka>
+      <piosenka>
+         <Tytuł>Sweet Child O' Mine</Tytuł>
+         <artyści>Steven Adler,
+								Soul Hudson,
+								Duff McKagan,
+								Axl Rose,
+								Izzy Stradlin,
+								</artyści>
+         <gatunek>Rock</gatunek>
+         <nastrój>smutna</nastrój>
+         <rokWydania>1987</rokWydania>
+         <album>Appetite for Destruction</album>
+         <czasTrwania>5:55</czasTrwania>
+      </piosenka>
+      <piosenka>
+         <Tytuł>You're Crazy</Tytuł>
+         <artyści>Steven Adler,
+								Soul Hudson,
+								Duff McKagan,
+								Axl Rose,
+								Izzy Stradlin,
+								</artyści>
+         <gatunek>Rock</gatunek>
+         <nastrój>wesoła</nastrój>
+         <rokWydania>1987</rokWydania>
+         <album>Appetite for Destruction</album>
+         <czasTrwania>3:17</czasTrwania>
+      </piosenka>
+      <piosenka>
+         <Tytuł>Anything Goes</Tytuł>
+         <artyści>Steven Adler,
+								Soul Hudson,
+								Duff McKagan,
+								Axl Rose,
+								Izzy Stradlin,
+								</artyści>
+         <gatunek>Rock</gatunek>
+         <nastrój>wesoła</nastrój>
+         <rokWydania>1987</rokWydania>
+         <album>Appetite for Destruction</album>
+         <czasTrwania>3:26</czasTrwania>
+      </piosenka>
+      <piosenka>
+         <Tytuł>Rocet Queen</Tytuł>
+         <artyści>Steven Adler,
+								Soul Hudson,
+								Duff McKagan,
+								Axl Rose,
+								Izzy Stradlin,
+								</artyści>
+         <gatunek>Rock</gatunek>
+         <nastrój>wesoła</nastrój>
+         <rokWydania>1987</rokWydania>
+         <album>Appetite for Destruction</album>
+         <czasTrwania>3:40</czasTrwania>
+      </piosenka>
+   </plajlista>
+   <plajlista>
+      <liczbaPiosenek>10</liczbaPiosenek>
+      <nazwa>Eternal Romance</nazwa>
+      <piosenka>
+         <Tytuł>Brother Louie</Tytuł>
+         <artyści>Thomas Anders,
+								Dieter Bohlen,
+								</artyści>
+         <gatunek>Pop</gatunek>
+         <nastrój>smutna</nastrój>
+         <rokWydania>1986</rokWydania>
+         <album>Ready for Romance</album>
+         <czasTrwania>3:41</czasTrwania>
+      </piosenka>
+      <piosenka>
+         <Tytuł>Just We Two</Tytuł>
+         <artyści>Thomas Anders,
+								Dieter Bohlen,
+								</artyści>
+         <gatunek>Pop</gatunek>
+         <nastrój>smutna</nastrój>
+         <rokWydania>1986</rokWydania>
+         <album>Ready for Romance</album>
+         <czasTrwania>3:54</czasTrwania>
+      </piosenka>
+      <piosenka>
+         <Tytuł>Lady Lai</Tytuł>
+         <artyści>Thomas Anders,
+								Dieter Bohlen,
+								</artyści>
+         <gatunek>Pop</gatunek>
+         <nastrój>smutna</nastrój>
+         <rokWydania>1986</rokWydania>
+         <album>Ready for Romance</album>
+         <czasTrwania>4:55</czasTrwania>
+      </piosenka>
+      <piosenka>
+         <Tytuł>Doctor for My Heart</Tytuł>
+         <artyści>Thomas Anders,
+								Dieter Bohlen,
+								</artyści>
+         <gatunek>Pop</gatunek>
+         <nastrój>niezidentyfikowana</nastrój>
+         <rokWydania>1986</rokWydania>
+         <album>Ready for Romance</album>
+         <czasTrwania>3:16</czasTrwania>
+      </piosenka>
+      <piosenka>
+         <Tytuł>Save Me - Don't Break Me</Tytuł>
+         <artyści>Thomas Anders,
+								Dieter Bohlen,
+								</artyści>
+         <gatunek>Pop</gatunek>
+         <nastrój>smutna</nastrój>
+         <rokWydania>1986</rokWydania>
+         <album>Ready for Romance</album>
+         <czasTrwania>3:45</czasTrwania>
+      </piosenka>
+      <piosenka>
+         <Tytuł>Atlantis Is Calling</Tytuł>
+         <artyści>Thomas Anders,
+								Dieter Bohlen,
+								</artyści>
+         <gatunek>Pop</gatunek>
+         <nastrój>niezidentyfikowana</nastrój>
+         <rokWydania>1986</rokWydania>
+         <album>Ready for Romance</album>
+         <czasTrwania>3:48</czasTrwania>
+      </piosenka>
+      <piosenka>
+         <Tytuł>Keep Lova Alive</Tytuł>
+         <artyści>Thomas Anders,
+								Dieter Bohlen,
+								</artyści>
+         <gatunek>Pop</gatunek>
+         <nastrój>smutna</nastrój>
+         <rokWydania>1986</rokWydania>
+         <album>Ready for Romance</album>
+         <czasTrwania>3:25</czasTrwania>
+      </piosenka>
+      <piosenka>
+         <Tytuł>Hey You</Tytuł>
+         <artyści>Thomas Anders,
+								Dieter Bohlen,
+								</artyści>
+         <gatunek>Pop</gatunek>
+         <nastrój>niezidentyfikowana</nastrój>
+         <rokWydania>1986</rokWydania>
+         <album>Ready for Romance</album>
+         <czasTrwania>3:20</czasTrwania>
+      </piosenka>
+      <piosenka>
+         <Tytuł>Angie's Heart</Tytuł>
+         <artyści>Thomas Anders,
+								Dieter Bohlen,
+								</artyści>
+         <gatunek>Pop</gatunek>
+         <nastrój>mieszana</nastrój>
+         <rokWydania>1986</rokWydania>
+         <album>Ready for Romance</album>
+         <czasTrwania>3:37</czasTrwania>
+      </piosenka>
+      <piosenka>
+         <Tytuł>Only Love Can Break My Heart</Tytuł>
+         <artyści>Thomas Anders,
+								Dieter Bohlen,
+								</artyści>
+         <gatunek>Pop</gatunek>
+         <nastrój>smutna</nastrój>
+         <rokWydania>1986</rokWydania>
+         <album>Ready for Romance</album>
+         <czasTrwania>3:35</czasTrwania>
+      </piosenka>
+   </plajlista>
+</zestawienie>

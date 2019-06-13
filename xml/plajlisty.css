@@ -1,0 +1,211 @@
+plajlisty {
+	background-color: #2F2F2F;
+    font-family: Lato, serif;
+	margin-top: 150px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+metadane {
+	display: block;
+    font-family: tahoma, monaco, monospace;
+	margin: 100px 5px 5px 5px;
+	text-align: center;
+	background-color: #222222;
+	border-style: solid;
+	border-color: green;
+	border-width: 5px;
+	border-radius: 5px;
+	color: #AA8888;
+	padding: 15px;
+	font-weight: 700;
+}
+
+lista_wykonawców::before {
+	color: #88AA88;
+	margin: 15px 15px 15px 15px;
+	content: "lista wykonawców:"
+}
+
+lista_wykonawców {
+	margin: -140px auto 10px auto;
+	background-color: #111111;
+	border-style: solid;
+	border-color: green;
+	border-width: 5px;
+	border-radius: 5px;
+	display: block;
+	position: fixed;
+	width: 100%;
+	opacity: 0.2;
+	transition-timing-function: ease-out;
+	transition: opacity 0.8s, padding 0.8s;
+	padding: 0px;
+}
+
+lista_wykonawców:hover {
+	opacity: 0.9;
+	padding: 50px 0px;
+	transition-timing-function: ease-in;
+	transition: opacity 0.6s, padding 0.6s;
+}
+
+wykonawca::before {
+	padding-right: 5px;
+	color: #AAAAAA;
+	content: "zespół " attr(nazwa) ": "
+}
+
+wykonawca {
+	padding-left: 8px;
+	padding-right: 5px;
+	border-left: solid 7px #94a351;
+	color: #AA8888;
+}
+
+artysta {
+	padding-right: 5px;
+}
+
+lista_gatunków::before {
+	color: #88AA88;
+	margin: 5px 15px;
+	content: "lista gatunków:"
+}
+
+lista_gatunków {
+	background-color: #888888;
+	margin: 10px;
+	background-color: #111111;
+	border-style: solid;
+	border-color: green;
+	border-width: 5px;
+	border-radius: 5px;
+	display: block;
+	position: fixed;
+	bottom: 0px;
+	width: 90%;
+	opacity: 0.2;
+	transition-timing-function: ease-out;
+	transition: opacity 0.8s, padding 0.8s;
+	padding: 0px;
+}
+
+lista_gatunków:hover {
+	opacity: 0.9;
+	padding: 50px;
+	transition-timing-function: ease-out;
+	transition: opacity 0.8s, padding 0.8s;
+}
+
+gatunek {
+	padding-left: 5px;
+	padding-right: 5px;
+	border-left: solid 7px #94a351;
+	color: #AA8888;
+}
+
+plajlista {
+	flex: 1;
+	margin: 150px 70px 70px 70px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	background-color: #222222;
+}
+
+plajlista::before {
+	color: #88AA88;
+	content: "plajlista: " attr(nazwa);
+	margin: 5px;
+}
+
+piosenkaRef::before {
+	color: #88AA88;
+	content: attr(tytulRef);
+	margin: 5px;
+}
+
+piosenkaRef {
+	margin: 20px;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	padding: 50px;
+	border: 5px solid green;
+	border-radius: 10px;
+	min-width: 100px;
+	background-color: #333333;
+	transition-timing-function: ease-out;
+	transition: background-color 0.8s;
+}
+
+piosenka::before {
+	color: #88AA88;
+	content: "piosenka " attr(nastrój) " - " attr(tytuł);
+	margin-bottom: 5px;
+}
+
+piosenka {
+	margin: 20px;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	padding: 50px;
+	border: 5px solid green;
+	border-radius: 10px;
+	min-width: 100px;
+	background-color: #333333;
+	transition-timing-function: ease-out;
+	transition: background-color 0.8s;
+}
+
+piosenka:hover {
+	background-color: #444444;
+	transition-timing-function: ease-in;
+	transition: background-color 0.8s;
+}
+
+tytuł::before {
+	color: #AAAAAA;
+	content: "tytuł - ";
+}
+
+czas_trwania::before {
+	color: #AAAAAA;
+	content: "czas trwania - ";
+}
+
+album::before {
+	color: #AAAAAA;
+	content: "album - ";
+}
+
+rok_wydania::before {
+	color: #AAAAAA;
+	content: "rok wydania - ";
+}
+
+tytuł {
+	color: #AA8888;
+
+}
+
+czas_trwania {
+	color: #AA8888;
+
+}
+
+album {
+	color: #AA8888;
+
+}
+
+rok_wydania {
+	color: #AA8888;
+}
+
+
+

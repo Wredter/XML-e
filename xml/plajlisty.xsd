@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:simpleType name="stringtype">
+  <xs:restriction base="xs:string"/>
+</xs:simpleType>
+
+<xs:simpleType name="inttype">
+  <xs:restriction base="xs:integer"/>
+</xs:simpleType>
+
+<xs:simpleType name="date">
+  <xs:restriction base="xs:date"/>
+</xs:simpleType>
+
+<xs:simpleType name="czas">
+<xs:restriction base="xs:string">
+<xs:pattern value="[0-9]{1,2}:[0-5]{1}[0-9]{1}"/>
+</xs:restriction>
+</xs:simpleType>
+
+  <xs:simpleType name="indeks">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="100000"/>
+      <xs:maxInclusive value="999999"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+ <xs:complexType name="rootType">
+  <xs:sequence>
+   <xs:element name="metadane" type="metadaneType" maxOccurs="1" />
+   <xs:element name="lista_gatunków" type="lista_gatunkówType" maxOccurs="1" />
+   <xs:element name="lista_wykonawców" type="lista_wykonawcówType" maxOccurs="1" />
+   <xs:element name="lista_piosenek" type="lista_piosenekType" maxOccurs="1" />
+   <xs:element name="plajlista" type="plajlistaType" maxOccurs="unbounded" />
+  </xs:sequence>
+ </xs:complexType>
+
+ 
+  <xs:complexType name="metadaneType">
+  <xs:sequence>
+   <xs:element name="autor" minOccurs="1" maxOccurs="2" type="autorType" />
+   <xs:element name="data_modyfikacji" minOccurs="1" maxOccurs="1" type="date" />
+  </xs:sequence>
+ </xs:complexType>
+ 
+  <xs:group name="autorGroup">
+<xs:sequence>
+   <xs:element name="imie" minOccurs="1" maxOccurs="1" type="stringtype" />
+   <xs:element name="nazwisko" minOccurs="1" maxOccurs="1" type="stringtype" />
+   <xs:element name="nr_indeksu" minOccurs="1" maxOccurs="1" type="indeks" />
+  </xs:sequence>
+</xs:group>
+ 
+ <xs:complexType name="autorType">
+	<xs:group ref="autorGroup"/>
+ </xs:complexType>
+ 
+  <xs:complexType name="lista_gatunkówType">
+  <xs:sequence>
+   <xs:element name="gatunek" maxOccurs="unbounded" type="gatunekType" />
+  </xs:sequence>
+ </xs:complexType>
+ 
+    <xs:complexType name="gatunekType">
+      <xs:simpleContent>
+        <xs:extension base="stringtype">
+          <xs:attribute name="id" type="stringtype" use="required" />
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+
+  <xs:complexType name="lista_wykonawcówType">
+  <xs:sequence>
+   <xs:element name="wykonawca" maxOccurs="unbounded" type="wykonawcaType" />
+  </xs:sequence>
+ </xs:complexType>
+ 
+    <xs:attributeGroup name="wykonawcaAtrrGroup">
+      <xs:attribute name="id" type="stringtype" use="required" />
+  <xs:attribute name="nazwa" type="stringtype" use="required" />
+  </xs:attributeGroup>
+ 
+   <xs:complexType name="wykonawcaType">
+  <xs:sequence>
+   <xs:element name="artysta" maxOccurs="unbounded" type="artystaType" />
+  </xs:sequence>
+  <xs:attributeGroup ref = "wykonawcaAtrrGroup"/>
+ </xs:complexType>
+ 
+    <xs:complexType name="artystaType">
+  <xs:sequence>
+   <xs:element name="imie" maxOccurs="1" type="stringtype" />
+   <xs:element name="nazwisko" maxOccurs="1" type="stringtype" />
+  </xs:sequence>
+  <xs:attribute name="pseudo" type="stringtype" />
+ </xs:complexType>
+ 
+     <xs:complexType name="lista_piosenekType">
+  <xs:sequence>
+   <xs:element name="piosenka" maxOccurs="unbounded" type="piosenkaType" />
+  </xs:sequence>
+ </xs:complexType>
+ 
+   <xs:attributeGroup name="piosenkaAtrrGroup">
+    <xs:attribute name="tytuł" type="stringtype" />
+        <xs:attribute default="niezidentyfikowana" name="nastrój">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="smutna" />
+            <xs:enumeration value="wesoła" />
+            <xs:enumeration value="mieszana" />
+            <xs:enumeration value="niezidentyfikowana" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+  <xs:attribute name="gatunek" type="stringtype" use="required" />
+  <xs:attribute name="wykonawca" type="stringtype" use="required" />
+  </xs:attributeGroup>
+ 
+      <xs:complexType name="piosenkaType">
+  <xs:sequence>
+   <xs:element name="czas_trwania" maxOccurs="1" type="czas" />
+   <xs:element name="album" maxOccurs="1" type="stringtype" />
+   <xs:element name="rok_wydania" maxOccurs="1" type="inttype" />
+  </xs:sequence>
+  <xs:attributeGroup ref = "piosenkaAtrrGroup"/>
+ </xs:complexType>
+ 
+	<xs:complexType name="plajlistaType">
+  <xs:sequence>
+   <xs:element name="piosenkaRef" maxOccurs="unbounded" type="piosenkaReferenceType" />
+  </xs:sequence>
+  <xs:attribute name="nazwa" type="stringtype" />
+ </xs:complexType>
+ 
+     <xs:complexType name="piosenkaReferenceType">
+          <xs:attribute name="tytulRef" type="stringtype" use="required" />
+    </xs:complexType>
+
+
+
+<xs:element name="root" type="rootType">
+   <xs:key name="piosenkaKey">
+  <xs:selector xpath="lista_piosenek/piosenka" />
+  <xs:field xpath="@tytuł" />
+ </xs:key>
+ 
+ <xs:keyref name="piosenkaKeyRef" refer="piosenkaKey">
+  <xs:selector xpath="plajlista/piosenkaRef" />
+  <xs:field xpath="@tytulRef" />
+ </xs:keyref>
+ 
+    <xs:key name="gatunekKey">
+  <xs:selector xpath="lista_gatunków/gatunek" />
+  <xs:field xpath="@id" />
+ </xs:key>
+ 
+ <xs:keyref name="gatunekKeyRef" refer="gatunekKey">
+  <xs:selector xpath="lista_piosenek/piosenka" />
+  <xs:field xpath="@gatunek" />
+   </xs:keyref>
+  
+      <xs:key name="wykonawcaKey">
+  <xs:selector xpath="lista_wykonawców/wykonawca" />
+  <xs:field xpath="@id" />
+ </xs:key>
+ 
+ <xs:keyref name="wykonawcaKeyRef" refer="wykonawcaKey">
+  <xs:selector xpath="lista_piosenek/piosenka" />
+  <xs:field xpath="@wykonawca" />
+ </xs:keyref>
+</xs:element>
+</xs:schema>
