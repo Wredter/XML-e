@@ -2,19 +2,53 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.gui.Controller">
-   <center>
-      <Button mnemonicParsing="false" text="Button" BorderPane.alignment="CENTER" />
-   </center>
-   <left>
-      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-         <children>
-            <ListView fx:id="listaPlaylist" onMouseClicked="#selectPlaylista" prefHeight="200.0" prefWidth="200.0" />
-            <ListView fx:id="listaPiosenek" prefHeight="200.0" prefWidth="200.0" />
-         </children>
-      </HBox>
-   </left>
-</BorderPane>
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.gui.Controller">
+  <tabs>
+    <Tab text="Piosenki">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+                     <center>
+                        <Button mnemonicParsing="false" text="Button" BorderPane.alignment="CENTER" />
+                     </center>
+                     <left>
+                        <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <ListView fx:id="listaPlaylist" onMouseClicked="#selectPlaylista" prefHeight="200.0" prefWidth="200.0" />
+                              <ListView fx:id="listaPiosenek" prefHeight="200.0" prefWidth="200.0" />
+                           </children>
+                        </HBox>
+                     </left>
+                  </BorderPane>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Wykonawcy">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+                     <center>
+                        <Button mnemonicParsing="false" text="Button" BorderPane.alignment="CENTER" />
+                     </center>
+                     <left>
+                        <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <ListView fx:id="listaWykonawcow" onMouseClicked="#selectWykonawca" prefHeight="200.0" prefWidth="200.0" />
+                              <ListView fx:id="listaArtystow" prefHeight="200.0" prefWidth="200.0" />
+                           </children>
+                        </HBox>
+                     </left>
+                  </BorderPane>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
