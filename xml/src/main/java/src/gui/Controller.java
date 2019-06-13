@@ -29,6 +29,8 @@ public class Controller implements Initializable {
     @FXML
     public ListView<String> listaPiosenek = new ListView<>();
     @FXML
+    public ListView<String> listaPiosenekRef = new ListView<>();
+    @FXML
     public ListView<String> listaGatunkow = new ListView<>();
     @FXML
     public ListView<String> listaWykonawcow = new ListView<>(); //lista wykonawcow - artysta
@@ -135,22 +137,6 @@ public class Controller implements Initializable {
         listaArtystow.setItems(FXCollections.observableArrayList(artysci));
     }
 
-
-//    @FXML
-//    public TextField tytulPiosenki = new TextField();
-//    @FXML
-//    public TextField czasPiosenki = new TextField();
-//    @FXML
-//    public TextField albumPiosenki = new TextField();
-//    @FXML
-//    public TextField rokPiosenki = new TextField();
-//    @FXML
-//    public ComboBox nastrojPiosenki = new ComboBox();
-//    @FXML
-//    public ComboBox wykonawcaPiosenki = new ComboBox();
-//    @FXML
-//    public ComboBox gatunekPiosenki = new ComboBox();
-
     public void refreshPiosenka(int piosenkaId) {
         PiosenkaType p = (PiosenkaType) root.getListaPiosenek().getPiosenka().stream().filter(x -> x.getTytul().equals(listaPiosenek.getSelectionModel().getSelectedItem())).toArray()[0];
         tytulPiosenki.setText(p.getTytul());
@@ -175,7 +161,7 @@ public class Controller implements Initializable {
     }
 
     public void selectPiosenka() {
-        WykonawcaType p = (WykonawcaType)root.getListaWykonawcow().getWykonawca().stream().filter(x -> x.getId().equals(listaWykonawcow.getSelectionModel().getSelectedItem())).toArray()[0];
+        PiosenkaType p = (PiosenkaType)root.getListaPiosenek().getPiosenka().stream().filter(x -> x.getTytul().equals(listaPiosenek.getSelectionModel().getSelectedItem())).toArray()[0];
         int id = root.getListaWykonawcow().getWykonawca().indexOf(p);
         refreshListaArtystow(id);
     }
