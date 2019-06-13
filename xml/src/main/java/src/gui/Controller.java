@@ -111,11 +111,20 @@ public class Controller implements Initializable {
         listaPlaylist.setItems(FXCollections.observableArrayList(playlisty));
     }
 
-    public void refreshListaPiosenek(int playlistaId) {
+    public void refreshListaPiosenekRef(int playlistaId) {
         ArrayList<String> piosenki = new ArrayList<>();
         piosenki.add("");
         for (PiosenkaReferenceType p : root.getPlajlista().get(playlistaId).getPiosenkaRef()) {
             piosenki.add(p.getTytulRef());
+        }
+        listaPiosenekRef.setItems(FXCollections.observableArrayList(piosenki));
+    }
+
+    public void refreshListaPiosenek() {
+        ArrayList<String> piosenki = new ArrayList<>();
+        piosenki.add("");
+        for (PiosenkaType p : root.getListaPiosenek().getPiosenka()) {
+            piosenki.add(p.getTytul());
         }
         listaPiosenek.setItems(FXCollections.observableArrayList(piosenki));
     }
@@ -152,7 +161,7 @@ public class Controller implements Initializable {
     public void selectPlaylista() {
         PlajlistaType p = (PlajlistaType)root.getPlajlista().stream().filter(x -> x.getNazwa().equals(listaPlaylist.getSelectionModel().getSelectedItem())).toArray()[0];
         int id = root.getPlajlista().indexOf(p);
-        refreshListaPiosenek(id);
+        refreshListaPiosenekRef(id);
     }
 
     public void selectWykonawca() {
@@ -164,7 +173,7 @@ public class Controller implements Initializable {
     public void selectPiosenka() {
         PiosenkaType p = (PiosenkaType)root.getListaPiosenek().getPiosenka().stream().filter(x -> x.getTytul().equals(listaPiosenek.getSelectionModel().getSelectedItem())).toArray()[0];
         int id = root.getListaWykonawcow().getWykonawca().indexOf(p);
-        refreshListaArtystow(id);
+        refreshPiosenka(id);
     }
 
 
