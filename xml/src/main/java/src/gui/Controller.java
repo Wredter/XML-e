@@ -105,6 +105,9 @@ public class Controller implements Initializable {
         refreshNastroj();
     }
 
+
+
+
     ArrayList<String> nastroje = new ArrayList<>();
     public void refreshNastroj() {
         nastroje.add("smutna");
@@ -191,6 +194,7 @@ public class Controller implements Initializable {
     public void selectWykonawca() {
         WykonawcaType p = (WykonawcaType)root.getListaWykonawcow().getWykonawca().stream().filter(x -> x.getId().equals(listaWykonawcow.getSelectionModel().getSelectedItem())).toArray()[0];
         int id = root.getListaWykonawcow().getWykonawca().indexOf(p);
+        nazwaWykonawcy.setText(p.getNazwa());
         refreshListaArtystow(id);
     }
 
@@ -277,6 +281,26 @@ public class Controller implements Initializable {
         pl.setNazwa(nazwaPlaylisty.getText());
         refreshListaPlaylist();
     }
+
+    public void clickDodajWykonawce() {
+        WykonawcaType p = new WykonawcaType();
+        p.setNazwa(nazwaWykonawcy.getText());
+        root.getListaWykonawcow().getWykonawca().add(p);
+        refreshListaWykonawcow();
+    }
+
+    public void clickUsunWykonawce() {
+        WykonawcaType pl = (WykonawcaType)root.getListaWykonawcow().getWykonawca().stream().filter(x -> x.getId().equals(listaWykonawcow.getSelectionModel().getSelectedItem())).toArray()[0];
+        root.getListaWykonawcow().getWykonawca().remove(pl);
+        refreshListaWykonawcow();
+    }
+
+    public void clickUpdateWykonawce() {
+        WykonawcaType p = (WykonawcaType)root.getListaWykonawcow().getWykonawca().stream().filter(x -> x.getId().equals(listaWykonawcow.getSelectionModel().getSelectedItem())).toArray()[0];
+        p.setNazwa(nazwaWykonawcy.getText());
+        refreshListaWykonawcow();
+    }
+
 
 
     private void saveXMLFile() {
