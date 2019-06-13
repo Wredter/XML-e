@@ -45,13 +45,16 @@
                      <right>
                         <VBox BorderPane.alignment="CENTER">
                            <children>
-                              <TextField promptText="tytuł" />
-                              <TextField promptText="czas" />
-                              <TextField promptText="album" />
-                              <TextField promptText="rok wydania" />
-                              <ComboBox prefWidth="150.0" promptText="wybierz wykonawce" />
-                              <ComboBox prefWidth="150.0" promptText="wybierz gatunek" />
-                              <ComboBox prefWidth="150.0" promptText="wybierz nastrój" />
+                              <TextField fx:id="tytulPiosenki" promptText="tytuł" />
+                              <TextField fx:id="czasPiosenki" promptText="czas" />
+                              <TextField fx:id="albumPiosenki" promptText="album" />
+                              <TextField fx:id="rokPiosenki" promptText="rok wydania" />
+                              <ComboBox fx:id="wykonawcaPiosenki" prefWidth="150.0" promptText="wybierz wykonawce" />
+                              <ComboBox fx:id="gatunekPiosenki" prefWidth="150.0" promptText="wybierz gatunek" />
+                              <ComboBox fx:id="nastrojPiosenki" prefWidth="150.0" promptText="wybierz nastrój" />
+                              <Button mnemonicParsing="false" text="Dodaj Piosenke" />
+                              <Button mnemonicParsing="false" text="Usuń piosenke" />
+                              <Button mnemonicParsing="false" text="Modyfikuj piosenke" />
                            </children>
                         </VBox>
                      </right>
