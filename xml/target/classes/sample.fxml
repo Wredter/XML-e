@@ -5,6 +5,7 @@
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
@@ -20,7 +21,15 @@
                      <left>
                         <HBox BorderPane.alignment="CENTER_LEFT">
                            <children>
-                              <ListView fx:id="listaPlaylist" onMouseClicked="#selectPlaylista" HBox.hgrow="ALWAYS" />
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <ListView fx:id="listaPlaylist" onMouseClicked="#selectPlaylista" />
+                                    <TextField fx:id="nazwaPlaylisty" promptText="Nazwa Playlisty" />
+                                    <Button mnemonicParsing="false" text="Dodaj" onMouseClicked="#clickDodajPlayliste"/>
+                                    <Button mnemonicParsing="false" text="Usuń" onMouseClicked="#clickUsunPlayliste"/>
+                                    <Button mnemonicParsing="false" text="modyfikuj" onMouseClicked="#clickUpdatePlayliste"/>
+                                 </children>
+                              </VBox>
                               <ListView fx:id="listaPiosenekRef" HBox.hgrow="ALWAYS" />
                               <VBox>
                                  <children>
@@ -29,10 +38,21 @@
                                     <Button mnemonicParsing="false" text="Usuń piosenke z playlisty" />
                                  </children>
                               </VBox>
-                              <ListView fx:id="listaPiosenek" HBox.hgrow="ALWAYS" onMouseClicked="#selectPiosenka"/>
+                              <ListView fx:id="listaPiosenek" onMouseClicked="#selectPiosenka" HBox.hgrow="ALWAYS" />
                            </children>
                         </HBox>
                      </left>
+                     <right>
+                        <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <TextField />
+                              <TextField />
+                              <TextField />
+                              <TextField />
+                              <TextField />
+                           </children>
+                        </VBox>
+                     </right>
                   </BorderPane>
                </children></AnchorPane>
       </content>
