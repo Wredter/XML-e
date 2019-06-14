@@ -103,8 +103,8 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/src/gui/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="331" column="31" lean-forward="true" selection-start-line="331" selection-start-column="31" selection-end-line="331" selection-end-column="31" />
+            <state relative-caret-position="223">
+              <caret line="299" column="39" lean-forward="false" selection-start-line="299" selection-start-column="39" selection-end-line="299" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#refreshNastroj#0;class#Controller#0" expanded="false" />
@@ -116,10 +116,11 @@
                 <element signature="method#refreshListaArtystow#0;class#Controller#0" expanded="false" />
                 <element signature="method#refreshPiosenka#0;class#Controller#0" expanded="false" />
                 <element signature="method#selectPlaylista#0;class#Controller#0" expanded="false" />
-                <element signature="method#selectWykonawca#0;class#Controller#0" expanded="false" />
                 <element signature="method#selectPiosenkaRef#0;class#Controller#0" expanded="false" />
+                <element signature="method#clickUsunPiosenkeZPlaylisty#0;class#Controller#0" expanded="false" />
                 <element signature="method#clickUsunPiosenke#0;class#Controller#0" expanded="false" />
                 <element signature="method#clickDodajPiosenke#0;class#Controller#0" expanded="false" />
+                <element signature="method#clickUpdatePiosenke#0;class#Controller#0" expanded="false" />
                 <element signature="method#clickDodajPiosenkeDoPlaylisty#0;class#Controller#0" expanded="false" />
                 <element signature="method#clickDodajPlayliste#0;class#Controller#0" expanded="false" />
                 <element signature="method#clickUsunPlayliste#0;class#Controller#0" expanded="false" />
@@ -127,6 +128,9 @@
                 <element signature="method#clickDodajWykonawce#0;class#Controller#0" expanded="false" />
                 <element signature="method#clickUsunWykonawce#0;class#Controller#0" expanded="false" />
                 <element signature="method#clickUpdateWykonawce#0;class#Controller#0" expanded="false" />
+                <element signature="method#clickDodajArtyste#0;class#Controller#0" expanded="false" />
+                <element signature="method#clickUsunArtyste#0;class#Controller#0" expanded="false" />
+                <element signature="method#clickUpdateArtyste#0;class#Controller#0" expanded="false" />
                 <element signature="method#saveXMLFile#0;class#Controller#0" expanded="false" />
                 <element signature="method#openDifferentXMLFile#0;class#Controller#0" expanded="false" />
               </folding>
@@ -767,10 +771,11 @@
             <element signature="method#refreshListaArtystow#0;class#Controller#0" expanded="false" />
             <element signature="method#refreshPiosenka#0;class#Controller#0" expanded="false" />
             <element signature="method#selectPlaylista#0;class#Controller#0" expanded="false" />
-            <element signature="method#selectWykonawca#0;class#Controller#0" expanded="false" />
             <element signature="method#selectPiosenkaRef#0;class#Controller#0" expanded="false" />
+            <element signature="method#clickUsunPiosenkeZPlaylisty#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUsunPiosenke#0;class#Controller#0" expanded="false" />
             <element signature="method#clickDodajPiosenke#0;class#Controller#0" expanded="false" />
+            <element signature="method#clickUpdatePiosenke#0;class#Controller#0" expanded="false" />
             <element signature="method#clickDodajPiosenkeDoPlaylisty#0;class#Controller#0" expanded="false" />
             <element signature="method#clickDodajPlayliste#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUsunPlayliste#0;class#Controller#0" expanded="false" />
@@ -778,6 +783,9 @@
             <element signature="method#clickDodajWykonawce#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUsunWykonawce#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUpdateWykonawce#0;class#Controller#0" expanded="false" />
+            <element signature="method#clickDodajArtyste#0;class#Controller#0" expanded="false" />
+            <element signature="method#clickUsunArtyste#0;class#Controller#0" expanded="false" />
+            <element signature="method#clickUpdateArtyste#0;class#Controller#0" expanded="false" />
             <element signature="method#saveXMLFile#0;class#Controller#0" expanded="false" />
             <element signature="method#openDifferentXMLFile#0;class#Controller#0" expanded="false" />
           </folding>
@@ -945,10 +953,11 @@
             <element signature="method#refreshListaArtystow#0;class#Controller#0" expanded="false" />
             <element signature="method#refreshPiosenka#0;class#Controller#0" expanded="false" />
             <element signature="method#selectPlaylista#0;class#Controller#0" expanded="false" />
-            <element signature="method#selectWykonawca#0;class#Controller#0" expanded="false" />
             <element signature="method#selectPiosenkaRef#0;class#Controller#0" expanded="false" />
+            <element signature="method#clickUsunPiosenkeZPlaylisty#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUsunPiosenke#0;class#Controller#0" expanded="false" />
             <element signature="method#clickDodajPiosenke#0;class#Controller#0" expanded="false" />
+            <element signature="method#clickUpdatePiosenke#0;class#Controller#0" expanded="false" />
             <element signature="method#clickDodajPiosenkeDoPlaylisty#0;class#Controller#0" expanded="false" />
             <element signature="method#clickDodajPlayliste#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUsunPlayliste#0;class#Controller#0" expanded="false" />
@@ -956,6 +965,9 @@
             <element signature="method#clickDodajWykonawce#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUsunWykonawce#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUpdateWykonawce#0;class#Controller#0" expanded="false" />
+            <element signature="method#clickDodajArtyste#0;class#Controller#0" expanded="false" />
+            <element signature="method#clickUsunArtyste#0;class#Controller#0" expanded="false" />
+            <element signature="method#clickUpdateArtyste#0;class#Controller#0" expanded="false" />
             <element signature="method#saveXMLFile#0;class#Controller#0" expanded="false" />
             <element signature="method#openDifferentXMLFile#0;class#Controller#0" expanded="false" />
           </folding>
@@ -1177,8 +1189,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/src/gui/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="331" column="31" lean-forward="true" selection-start-line="331" selection-start-column="31" selection-end-line="331" selection-end-column="31" />
+        <state relative-caret-position="223">
+          <caret line="299" column="39" lean-forward="false" selection-start-line="299" selection-start-column="39" selection-end-line="299" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#refreshNastroj#0;class#Controller#0" expanded="false" />
@@ -1190,10 +1202,11 @@
             <element signature="method#refreshListaArtystow#0;class#Controller#0" expanded="false" />
             <element signature="method#refreshPiosenka#0;class#Controller#0" expanded="false" />
             <element signature="method#selectPlaylista#0;class#Controller#0" expanded="false" />
-            <element signature="method#selectWykonawca#0;class#Controller#0" expanded="false" />
             <element signature="method#selectPiosenkaRef#0;class#Controller#0" expanded="false" />
+            <element signature="method#clickUsunPiosenkeZPlaylisty#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUsunPiosenke#0;class#Controller#0" expanded="false" />
             <element signature="method#clickDodajPiosenke#0;class#Controller#0" expanded="false" />
+            <element signature="method#clickUpdatePiosenke#0;class#Controller#0" expanded="false" />
             <element signature="method#clickDodajPiosenkeDoPlaylisty#0;class#Controller#0" expanded="false" />
             <element signature="method#clickDodajPlayliste#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUsunPlayliste#0;class#Controller#0" expanded="false" />
@@ -1201,6 +1214,9 @@
             <element signature="method#clickDodajWykonawce#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUsunWykonawce#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUpdateWykonawce#0;class#Controller#0" expanded="false" />
+            <element signature="method#clickDodajArtyste#0;class#Controller#0" expanded="false" />
+            <element signature="method#clickUsunArtyste#0;class#Controller#0" expanded="false" />
+            <element signature="method#clickUpdateArtyste#0;class#Controller#0" expanded="false" />
             <element signature="method#saveXMLFile#0;class#Controller#0" expanded="false" />
             <element signature="method#openDifferentXMLFile#0;class#Controller#0" expanded="false" />
           </folding>

@@ -195,6 +195,7 @@ public class Controller implements Initializable {
         WykonawcaType p = (WykonawcaType)root.getListaWykonawcow().getWykonawca().stream().filter(x -> x.getId().equals(listaWykonawcow.getSelectionModel().getSelectedItem())).toArray()[0];
         int id = root.getListaWykonawcow().getWykonawca().indexOf(p);
         nazwaWykonawcy.setText(p.getNazwa());
+        id_wykonawcy.setText(p.getId());
         refreshListaArtystow(id);
     }
 
@@ -285,6 +286,7 @@ public class Controller implements Initializable {
     public void clickDodajWykonawce() {
         WykonawcaType p = new WykonawcaType();
         p.setNazwa(nazwaWykonawcy.getText());
+        p.setId(id_wykonawcy.getText());
         root.getListaWykonawcow().getWykonawca().add(p);
         refreshListaWykonawcow();
     }
@@ -298,6 +300,7 @@ public class Controller implements Initializable {
     public void clickUpdateWykonawce() {
         WykonawcaType p = (WykonawcaType)root.getListaWykonawcow().getWykonawca().stream().filter(x -> x.getId().equals(listaWykonawcow.getSelectionModel().getSelectedItem())).toArray()[0];
         p.setNazwa(nazwaWykonawcy.getText());
+        p.setId(id_wykonawcy.getText());
         refreshListaWykonawcow();
     }
 
