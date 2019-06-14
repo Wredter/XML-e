@@ -82,7 +82,7 @@
                               </VBox>
                               <VBox>
                                  <children>
-                                    <ListView fx:id="listaArtystow" />
+                                    <ListView fx:id="listaArtystow" onMouseClicked="#selectArtysta"/>
                                     <TextField fx:id="imieArtysty" promptText="Wpisz imię artysty" />
                                     <TextField fx:id="nazwiskoArtysty" promptText="Wpisz Nazwisko artysty" />
                                     <TextField fx:id="pseudoArtysty" promptText="Wpisz pseudonim wykonawcy" />
