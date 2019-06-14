@@ -73,15 +73,22 @@
                               <VBox>
                                  <children>
                                     <ListView fx:id="listaWykonawcow" onMouseClicked="#selectWykonawca" />
-                                    <TextField />
-                                    <Button mnemonicParsing="false" text="Dodaj wykonawce" />
-                                    <Button mnemonicParsing="false" text="Usuń wykonawce" />
-                                    <Button mnemonicParsing="false" text="Modyfikuj wykonawce" />
+                                    <TextField fx:id="id_wykonawcy" promptText="Wpisz ID wykonawcy" />
+                                    <TextField fx:id="nazwaWykonawcy" promptText="Wpisz Nazwę wykonawcy" />
+                                    <Button mnemonicParsing="false" onMouseClicked="#clickDodajWykonawce" text="Dodaj wykonawce" />
+                                    <Button mnemonicParsing="false" onMouseClicked="#clickUsunWykonawce" text="Usuń wykonawce" />
+                                    <Button mnemonicParsing="false" onMouseClicked="#clickUpdateWykonawce" text="Modyfikuj wykonawce" />
                                  </children>
                               </VBox>
                               <VBox>
                                  <children>
                                     <ListView fx:id="listaArtystow" />
+                                    <TextField fx:id="imieArtysty" promptText="Wpisz imię artysty" />
+                                    <TextField fx:id="nazwiskoArtysty" promptText="Wpisz Nazwisko artysty" />
+                                    <TextField fx:id="pseudoArtysty" promptText="Wpisz pseudonim wykonawcy" />
+                                    <Button mnemonicParsing="false" text="Dodaj Artystę" />
+                                    <Button mnemonicParsing="false" text="Usuń Artystę" />
+                                    <Button mnemonicParsing="false" text="Modyfikuj Artystę" />
                                  </children>
                               </VBox>
                            </children>
