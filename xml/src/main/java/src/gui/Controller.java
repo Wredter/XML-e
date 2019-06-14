@@ -23,6 +23,11 @@ import java.time.LocalDate;
 import java.util.*;
 
 public class Controller implements Initializable {
+    //file
+    @FXML
+    public TextField export = new TextField();
+
+
     //listy
     @FXML
     public ListView<String> listaPlaylist = new ListView<>(); //lista playlist - piosenka
@@ -83,9 +88,6 @@ public class Controller implements Initializable {
     @FXML
     public TextField nazwaWykonawcy = new TextField();
 
-    @FXML
-    public TextField path_read = new TextField();
-
     private static RootType root = XMLOperations.root;
 
     @Override
@@ -120,7 +122,7 @@ public class Controller implements Initializable {
     public void refreshListaGatunkow() {
         ArrayList<String> gatunki = new ArrayList<>();
         for (GatunekType gatunek : root.getListaGatunkow().getGatunek()) {
-            gatunki.add(gatunek.getValue());
+            gatunki.add(gatunek.getId());
         }
         gatunekPiosenki.setItems(FXCollections.observableArrayList(gatunki));
         listaGatunkow.setItems(FXCollections.observableArrayList(gatunki));
@@ -369,7 +371,6 @@ public class Controller implements Initializable {
         GatunekType p = (GatunekType)root.getListaGatunkow().getGatunek().stream().filter(x -> x.getId().equals(listaGatunkow.getSelectionModel().getSelectedItem())).toArray()[0];
         p.setId(id_gatunek.getText());
         p.setValue(nazwaGatunek.getText());
-        root.getListaGatunkow().getGatunek().add(p);
         refreshListaGatunkow();
     }
 
@@ -377,14 +378,13 @@ public class Controller implements Initializable {
 
     private void saveXMLFile() {
         try {
-            XMLOperations.saveToXML("burgerownia");
+            XMLOperations.saveToXML("playlisty");
         } catch (JAXBException e) {
             e.printStackTrace();
         }
     }
 
-    public void openDifferentXMLFile() {
-        String name = path_read.getText();
+    public void openDifferentXMLFile(String name) {
         XMLOperations.setXmlFilePath(name);
         try {
             XMLOperations.readFromXML();
@@ -393,8 +393,8 @@ public class Controller implements Initializable {
         }
     }
 
-    private void transformToXHTML(String path) {
-        XMLOperations.transformXML(path);
+    private void transformToXHTML() {
+        XMLOperations.transformXML(export.getText());
     }
 
 
