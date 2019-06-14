@@ -88,7 +88,7 @@
                                     <TextField fx:id="pseudoArtysty" promptText="Wpisz pseudonim wykonawcy" />
                                     <Button mnemonicParsing="false" text="Dodaj Artystę" onMouseClicked="#clickDodajArtyste"/>
                                     <Button mnemonicParsing="false" text="Usuń Artystę" onMouseClicked="#clickUsunArtyste"/>
-                                    <Button mnemonicParsing="false" text="Modyfikuj Artystę" onMouseClicked="#clickUpdateGatunek"/>
+                                    <Button mnemonicParsing="false" text="Modyfikuj Artystę" onMouseClicked="#clickUpdateArtyste"/>
                                  </children>
                               </VBox>
                            </children>
