@@ -376,7 +376,7 @@ public class Controller implements Initializable {
 
 
 
-    private void saveXMLFile() {
+    public void saveXMLFile() {
         try {
             XMLOperations.saveToXML("playlisty");
         } catch (JAXBException e) {
@@ -393,7 +393,7 @@ public class Controller implements Initializable {
         }
     }
 
-    private void transformToXHTML() {
+    public void transformToXHTML() {
         XMLOperations.transformXML(export.getText());
     }
 
