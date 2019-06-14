@@ -220,6 +220,13 @@ public class Controller implements Initializable {
         pseudoArtysty.setText(p.getPseudo());
     }
 
+    public void selectGatunek() {
+        GatunekType p = (GatunekType)root.getListaGatunkow().getGatunek().stream().filter(x -> x.getId().equals(listaGatunkow.getSelectionModel().getSelectedItem())).toArray()[0];
+        id_gatunek.setText(p.getId());
+        nazwaGatunek.setText(p.getValue());
+        refreshListaGatunkow();
+    }
+
 
 
 
