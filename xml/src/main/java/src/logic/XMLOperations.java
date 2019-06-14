@@ -62,8 +62,8 @@ public class XMLOperations {
         root = (RootType) unmarshaller.unmarshal(new FileInputStream(new File(xmlFilePath)));
     }
 
-    public static void transformXML(String transformedName) {
-        String[] arglist1 = {"-o:raport.xml", xmlFilePath, "plajlisty-helper.xsl"};
+    public static void transformXML(String transformedName, String xml) {
+        String[] arglist1 = {"-o:raport.xml", xml + ".xml", "plajlisty-helper.xsl"};
         Transform.main(arglist1);
         String[] arglist2 = {"-o:" + transformedName + ".xhtml", "raport.xml", "plajlisty.xsl"};
         Transform.main(arglist2);

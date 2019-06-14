@@ -10,15 +10,15 @@ import javax.xml.bind.JAXBException;
  */
 public class Main {
     private static RootType root = XMLOperations.root;
-    public static void main(String[] args) {
-        try {
-            XMLOperations.readFromXML();
-            XMLOperations.saveToXML("elo");
-            XMLOperations.transformXML("elohtml");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        root = XMLOperations.root;
-        System.out.println(root.getListaGatunkow().getGatunek().get(0).getValue());
-    }
+//    public static void main(String[] args) {
+//        try {
+//            XMLOperations.readFromXML();
+//            XMLOperations.saveToXML("elo");
+//            XMLOperations.transformXML("elohtml", "elo");
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//        root = XMLOperations.root;
+//        System.out.println(root.getListaGatunkow().getGatunek().get(0).getValue());
+//    }
 }

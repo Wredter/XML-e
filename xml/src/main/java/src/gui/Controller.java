@@ -403,7 +403,7 @@ public class Controller implements Initializable {
     }
 
     public void transformToXHTML() {
-        XMLOperations.transformXML(export.getText());
+        XMLOperations.transformXML(export.getText(), save.getText());
     }
 
 

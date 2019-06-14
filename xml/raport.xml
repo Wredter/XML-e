@@ -11,82 +11,36 @@
          <nazwisko>Mosieński</nazwisko>
          <nrIndeksu>210280</nrIndeksu>
       </autor>
-      <Datamodyfikacji>13/06/2019,20:51</Datamodyfikacji>
+      <Datamodyfikacji>14/06/2019,03:22</Datamodyfikacji>
    </Dane>
    <biblioteka>
-      <liczbaWykonawcow>2</liczbaWykonawcow>
+      <liczbaWykonawcow>3</liczbaWykonawcow>
       <liczbaArtystow>7</liczbaArtystow>
-      <liczbaPiosenek>21</liczbaPiosenek>
-      <liczbaPiosenekSmutnych>10</liczbaPiosenekSmutnych>
+      <liczbaPiosenek>23</liczbaPiosenek>
+      <liczbaPiosenekSmutnych>9</liczbaPiosenekSmutnych>
       <liczbaPiosenekWesolych>5</liczbaPiosenekWesolych>
-      <liczbaPiosenekMieszanych>2</liczbaPiosenekMieszanych>
-      <liczbaPiosenekNiezidentyfikowanych>4</liczbaPiosenekNiezidentyfikowanych>
+      <liczbaPiosenekMieszanych>4</liczbaPiosenekMieszanych>
+      <liczbaPiosenekNiezidentyfikowanych>5</liczbaPiosenekNiezidentyfikowanych>
    </biblioteka>
    <plajlista>
-      <liczbaPiosenek>11</liczbaPiosenek>
-      <nazwa>Guns'i A4D</nazwa>
-      <piosenka>
-         <Tytul>It's So Easy</Tytul>
-         <artyści>Steven Adler,
-								Soul Hudson,
-								Duff McKagan,
-								Axl Rose,
-								Izzy Stradlin,
-								</artyści>
-         <gatunek>Rock</gatunek>
-         <nastroj>wesola</nastroj>
-         <rokWydania>1987</rokWydania>
-         <album>Appetite for Destruction</album>
-         <czasTrwania>3:23</czasTrwania>
-      </piosenka>
-      <piosenka>
-         <Tytul>Nighttrain</Tytul>
-         <artyści>Steven Adler,
-								Soul Hudson,
-								Duff McKagan,
-								Axl Rose,
-								Izzy Stradlin,
-								</artyści>
-         <gatunek>Rock</gatunek>
-         <nastroj>smutna</nastroj>
-         <rokWydania>1987</rokWydania>
-         <album>Appetite for Destruction</album>
-         <czasTrwania>4:29</czasTrwania>
-      </piosenka>
+      <liczbaPiosenek>8</liczbaPiosenek>
+      <nazwa>Guns'i A4Dddddddd</nazwa>
       <piosenka>
          <Tytul>Out Ta Get Me</Tytul>
-         <artyści>Steven Adler,
-								Soul Hudson,
-								Duff McKagan,
-								Axl Rose,
+         <artyści>Souldd Hudsondd,
+								Axldd Rosedd,
 								Izzy Stradlin,
 								</artyści>
          <gatunek>Rock</gatunek>
          <nastroj>mieszana</nastroj>
-         <rokWydania>1987</rokWydania>
+         <rokWydania>1233</rokWydania>
          <album>Appetite for Destruction</album>
          <czasTrwania>4:25</czasTrwania>
       </piosenka>
       <piosenka>
-         <Tytul>Mr. Brownstone</Tytul>
-         <artyści>Steven Adler,
-								Soul Hudson,
-								Duff McKagan,
-								Axl Rose,
-								Izzy Stradlin,
-								</artyści>
-         <gatunek>Rock</gatunek>
-         <nastroj>smutna</nastroj>
-         <rokWydania>1987</rokWydania>
-         <album>Appetite for Destruction</album>
-         <czasTrwania>3:49</czasTrwania>
-      </piosenka>
-      <piosenka>
          <Tytul>Paradise City</Tytul>
-         <artyści>Steven Adler,
-								Soul Hudson,
-								Duff McKagan,
-								Axl Rose,
+         <artyści>Souldd Hudsondd,
+								Axldd Rosedd,
 								Izzy Stradlin,
 								</artyści>
          <gatunek>Rock</gatunek>
@@ -97,10 +51,8 @@
       </piosenka>
       <piosenka>
          <Tytul>My Michelle</Tytul>
-         <artyści>Steven Adler,
-								Soul Hudson,
-								Duff McKagan,
-								Axl Rose,
+         <artyści>Souldd Hudsondd,
+								Axldd Rosedd,
 								Izzy Stradlin,
 								</artyści>
          <gatunek>Rock</gatunek>
@@ -111,10 +63,8 @@
       </piosenka>
       <piosenka>
          <Tytul>Think About You</Tytul>
-         <artyści>Steven Adler,
-								Soul Hudson,
-								Duff McKagan,
-								Axl Rose,
+         <artyści>Souldd Hudsondd,
+								Axldd Rosedd,
 								Izzy Stradlin,
 								</artyści>
          <gatunek>Rock</gatunek>
@@ -125,10 +75,8 @@
       </piosenka>
       <piosenka>
          <Tytul>Sweet Child O' Mine</Tytul>
-         <artyści>Steven Adler,
-								Soul Hudson,
-								Duff McKagan,
-								Axl Rose,
+         <artyści>Souldd Hudsondd,
+								Axldd Rosedd,
 								Izzy Stradlin,
 								</artyści>
          <gatunek>Rock</gatunek>
@@ -139,10 +87,8 @@
       </piosenka>
       <piosenka>
          <Tytul>You're Crazy</Tytul>
-         <artyści>Steven Adler,
-								Soul Hudson,
-								Duff McKagan,
-								Axl Rose,
+         <artyści>Souldd Hudsondd,
+								Axldd Rosedd,
 								Izzy Stradlin,
 								</artyści>
          <gatunek>Rock</gatunek>
@@ -153,10 +99,8 @@
       </piosenka>
       <piosenka>
          <Tytul>Anything Goes</Tytul>
-         <artyści>Steven Adler,
-								Soul Hudson,
-								Duff McKagan,
-								Axl Rose,
+         <artyści>Souldd Hudsondd,
+								Axldd Rosedd,
 								Izzy Stradlin,
 								</artyści>
          <gatunek>Rock</gatunek>
@@ -167,10 +111,8 @@
       </piosenka>
       <piosenka>
          <Tytul>Rocet Queen</Tytul>
-         <artyści>Steven Adler,
-								Soul Hudson,
-								Duff McKagan,
-								Axl Rose,
+         <artyści>Souldd Hudsondd,
+								Axldd Rosedd,
 								Izzy Stradlin,
 								</artyści>
          <gatunek>Rock</gatunek>
@@ -292,6 +234,140 @@
          <rokWydania>1986</rokWydania>
          <album>Ready for Romance</album>
          <czasTrwania>3:35</czasTrwania>
+      </piosenka>
+   </plajlista>
+   <plajlista>
+      <liczbaPiosenek>11</liczbaPiosenek>
+      <nazwa>elo</nazwa>
+      <piosenka>
+         <Tytul>Out Ta Get Me</Tytul>
+         <artyści>Souldd Hudsondd,
+								Axldd Rosedd,
+								Izzy Stradlin,
+								</artyści>
+         <gatunek>Rock</gatunek>
+         <nastroj>mieszana</nastroj>
+         <rokWydania>1233</rokWydania>
+         <album>Appetite for Destruction</album>
+         <czasTrwania>4:25</czasTrwania>
+      </piosenka>
+      <piosenka>
+         <Tytul>Out Ta Get Me</Tytul>
+         <artyści>Souldd Hudsondd,
+								Axldd Rosedd,
+								Izzy Stradlin,
+								</artyści>
+         <gatunek>Rock</gatunek>
+         <nastroj>mieszana</nastroj>
+         <rokWydania>1233</rokWydania>
+         <album>Appetite for Destruction</album>
+         <czasTrwania>4:25</czasTrwania>
+      </piosenka>
+      <piosenka>
+         <Tytul>Out Ta Get Me</Tytul>
+         <artyści>Souldd Hudsondd,
+								Axldd Rosedd,
+								Izzy Stradlin,
+								</artyści>
+         <gatunek>Rock</gatunek>
+         <nastroj>mieszana</nastroj>
+         <rokWydania>1233</rokWydania>
+         <album>Appetite for Destruction</album>
+         <czasTrwania>4:25</czasTrwania>
+      </piosenka>
+      <piosenka>
+         <Tytul>Out Ta Get Me</Tytul>
+         <artyści>Souldd Hudsondd,
+								Axldd Rosedd,
+								Izzy Stradlin,
+								</artyści>
+         <gatunek>Rock</gatunek>
+         <nastroj>mieszana</nastroj>
+         <rokWydania>1233</rokWydania>
+         <album>Appetite for Destruction</album>
+         <czasTrwania>4:25</czasTrwania>
+      </piosenka>
+      <piosenka>
+         <Tytul>Out Ta Get Me</Tytul>
+         <artyści>Souldd Hudsondd,
+								Axldd Rosedd,
+								Izzy Stradlin,
+								</artyści>
+         <gatunek>Rock</gatunek>
+         <nastroj>mieszana</nastroj>
+         <rokWydania>1233</rokWydania>
+         <album>Appetite for Destruction</album>
+         <czasTrwania>4:25</czasTrwania>
+      </piosenka>
+      <piosenka>
+         <Tytul>Out Ta Get Me</Tytul>
+         <artyści>Souldd Hudsondd,
+								Axldd Rosedd,
+								Izzy Stradlin,
+								</artyści>
+         <gatunek>Rock</gatunek>
+         <nastroj>mieszana</nastroj>
+         <rokWydania>1233</rokWydania>
+         <album>Appetite for Destruction</album>
+         <czasTrwania>4:25</czasTrwania>
+      </piosenka>
+      <piosenka>
+         <Tytul>Out Ta Get Me</Tytul>
+         <artyści>Souldd Hudsondd,
+								Axldd Rosedd,
+								Izzy Stradlin,
+								</artyści>
+         <gatunek>Rock</gatunek>
+         <nastroj>mieszana</nastroj>
+         <rokWydania>1233</rokWydania>
+         <album>Appetite for Destruction</album>
+         <czasTrwania>4:25</czasTrwania>
+      </piosenka>
+      <piosenka>
+         <Tytul>Out Ta Get Me</Tytul>
+         <artyści>Souldd Hudsondd,
+								Axldd Rosedd,
+								Izzy Stradlin,
+								</artyści>
+         <gatunek>Rock</gatunek>
+         <nastroj>mieszana</nastroj>
+         <rokWydania>1233</rokWydania>
+         <album>Appetite for Destruction</album>
+         <czasTrwania>4:25</czasTrwania>
+      </piosenka>
+      <piosenka>
+         <Tytul>Out Ta Get Me</Tytul>
+         <artyści>Souldd Hudsondd,
+								Axldd Rosedd,
+								Izzy Stradlin,
+								</artyści>
+         <gatunek>Rock</gatunek>
+         <nastroj>mieszana</nastroj>
+         <rokWydania>1233</rokWydania>
+         <album>Appetite for Destruction</album>
+         <czasTrwania>4:25</czasTrwania>
+      </piosenka>
+      <piosenka>
+         <Tytul>asfdsafdsaf</Tytul>
+         <artyści>elo sd,
+								q1 w2,
+								</artyści>
+         <gatunek>ddddddd</gatunek>
+         <nastroj>mieszana</nastroj>
+         <rokWydania>1987</rokWydania>
+         <album>Appetite for Destructionddddddd</album>
+         <czasTrwania>4:29</czasTrwania>
+      </piosenka>
+      <piosenka>
+         <Tytul>asfdselo</Tytul>
+         <artyści>elo sd,
+								q1 w2,
+								</artyści>
+         <gatunek>ddddddd</gatunek>
+         <nastroj>niezidentyfikowana</nastroj>
+         <rokWydania>1987</rokWydania>
+         <album>Adasd</album>
+         <czasTrwania>4:29</czasTrwania>
       </piosenka>
    </plajlista>
 </zestawienie>
