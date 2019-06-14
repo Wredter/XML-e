@@ -103,6 +103,10 @@ public class Controller implements Initializable {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+        refresh();
+    }
+
+    public void refresh() {
         root = XMLOperations.root;
         refreshListaPlaylist();
         refreshListaWykonawcow();
@@ -395,6 +399,7 @@ public class Controller implements Initializable {
         } catch (JAXBException | FileNotFoundException e) {
             e.printStackTrace();
         }
+        refresh();
     }
 
     public void transformToXHTML() {
