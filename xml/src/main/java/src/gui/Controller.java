@@ -357,16 +357,17 @@ public class Controller implements Initializable {
     }
 
     public void clickUsunGatunek() {
-        GatunekType pl = (GatunekType)root.getListaWykonawcow().getWykonawca().stream().filter(x -> x.getId().equals(listaWykonawcow.getSelectionModel().getSelectedItem())).toArray()[0];
-        root.getListaWykonawcow().getWykonawca().remove(pl);
-        refreshListaWykonawcow();
+        GatunekType pl = (GatunekType)root.getListaGatunkow().getGatunek().stream().filter(x -> x.getId().equals(listaGatunkow.getSelectionModel().getSelectedItem())).toArray()[0];
+        root.getListaGatunkow().getGatunek().remove(pl);
+        refreshListaGatunkow();
     }
 
     public void clickUpdateGatunek() {
-        WykonawcaType p = (WykonawcaType)root.getListaWykonawcow().getWykonawca().stream().filter(x -> x.getId().equals(listaWykonawcow.getSelectionModel().getSelectedItem())).toArray()[0];
-        p.setNazwa(nazwaWykonawcy.getText());
-        p.setId(id_wykonawcy.getText());
-        refreshListaWykonawcow();
+        GatunekType p = (GatunekType)root.getListaGatunkow().getGatunek().stream().filter(x -> x.getId().equals(listaGatunkow.getSelectionModel().getSelectedItem())).toArray()[0];
+        p.setId(id_gatunek.getText());
+        p.setValue(nazwaGatunek.getText());
+        root.getListaGatunkow().getGatunek().add(p);
+        refreshListaGatunkow();
     }
 
 

@@ -52,9 +52,9 @@
                               <ComboBox fx:id="wykonawcaPiosenki" prefWidth="150.0" promptText="wybierz wykonawce" />
                               <ComboBox fx:id="gatunekPiosenki" prefWidth="150.0" promptText="wybierz gatunek" />
                               <ComboBox fx:id="nastrojPiosenki" prefWidth="150.0" promptText="wybierz nastrój" />
-                              <Button mnemonicParsing="false" text="Dodaj Piosenke" onMouseClicked="#clickDodajPiosenke"/>
-                              <Button mnemonicParsing="false" text="Usuń piosenke" onMouseClicked="#clickUsunPiosenke"/>
-                              <Button mnemonicParsing="false" text="Modyfikuj piosenke" onMouseClicked="#clickUpdatePiosenke"/>
+                              <Button mnemonicParsing="false" onMouseClicked="#clickDodajPiosenke" text="Dodaj Piosenke" />
+                              <Button mnemonicParsing="false" onMouseClicked="#clickUsunPiosenke" text="Usuń piosenke" />
+                              <Button mnemonicParsing="false" onMouseClicked="#clickUpdatePiosenke" text="Modyfikuj piosenke" />
                            </children>
                         </VBox>
                      </right>
@@ -70,8 +70,27 @@
                      <left>
                         <HBox BorderPane.alignment="CENTER">
                            <children>
-                              <ListView fx:id="listaWykonawcow" onMouseClicked="#selectWykonawca" />
-                              <ListView fx:id="listaArtystow" />
+                              <VBox>
+                                 <children>
+                                    <ListView fx:id="listaWykonawcow" onMouseClicked="#selectWykonawca" />
+                                    <TextField fx:id="id_wykonawcy" promptText="Wpisz ID wykonawcy" />
+                                    <TextField fx:id="nazwaWykonawcy" promptText="Wpisz Nazwę wykonawcy" />
+                                    <Button mnemonicParsing="false" onMouseClicked="#clickDodajWykonawce" text="Dodaj wykonawce" />
+                                    <Button mnemonicParsing="false" onMouseClicked="#clickUsunWykonawce" text="Usuń wykonawce" />
+                                    <Button mnemonicParsing="false" onMouseClicked="#clickUpdateWykonawce" text="Modyfikuj wykonawce" />
+                                 </children>
+                              </VBox>
+                              <VBox>
+                                 <children>
+                                    <ListView fx:id="listaArtystow" />
+                                    <TextField fx:id="imieArtysty" promptText="Wpisz imię artysty" />
+                                    <TextField fx:id="nazwiskoArtysty" promptText="Wpisz Nazwisko artysty" />
+                                    <TextField fx:id="pseudoArtysty" promptText="Wpisz pseudonim wykonawcy" />
+                                    <Button mnemonicParsing="false" text="Dodaj Artystę" />
+                                    <Button mnemonicParsing="false" text="Usuń Artystę" />
+                                    <Button mnemonicParsing="false" text="Modyfikuj Artystę" />
+                                 </children>
+                              </VBox>
                            </children>
                         </HBox>
                      </left>
