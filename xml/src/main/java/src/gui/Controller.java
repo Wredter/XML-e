@@ -214,13 +214,10 @@ public class Controller implements Initializable {
 
     public void selectArtysta() {
         WykonawcaType pl = (WykonawcaType)root.getListaWykonawcow().getWykonawca().stream().filter(x -> x.getId().equals(listaWykonawcow.getSelectionModel().getSelectedItem())).toArray()[0];
-        ArtystaType p = (ArtystaType) pl.getArtysta().stream().filter(x -> (x.getNazwisko().equals(listaArtystow.getSelectionModel().getSelectedItem()) &&
-                x.getNazwisko().equals(listaArtystow.getSelectionModel().getSelectedItem()))).toArray()[0];
+        ArtystaType p = (ArtystaType) pl.getArtysta().stream().filter(x -> ((x.getImie() + " " + x.getNazwisko()).equals(listaArtystow.getSelectionModel().getSelectedItem()))).toArray()[0];
         imieArtysty.setText(p.getImie());
         nazwiskoArtysty.setText(p.getNazwisko());
         pseudoArtysty.setText(p.getPseudo());
-        int id = root.getListaPiosenek().getPiosenka().indexOf(p);
-        refreshPiosenka(id);
     }
 
 
