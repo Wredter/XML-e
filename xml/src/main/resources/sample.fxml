@@ -26,17 +26,23 @@
                                  <children>
                                     <ListView fx:id="listaPlaylist" onMouseClicked="#selectPlaylista" />
                                     <TextField fx:id="nazwaPlaylisty" promptText="Nazwa Playlisty" />
-                                    <Button mnemonicParsing="false" onMouseClicked="#clickDodajPlayliste" text="Dodaj" />
-                                    <Button mnemonicParsing="false" onMouseClicked="#clickUsunPlayliste" text="Usuń" />
-                                    <Button mnemonicParsing="false" onMouseClicked="#clickUpdatePlayliste" text="modyfikuj" />
+                                    <Button mnemonicParsing="false" onMouseClicked="#clickDodajPlayliste" prefHeight="25.0" prefWidth="248.0" text="Dodaj playlistę">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin></Button>
+                                    <Button mnemonicParsing="false" onMouseClicked="#clickUsunPlayliste" prefHeight="25.0" prefWidth="248.0" text="Usuń playlistę" />
+                                    <Button mnemonicParsing="false" onMouseClicked="#clickUpdatePlayliste" prefHeight="25.0" prefWidth="248.0" text="modyfikuj playlistę" />
                                  </children>
                               </VBox>
                               <ListView fx:id="listaPiosenekRef" HBox.hgrow="ALWAYS" />
                               <VBox>
                                  <children>
-                                    <ComboBox fx:id="idPiosenki" promptText="wybierz piosenke" VBox.vgrow="ALWAYS" />
-                                    <Button mnemonicParsing="false" onMouseClicked="#clickDodajPiosenkeDoPlaylisty" text="Dodaj piosenke do playlisty" />
-                                    <Button mnemonicParsing="false" onMouseClicked="#clickUsunPiosenkeZPlaylisty" text="Usuń piosenke z playlisty" />
+                                    <ComboBox fx:id="idPiosenki" prefHeight="25.0" prefWidth="162.0" promptText="wybierz piosenke" />
+                                    <Button mnemonicParsing="false" onMouseClicked="#clickDodajPiosenkeDoPlaylisty" text="Dodaj piosenke do playlisty">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin></Button>
+                                    <Button mnemonicParsing="false" onMouseClicked="#clickUsunPiosenkeZPlaylisty" prefHeight="25.0" prefWidth="162.0" text="Usuń piosenke z playlisty" />
                                  </children>
                               </VBox>
                               <ListView fx:id="listaPiosenek" onMouseClicked="#selectPiosenka" HBox.hgrow="ALWAYS" />
@@ -53,9 +59,12 @@
                               <ComboBox fx:id="wykonawcaPiosenki" prefWidth="150.0" promptText="wybierz wykonawce" />
                               <ComboBox fx:id="gatunekPiosenki" prefWidth="150.0" promptText="wybierz gatunek" />
                               <ComboBox fx:id="nastrojPiosenki" prefWidth="150.0" promptText="wybierz nastrój" />
-                              <Button mnemonicParsing="false" onMouseClicked="#clickDodajPiosenke" text="Dodaj Piosenke" />
-                              <Button mnemonicParsing="false" onMouseClicked="#clickUsunPiosenke" text="Usuń piosenke" />
-                              <Button mnemonicParsing="false" onMouseClicked="#clickUpdatePiosenke" text="Modyfikuj piosenke" />
+                              <Button mnemonicParsing="false" onMouseClicked="#clickDodajPiosenke" prefHeight="25.0" prefWidth="150.0" text="Dodaj Piosenke">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin></Button>
+                              <Button mnemonicParsing="false" onMouseClicked="#clickUsunPiosenke" prefHeight="25.0" prefWidth="150.0" text="Usuń piosenke" />
+                              <Button mnemonicParsing="false" onMouseClicked="#clickUpdatePiosenke" prefHeight="25.0" prefWidth="150.0" text="Modyfikuj piosenke" />
                            </children>
                         </VBox>
                      </right>
@@ -76,9 +85,12 @@
                                     <ListView fx:id="listaWykonawcow" onMouseClicked="#selectWykonawca" />
                                     <TextField fx:id="id_wykonawcy" promptText="Wpisz ID wykonawcy" />
                                     <TextField fx:id="nazwaWykonawcy" promptText="Wpisz Nazwę wykonawcy" />
-                                    <Button mnemonicParsing="false" onMouseClicked="#clickDodajWykonawce" text="Dodaj wykonawce" />
-                                    <Button mnemonicParsing="false" onMouseClicked="#clickUsunWykonawce" text="Usuń wykonawce" />
-                                    <Button mnemonicParsing="false" onMouseClicked="#clickUpdateWykonawce" text="Modyfikuj wykonawce" />
+                                    <Button mnemonicParsing="false" onMouseClicked="#clickDodajWykonawce" prefHeight="25.0" prefWidth="248.0" text="Dodaj wykonawce">
+                                       <VBox.margin>
+                                          <Insets right="5.0" top="10.0" />
+                                       </VBox.margin></Button>
+                                    <Button mnemonicParsing="false" onMouseClicked="#clickUsunWykonawce" prefHeight="25.0" prefWidth="248.0" text="Usuń wykonawce" />
+                                    <Button mnemonicParsing="false" onMouseClicked="#clickUpdateWykonawce" prefHeight="25.0" prefWidth="248.0" text="Modyfikuj wykonawce" />
                                  </children>
                               </VBox>
                               <VBox>
@@ -87,9 +99,18 @@
                                     <TextField fx:id="imieArtysty" promptText="Wpisz imię artysty" />
                                     <TextField fx:id="nazwiskoArtysty" promptText="Wpisz Nazwisko artysty" />
                                     <TextField fx:id="pseudoArtysty" promptText="Wpisz pseudonim wykonawcy" />
-                                    <Button mnemonicParsing="false" onMouseClicked="#clickDodajArtyste" text="Dodaj Artystę" />
-                                    <Button mnemonicParsing="false" onMouseClicked="#clickUsunArtyste" text="Usuń Artystę" />
-                                    <Button mnemonicParsing="false" onMouseClicked="#clickUpdateArtyste" text="Modyfikuj Artystę" />
+                                    <Button mnemonicParsing="false" onMouseClicked="#clickDodajArtyste" prefHeight="25.0" prefWidth="248.0" text="Dodaj Artystę">
+                                       <VBox.margin>
+                                          <Insets left="5.0" top="10.0" />
+                                       </VBox.margin></Button>
+                                    <Button mnemonicParsing="false" onMouseClicked="#clickUsunArtyste" prefHeight="25.0" prefWidth="248.0" text="Usuń Artystę">
+                                       <VBox.margin>
+                                          <Insets left="5.0" />
+                                       </VBox.margin></Button>
+                                    <Button mnemonicParsing="false" onMouseClicked="#clickUpdateArtyste" prefHeight="25.0" prefWidth="248.0" text="Modyfikuj Artystę">
+                                       <VBox.margin>
+                                          <Insets left="5.0" />
+                                       </VBox.margin></Button>
                                  </children>
                               </VBox>
                            </children>
@@ -112,9 +133,12 @@
                                     <ListView fx:id="listaGatunkow" onMouseClicked="#selectGatunek" />
                                     <TextField fx:id="id_gatunek" promptText="Wpisz ID gatunku" />
                                     <TextField fx:id="nazwaGatunek" promptText="Wpisz Nazwę gatunku" />
-                                    <Button mnemonicParsing="false" onMouseClicked="#clickDodajGatunek" text="Dodaj gatunek" />
-                                    <Button mnemonicParsing="false" onMouseClicked="#clickUsunGatunek" text="Usuń gatunek" />
-                                    <Button mnemonicParsing="false" onMouseClicked="#clickUpdateGatunek" text="Modyfikuj gatunek" />
+                                    <Button mnemonicParsing="false" onMouseClicked="#clickDodajGatunek" prefHeight="25.0" prefWidth="247.0" text="Dodaj gatunek">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin></Button>
+                                    <Button mnemonicParsing="false" onMouseClicked="#clickUsunGatunek" prefHeight="25.0" prefWidth="247.0" text="Usuń gatunek" />
+                                    <Button mnemonicParsing="false" onMouseClicked="#clickUpdateGatunek" prefHeight="25.0" prefWidth="247.0" text="Modyfikuj gatunek" />
                                  </children>
                               </VBox>
                            </children>
@@ -149,7 +173,7 @@
                                     <Insets top="5.0" />
                                  </VBox.margin>
                               </Button>
-                              <TextField fx:id="export" maxWidth="600.0" prefWidth="200.0" promptText="Wprowadź ścieżkę do exportu pliku">
+                              <TextField fx:id="export" alignment="CENTER" maxWidth="600.0" prefWidth="200.0" promptText="Wprowadź ścieżkę do exportu pliku">
                                  <VBox.margin>
                                     <Insets top="5.0" />
                                  </VBox.margin>
