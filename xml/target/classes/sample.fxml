@@ -82,13 +82,13 @@
                               </VBox>
                               <VBox>
                                  <children>
-                                    <ListView fx:id="listaArtystow" onMouseClicked="#selectArtysta"/>
+                                    <ListView fx:id="listaArtystow" onMouseClicked="#selectArtysta" />
                                     <TextField fx:id="imieArtysty" promptText="Wpisz imię artysty" />
                                     <TextField fx:id="nazwiskoArtysty" promptText="Wpisz Nazwisko artysty" />
                                     <TextField fx:id="pseudoArtysty" promptText="Wpisz pseudonim wykonawcy" />
-                                    <Button mnemonicParsing="false" text="Dodaj Artystę" />
-                                    <Button mnemonicParsing="false" text="Usuń Artystę" />
-                                    <Button mnemonicParsing="false" text="Modyfikuj Artystę" />
+                                    <Button mnemonicParsing="false" text="Dodaj Artystę" onMouseClicked="#clickDodajArtyste"/>
+                                    <Button mnemonicParsing="false" text="Usuń Artystę" onMouseClicked="#clickUsunArtyste"/>
+                                    <Button mnemonicParsing="false" text="Modyfikuj Artystę" onMouseClicked="#clickUpdateGatunek"/>
                                  </children>
                               </VBox>
                            </children>
@@ -98,5 +98,31 @@
                </children></AnchorPane>
       </content>
     </Tab>
+      <Tab text="Gatunki">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+                     <left>
+                        <HBox BorderPane.alignment="CENTER">
+                           <children>
+                              <VBox>
+                                 <children>
+                                    <ListView fx:id="listaGatunkow"  onMouseClicked="#selectGatunek"/>
+                                    <TextField fx:id="id_gatunek" promptText="Wpisz ID gatunku" />
+                                    <TextField fx:id="nazwaGatunek" promptText="Wpisz Nazwę gatunku" />
+                                    <Button mnemonicParsing="false" onMouseClicked="#clickDodajGatunek" text="Dodaj gatunek" />
+                                    <Button mnemonicParsing="false" onMouseClicked="#clickUsunGatunek" text="Usuń gatunek" />
+                                    <Button mnemonicParsing="false" onMouseClicked="#clickUpdateGatunek" text="Modyfikuj gatunek" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </left>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
   </tabs>
 </TabPane>
