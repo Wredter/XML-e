@@ -103,8 +103,8 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/src/gui/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="299" column="39" lean-forward="false" selection-start-line="299" selection-start-column="39" selection-end-line="299" selection-end-column="39" />
+            <state relative-caret-position="333">
+              <caret line="220" column="43" lean-forward="false" selection-start-line="220" selection-start-column="43" selection-end-line="220" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#refreshNastroj#0;class#Controller#0" expanded="false" />
@@ -112,7 +112,6 @@
                 <element signature="method#refreshListaPlaylist#0;class#Controller#0" expanded="false" />
                 <element signature="method#refreshListaPiosenekRef#0;class#Controller#0" expanded="false" />
                 <element signature="method#refreshListaPiosenek#0;class#Controller#0" expanded="false" />
-                <element signature="method#refreshListaWykonawcow#0;class#Controller#0" expanded="false" />
                 <element signature="method#refreshListaArtystow#0;class#Controller#0" expanded="false" />
                 <element signature="method#refreshPiosenka#0;class#Controller#0" expanded="false" />
                 <element signature="method#selectPlaylista#0;class#Controller#0" expanded="false" />
@@ -130,7 +129,6 @@
                 <element signature="method#clickUpdateWykonawce#0;class#Controller#0" expanded="false" />
                 <element signature="method#clickDodajArtyste#0;class#Controller#0" expanded="false" />
                 <element signature="method#clickUsunArtyste#0;class#Controller#0" expanded="false" />
-                <element signature="method#clickUpdateArtyste#0;class#Controller#0" expanded="false" />
                 <element signature="method#saveXMLFile#0;class#Controller#0" expanded="false" />
                 <element signature="method#openDifferentXMLFile#0;class#Controller#0" expanded="false" />
               </folding>
@@ -767,7 +765,6 @@
             <element signature="method#refreshListaPlaylist#0;class#Controller#0" expanded="false" />
             <element signature="method#refreshListaPiosenekRef#0;class#Controller#0" expanded="false" />
             <element signature="method#refreshListaPiosenek#0;class#Controller#0" expanded="false" />
-            <element signature="method#refreshListaWykonawcow#0;class#Controller#0" expanded="false" />
             <element signature="method#refreshListaArtystow#0;class#Controller#0" expanded="false" />
             <element signature="method#refreshPiosenka#0;class#Controller#0" expanded="false" />
             <element signature="method#selectPlaylista#0;class#Controller#0" expanded="false" />
@@ -785,7 +782,6 @@
             <element signature="method#clickUpdateWykonawce#0;class#Controller#0" expanded="false" />
             <element signature="method#clickDodajArtyste#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUsunArtyste#0;class#Controller#0" expanded="false" />
-            <element signature="method#clickUpdateArtyste#0;class#Controller#0" expanded="false" />
             <element signature="method#saveXMLFile#0;class#Controller#0" expanded="false" />
             <element signature="method#openDifferentXMLFile#0;class#Controller#0" expanded="false" />
           </folding>
@@ -949,7 +945,6 @@
             <element signature="method#refreshListaPlaylist#0;class#Controller#0" expanded="false" />
             <element signature="method#refreshListaPiosenekRef#0;class#Controller#0" expanded="false" />
             <element signature="method#refreshListaPiosenek#0;class#Controller#0" expanded="false" />
-            <element signature="method#refreshListaWykonawcow#0;class#Controller#0" expanded="false" />
             <element signature="method#refreshListaArtystow#0;class#Controller#0" expanded="false" />
             <element signature="method#refreshPiosenka#0;class#Controller#0" expanded="false" />
             <element signature="method#selectPlaylista#0;class#Controller#0" expanded="false" />
@@ -967,7 +962,6 @@
             <element signature="method#clickUpdateWykonawce#0;class#Controller#0" expanded="false" />
             <element signature="method#clickDodajArtyste#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUsunArtyste#0;class#Controller#0" expanded="false" />
-            <element signature="method#clickUpdateArtyste#0;class#Controller#0" expanded="false" />
             <element signature="method#saveXMLFile#0;class#Controller#0" expanded="false" />
             <element signature="method#openDifferentXMLFile#0;class#Controller#0" expanded="false" />
           </folding>
@@ -1189,8 +1183,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/src/gui/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="299" column="39" lean-forward="false" selection-start-line="299" selection-start-column="39" selection-end-line="299" selection-end-column="39" />
+        <state relative-caret-position="333">
+          <caret line="220" column="43" lean-forward="false" selection-start-line="220" selection-start-column="43" selection-end-line="220" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#refreshNastroj#0;class#Controller#0" expanded="false" />
@@ -1198,7 +1192,6 @@
             <element signature="method#refreshListaPlaylist#0;class#Controller#0" expanded="false" />
             <element signature="method#refreshListaPiosenekRef#0;class#Controller#0" expanded="false" />
             <element signature="method#refreshListaPiosenek#0;class#Controller#0" expanded="false" />
-            <element signature="method#refreshListaWykonawcow#0;class#Controller#0" expanded="false" />
             <element signature="method#refreshListaArtystow#0;class#Controller#0" expanded="false" />
             <element signature="method#refreshPiosenka#0;class#Controller#0" expanded="false" />
             <element signature="method#selectPlaylista#0;class#Controller#0" expanded="false" />
@@ -1216,7 +1209,6 @@
             <element signature="method#clickUpdateWykonawce#0;class#Controller#0" expanded="false" />
             <element signature="method#clickDodajArtyste#0;class#Controller#0" expanded="false" />
             <element signature="method#clickUsunArtyste#0;class#Controller#0" expanded="false" />
-            <element signature="method#clickUpdateArtyste#0;class#Controller#0" expanded="false" />
             <element signature="method#saveXMLFile#0;class#Controller#0" expanded="false" />
             <element signature="method#openDifferentXMLFile#0;class#Controller#0" expanded="false" />
           </folding>

@@ -212,6 +212,17 @@ public class Controller implements Initializable {
 //        refreshPiosenka(id);
     }
 
+    public void selectArtysta() {
+        WykonawcaType pl = (WykonawcaType)root.getListaWykonawcow().getWykonawca().stream().filter(x -> x.getId().equals(listaWykonawcow.getSelectionModel().getSelectedItem())).toArray()[0];
+        ArtystaType p = (ArtystaType) pl.getArtysta().stream().filter(x -> (x.getNazwisko().equals(listaArtystow.getSelectionModel().getSelectedItem()) &&
+                x.getNazwisko().equals(listaArtystow.getSelectionModel().getSelectedItem()))).toArray()[0];
+        imieArtysty.setText(p.getImie());
+        nazwiskoArtysty.setText(p.getNazwisko());
+        pseudoArtysty.setText(p.getPseudo());
+        int id = root.getListaPiosenek().getPiosenka().indexOf(p);
+        refreshPiosenka(id);
+    }
+
 
 
 
@@ -335,6 +346,27 @@ public class Controller implements Initializable {
         pl.getArtysta().add(p);
         int id = root.getListaWykonawcow().getWykonawca().indexOf(pl);
         refreshListaArtystow(id);
+    }
+
+    public void clickDodajGatunek() {
+        GatunekType p = new GatunekType();
+        p.setId(id_gatunek.getText());
+        p.setValue(nazwaGatunek.getText());
+        root.getListaGatunkow().getGatunek().add(p);
+        refreshListaGatunkow();
+    }
+
+    public void clickUsunGatunek() {
+        GatunekType pl = (GatunekType)root.getListaWykonawcow().getWykonawca().stream().filter(x -> x.getId().equals(listaWykonawcow.getSelectionModel().getSelectedItem())).toArray()[0];
+        root.getListaWykonawcow().getWykonawca().remove(pl);
+        refreshListaWykonawcow();
+    }
+
+    public void clickUpdateGatunek() {
+        WykonawcaType p = (WykonawcaType)root.getListaWykonawcow().getWykonawca().stream().filter(x -> x.getId().equals(listaWykonawcow.getSelectionModel().getSelectedItem())).toArray()[0];
+        p.setNazwa(nazwaWykonawcy.getText());
+        p.setId(id_wykonawcy.getText());
+        refreshListaWykonawcow();
     }
 
 
