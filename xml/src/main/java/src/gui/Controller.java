@@ -26,6 +26,10 @@ public class Controller implements Initializable {
     //file
     @FXML
     public TextField export = new TextField();
+    @FXML
+    public TextField save = new TextField();
+    @FXML
+    public TextField open = new TextField();
 
 
     //listy
@@ -378,14 +382,14 @@ public class Controller implements Initializable {
 
     public void saveXMLFile() {
         try {
-            XMLOperations.saveToXML("playlisty");
+            XMLOperations.saveToXML(save.getText());
         } catch (JAXBException e) {
             e.printStackTrace();
         }
     }
 
-    public void openDifferentXMLFile(String name) {
-        XMLOperations.setXmlFilePath(name);
+    public void openDifferentXMLFile() {
+        XMLOperations.setXmlFilePath(open.getText());
         try {
             XMLOperations.readFromXML();
         } catch (JAXBException | FileNotFoundException e) {
