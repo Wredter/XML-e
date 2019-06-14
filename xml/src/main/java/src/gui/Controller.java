@@ -301,6 +301,39 @@ public class Controller implements Initializable {
         refreshListaWykonawcow();
     }
 
+    public void clickDodajArtyste() {
+        ArtystaType p = new ArtystaType();
+        p.setImie(imieArtysty.getText());
+        p.setNazwisko(nazwiskoArtysty.getText());
+        p.setPseudo(pseudoArtysty.getText());
+        WykonawcaType pl = (WykonawcaType)root.getListaWykonawcow().getWykonawca().stream().filter(x -> x.getId().equals(listaWykonawcow.getSelectionModel().getSelectedItem())).toArray()[0];
+        pl.getArtysta().add(p);
+        int id = root.getListaWykonawcow().getWykonawca().indexOf(pl);
+        refreshListaArtystow(id);
+    }
+
+    public void clickUsunArtyste() {
+        WykonawcaType pl = (WykonawcaType)root.getListaWykonawcow().getWykonawca().stream().filter(x -> x.getId().equals(listaWykonawcow.getSelectionModel().getSelectedItem())).toArray()[0];
+        ArtystaType a = (ArtystaType) pl.getArtysta().stream().filter(x -> (x.getNazwisko().equals(listaArtystow.getSelectionModel().getSelectedItem()) &&
+                        x.getNazwisko().equals(listaArtystow.getSelectionModel().getSelectedItem()))).toArray()[0];
+
+        int id = root.getListaWykonawcow().getWykonawca().indexOf(pl);
+        pl.getArtysta().remove(a);
+        refreshListaArtystow(id);
+    }
+
+    public void clickUpdateArtyste() {
+        WykonawcaType pl = (WykonawcaType)root.getListaWykonawcow().getWykonawca().stream().filter(x -> x.getId().equals(listaWykonawcow.getSelectionModel().getSelectedItem())).toArray()[0];
+        ArtystaType p = (ArtystaType) pl.getArtysta().stream().filter(x -> (x.getNazwisko().equals(listaArtystow.getSelectionModel().getSelectedItem()) &&
+                x.getNazwisko().equals(listaArtystow.getSelectionModel().getSelectedItem()))).toArray()[0];
+        p.setImie(imieArtysty.getText());
+        p.setNazwisko(nazwiskoArtysty.getText());
+        p.setPseudo(pseudoArtysty.getText());
+        pl.getArtysta().add(p);
+        int id = root.getListaWykonawcow().getWykonawca().indexOf(pl);
+        refreshListaArtystow(id);
+    }
+
 
 
     private void saveXMLFile() {
